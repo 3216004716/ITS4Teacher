@@ -1,0 +1,4337 @@
+{
+  "fileName": "勾股定理-谢攀攀1",
+  "length": 1516074538,
+  "videoDuration": 2822,
+  "fullText": [
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "好，",
+      "beginTime": 2,
+      "endTime": 3,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "上课老师。",
+      "beginTime": 4,
+      "endTime": 6,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "好好，同学们好，请坐。",
+      "beginTime": 7,
+      "endTime": 9,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "嗯嗯嗯",
+      "beginTime": 9,
+      "endTime": 11,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "前面呢我们学习了三角形，同学们都知道啊三角形在边的方面有哪些性质啊。",
+      "beginTime": 14,
+      "endTime": 22,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "两边之和",
+      "beginTime": 24,
+      "endTime": 25,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "啊满足任意两边之和大于第三边，两边之差。",
+      "beginTime": 25,
+      "endTime": 32,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "小于第三边，",
+      "beginTime": 32,
+      "endTime": 33,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "也就是第三边是大于两边。",
+      "beginTime": 33,
+      "endTime": 37,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "之高，",
+      "beginTime": 37,
+      "endTime": 38,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "第三边是大于两边之。",
+      "beginTime": 39,
+      "endTime": 41,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "差，",
+      "beginTime": 41,
+      "endTime": 42,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "小于两边之和。",
+      "beginTime": 42,
+      "endTime": 44,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "那紧接着三角形在角方面又有哪些性质呢。",
+      "beginTime": 44,
+      "endTime": 48,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "三角形？",
+      "beginTime": 48,
+      "endTime": 50,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "180度，三个三角形，三个内角的和为180度。",
+      "beginTime": 50,
+      "endTime": 54,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "好，紧接着呢我们又知道有一个角是90度的三角形，是特殊的什么三角形？",
+      "beginTime": 55,
+      "endTime": 61,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 0,
+      "sentenceContent": "直角三角形。",
+      "beginTime": 61,
+      "endTime": 63,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 1,
+      "sentenceContent": "那么直角三角形除了满足一般三角形所具备的边角之间的关系，它还有哪些特殊的性质呢？",
+      "beginTime": 63,
+      "endTime": 72,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 1,
+      "sentenceContent": "比如说直角三角形的角还有什么样的特殊性质？",
+      "beginTime": 73,
+      "endTime": 76,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 1,
+      "sentenceContent": "有一个角角角是有限的，",
+      "beginTime": 77,
+      "endTime": 80,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 1,
+      "sentenceContent": "啊直角三角形的两个锐角是什么关系？",
+      "beginTime": 80,
+      "endTime": 84,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 1,
+      "sentenceContent": "互余加在一起和为90度，那么直角三角形的三边除了满足任意两边之和大于第三边，任意两边之差小于第三边，还要具备哪些特殊的关系呢？",
+      "beginTime": 84,
+      "endTime": 98,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 2,
+      "sentenceContent": "好，我们这节课呢就继续来探究直角三角形中三边之间的数量关系，请同学们先打开课本，完成以下探究，把它写在课本上就可以。",
+      "beginTime": 98,
+      "endTime": 129,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 2,
+      "sentenceContent": "嗯好看大部分同学已经完成了，我们先来看第一个。",
+      "beginTime": 204,
+      "endTime": 207,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "好，",
+      "beginTime": 212,
+      "endTime": 212,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "同学们发现这个图形是1个什么形？",
+      "beginTime": 213,
+      "endTime": 216,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "正方形，那所以我们由正方形的面积公式，s一等于几个单位面积？",
+      "beginTime": 216,
+      "endTime": 221,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "9个，s2呢9。",
+      "beginTime": 221,
+      "endTime": 224,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "个。",
+      "beginTime": 224,
+      "endTime": 224,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "也是9个，那对应的s3。",
+      "beginTime": 224,
+      "endTime": 227,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "呢18。",
+      "beginTime": 228,
+      "endTime": 229,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "s3也是一个什么形？",
+      "beginTime": 230,
+      "endTime": 231,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "啊正方形。",
+      "beginTime": 231,
+      "endTime": 232,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "那这个正方形的边长我们不好求，我们可以通过什么样的方法去求解它的面积。",
+      "beginTime": 233,
+      "endTime": 238,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "呢啊歌谱，",
+      "beginTime": 238,
+      "endTime": 241,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "也听到了歌谱，对吧？",
+      "beginTime": 241,
+      "endTime": 242,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "那这题具体的应该怎么割怎么补呢？",
+      "beginTime": 242,
+      "endTime": 245,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "资料的建议的那个资格等于嗯。",
+      "beginTime": 245,
+      "endTime": 248,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "张彩玉，你来说。",
+      "beginTime": 248,
+      "endTime": 249,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 3,
+      "sentenceContent": "嗯构成的意义。",
+      "beginTime": 249,
+      "endTime": 251,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "割成4个直角三角形怎么割呢和对角可以。",
+      "beginTime": 251,
+      "endTime": 256,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "噢把对角线连接起来，是吗？",
+      "beginTime": 256,
+      "endTime": 258,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "好，请坐。",
+      "beginTime": 258,
+      "endTime": 259,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "那我们利用这样的方式对它进行割，割完之后这个正方形被分割成了几个三角形？",
+      "beginTime": 259,
+      "endTime": 269,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "4个4个什么三角形？",
+      "beginTime": 270,
+      "endTime": 272,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "直角三角形，那每一个直角三角形的面积可求不可求？",
+      "beginTime": 272,
+      "endTime": 277,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "可求，进而我们求得这个正方形的面积是多少？",
+      "beginTime": 277,
+      "endTime": 282,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "18。",
+      "beginTime": 282,
+      "endTime": 283,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "同学们提供了非常好的方法叫做割的方法，对吧？",
+      "beginTime": 283,
+      "endTime": 288,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "最终解得了面积是18。",
+      "beginTime": 288,
+      "endTime": 290,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 4,
+      "sentenceContent": "好，紧接着我们再来看第二个图形，观察两个小的依然是正方形，大的也是正方形，那么小正方形的边长是几？",
+      "beginTime": 290,
+      "endTime": 302,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "三，所以s一等于99，继续s2=。",
+      "beginTime": 303,
+      "endTime": 309,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "16 16，",
+      "beginTime": 309,
+      "endTime": 311,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "那对应的s3面积如如何求解呢？",
+      "beginTime": 311,
+      "endTime": 316,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "嗯",
+      "beginTime": 317,
+      "endTime": 318,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "采用什么样的方法？",
+      "beginTime": 318,
+      "endTime": 319,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "呢嗯好，胳膊出来的举手。",
+      "beginTime": 319,
+      "endTime": 322,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "有哪些同学通过胳膊、膊的方法求出来它的面积？",
+      "beginTime": 323,
+      "endTime": 326,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "可求出面积是多少？",
+      "beginTime": 326,
+      "endTime": 328,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "25，是吧？",
+      "beginTime": 328,
+      "endTime": 329,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "好，朱静然，你是怎么求的？",
+      "beginTime": 329,
+      "endTime": 331,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "我们把这个 Ss三这个正方形给它组成一个大的。",
+      "beginTime": 331,
+      "endTime": 336,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "补成一个大的，好，那你来操作一下你到底是怎么补的？",
+      "beginTime": 337,
+      "endTime": 341,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 5,
+      "sentenceContent": "好，来到前面来操作一下。",
+      "beginTime": 342,
+      "endTime": 343,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 6,
+      "sentenceContent": "好，其他同学注意观察，",
+      "beginTime": 344,
+      "endTime": 345,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 6,
+      "sentenceContent": "嗯",
+      "beginTime": 348,
+      "endTime": 349,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 6,
+      "sentenceContent": "通过这样补形的方法来解决面积的问题，可不可以？",
+      "beginTime": 361,
+      "endTime": 364,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "好，那我们再来找同学解释一下，那此时s3应该如何求解呢啊近期4个用谁的面积减谁的面积，用大的什么星？",
+      "beginTime": 365,
+      "endTime": 392,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "正方形，这个大正方形的边长是多少？",
+      "beginTime": 393,
+      "endTime": 396,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "边长是7，所以它的面积是49减去。",
+      "beginTime": 399,
+      "endTime": 404,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "我们想求的是s三，对不对？",
+      "beginTime": 406,
+      "endTime": 408,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "所以我们要用大正方形的面积减去噢4个小的三角形的面积，那么这4个三角形能看出来是什么关系吗？",
+      "beginTime": 408,
+      "endTime": 419,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "全等的全等。",
+      "beginTime": 419,
+      "endTime": 421,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "的，好很好，请坐。",
+      "beginTime": 421,
+      "endTime": 422,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "每一个小三角形的面积都是几？",
+      "beginTime": 422,
+      "endTime": 424,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "每一个小三角形面积都是几？",
+      "beginTime": 427,
+      "endTime": 429,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "啊6。",
+      "beginTime": 429,
+      "endTime": 430,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 7,
+      "sentenceContent": "所以一共有几个小的三角形？",
+      "beginTime": 430,
+      "endTime": 433,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "4个，所以s3应该等于大正方形的面积49减去4个小三角形的面积24，所以最终结果s3等于多少？",
+      "beginTime": 433,
+      "endTime": 445,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "唉等于25，对吧？",
+      "beginTime": 445,
+      "endTime": 448,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "好，那么此时我们求解s三的面积，除了用刚刚周静然提供的这种5行的方式，可不可以用割的方式来求解？",
+      "beginTime": 448,
+      "endTime": 459,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "可以可以，",
+      "beginTime": 459,
+      "endTime": 460,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "可不可以啊那怎么割呢？",
+      "beginTime": 460,
+      "endTime": 463,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "用有有。",
+      "beginTime": 463,
+      "endTime": 466,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "思路吗？",
+      "beginTime": 466,
+      "endTime": 466,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "这个事情很重要，",
+      "beginTime": 466,
+      "endTime": 468,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "我们也可以用戈的方法来对它进行求解，什么歌？",
+      "beginTime": 468,
+      "endTime": 471,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "啊谁有方法自己？",
+      "beginTime": 472,
+      "endTime": 474,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "来来，你来。",
+      "beginTime": 474,
+      "endTime": 476,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "嗯好，同学们注意观察这2亿是怎么解决这个问题的？",
+      "beginTime": 478,
+      "endTime": 482,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "哈啊已经有了噢",
+      "beginTime": 482,
+      "endTime": 485,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 8,
+      "sentenceContent": "这个颜色还是一个过程。",
+      "beginTime": 497,
+      "endTime": 501,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "好，可。",
+      "beginTime": 501,
+      "endTime": 501,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "看出来张嘉译是怎么得到的，像这个问题。",
+      "beginTime": 501,
+      "endTime": 504,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "来讲考虑三。",
+      "beginTime": 504,
+      "endTime": 505,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "条线段。",
+      "beginTime": 510,
+      "endTime": 511,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "好，此时s三被分割成了几个三角形？",
+      "beginTime": 512,
+      "endTime": 517,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "4。",
+      "beginTime": 517,
+      "endTime": 518,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "个加1个什么形？",
+      "beginTime": 518,
+      "endTime": 520,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "正方形？",
+      "beginTime": 520,
+      "endTime": 520,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "这个小正方形的面积是几。",
+      "beginTime": 521,
+      "endTime": 522,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "一，",
+      "beginTime": 522,
+      "endTime": 523,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "每一个三角形的面积都是6，所以4个三角形的面积加上正方形的面积在一起是多少？",
+      "beginTime": 523,
+      "endTime": 531,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 9,
+      "sentenceContent": "25，唉我们通过这首歌的方式，最终也求解出这个三23=25，给刚刚的两位同学掌声鼓励。",
+      "beginTime": 531,
+      "endTime": 540,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 10,
+      "sentenceContent": "啊要不然。",
+      "beginTime": 541,
+      "endTime": 541,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 10,
+      "sentenceContent": "那紧接着呢我们把这两个问题放在一起，同学们注意观察，我们先来看图一，图一刚刚求出两个小正方形的面积都是9，大正方形的面积是18，这是中间这个三角形它是一个特殊的什么？",
+      "beginTime": 544,
+      "endTime": 562,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 10,
+      "sentenceContent": "三角形，等腰直角三角形，对不对？",
+      "beginTime": 562,
+      "endTime": 565,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 11,
+      "sentenceContent": "好，我们发现了一个问题，如果我们令这个等腰直角三角形的两条直角边分别是a和b你发现以a为边长的正方形面积加上以b为边长的正方形面积，与以c为边长的正方形面积之间有什么样的数量关系？",
+      "beginTime": 565,
+      "endTime": 588,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 11,
+      "sentenceContent": "S一、s二、s三之间有什么样的数量关系？",
+      "beginTime": 590,
+      "endTime": 593,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 11,
+      "sentenceContent": "S1+s2=s3，我们将这个直角三角形一般化，从等腰直角三角形过渡到一般的直角三角形，你看右图中这个直角三角形的三条边分别是345，紧接着我们分别以它的各边为边向外做正方形，所得到的三个正方形面积之间也存在什么样的关系？",
+      "beginTime": 595,
+      "endTime": 625,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 11,
+      "sentenceContent": "啊 S1+s2。",
+      "beginTime": 625,
+      "endTime": 629,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 11,
+      "sentenceContent": "=s3。",
+      "beginTime": 629,
+      "endTime": 631,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "好，接下来我们把这种数量关系用三角形的边长来表示，s1等于。",
+      "beginTime": 631,
+      "endTime": 639,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "什么？",
+      "beginTime": 640,
+      "endTime": 640,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "立方。",
+      "beginTime": 640,
+      "endTime": 641,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "s二呢 S三，呢所以你能够得到 a方加b方。",
+      "beginTime": 641,
+      "endTime": 649,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "等于。",
+      "beginTime": 649,
+      "endTime": 650,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "c方。",
+      "beginTime": 650,
+      "endTime": 651,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "同样的对图二是否成立呢唉也是成立的。",
+      "beginTime": 652,
+      "endTime": 657,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 12,
+      "sentenceContent": "那现在呢我们就想一想，由刚刚的特殊直角三角形，一个是等腰直角三角形，还有一个三边分别是345的直角三角形。",
+      "beginTime": 657,
+      "endTime": 668,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "我们可以猜想出直角三角形三边之间满足什么样的数量关系？",
+      "beginTime": 668,
+      "endTime": 675,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "呢直角三角形三边之间满足什么样的数量关系？",
+      "beginTime": 675,
+      "endTime": 680,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "A和b都是这个直角三角形的什么边？",
+      "beginTime": 680,
+      "endTime": 684,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "直角边，c是它的什么？",
+      "beginTime": 684,
+      "endTime": 686,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "边斜边。",
+      "beginTime": 686,
+      "endTime": 687,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "那么a方加b方等于c方，a方加b方。",
+      "beginTime": 687,
+      "endTime": 693,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "是。",
+      "beginTime": 693,
+      "endTime": 695,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "两条直角边的平方和等于。",
+      "beginTime": 695,
+      "endTime": 700,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "斜边的平方，",
+      "beginTime": 700,
+      "endTime": 702,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "那这个呢是我们刚刚通过刚刚的实践得出的一个猜想。",
+      "beginTime": 702,
+      "endTime": 708,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "这个猜想大家一起。",
+      "beginTime": 708,
+      "endTime": 711,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "说。",
+      "beginTime": 711,
+      "endTime": 711,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "应该。",
+      "beginTime": 711,
+      "endTime": 712,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "是。",
+      "beginTime": 712,
+      "endTime": 712,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "什么直角三角形？",
+      "beginTime": 712,
+      "endTime": 714,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "两直角边的。",
+      "beginTime": 715,
+      "endTime": 719,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "平方。",
+      "beginTime": 719,
+      "endTime": 720,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "什么平方和等于。",
+      "beginTime": 720,
+      "endTime": 724,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "斜边的",
+      "beginTime": 724,
+      "endTime": 725,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 13,
+      "sentenceContent": "噢斜边的。",
+      "beginTime": 725,
+      "endTime": 727,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 14,
+      "sentenceContent": "那么以上关系是否对所有的直角三角形都成立，呢想一想我们刚刚猜想出来的这句话，它是不是一句文字语言？",
+      "beginTime": 732,
+      "endTime": 745,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 14,
+      "sentenceContent": "是不是一个文字命题？",
+      "beginTime": 746,
+      "endTime": 747,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 14,
+      "sentenceContent": "是这样，如果这个文字命题是成立的，那么这种关系就对所有的直角三角形都适用，对吧？",
+      "beginTime": 747,
+      "endTime": 757,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 14,
+      "sentenceContent": "那所以接下来呢我们需要对这样的一个文字命题进行严格的推理论证。",
+      "beginTime": 757,
+      "endTime": 763,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "同学们还记得证明文字命题的一般步骤吗？",
+      "beginTime": 763,
+      "endTime": 766,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "首先我们要做什么？",
+      "beginTime": 768,
+      "endTime": 769,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "文化旅行，",
+      "beginTime": 769,
+      "endTime": 770,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "啊将文字语言转化为什么？",
+      "beginTime": 771,
+      "endTime": 775,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "啊",
+      "beginTime": 775,
+      "endTime": 776,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "图形语言，还有呢。",
+      "beginTime": 776,
+      "endTime": 778,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "符号语言符号语言。",
+      "beginTime": 778,
+      "endTime": 779,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "好，",
+      "beginTime": 779,
+      "endTime": 780,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "那我们进进一步进行来转化。",
+      "beginTime": 780,
+      "endTime": 782,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "啊直角三角形两直角边的平方和你觉得它的提示它的条件是什么？",
+      "beginTime": 782,
+      "endTime": 789,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "噢是直角。",
+      "beginTime": 789,
+      "endTime": 790,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "三角形在什么三角形中rt三角形中，好。",
+      "beginTime": 790,
+      "endTime": 794,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "好，我们还要确定谁是直角边，谁是斜边，对不对？",
+      "beginTime": 794,
+      "endTime": 800,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "那他的结论是什么？",
+      "beginTime": 800,
+      "endTime": 801,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 15,
+      "sentenceContent": "好，两直角边的平方和等于斜边的平方，啊所以接下来呢我们把符号语言和图形语言全部表述在上面。",
+      "beginTime": 805,
+      "endTime": 815,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 16,
+      "sentenceContent": "那紧接着这是一个文字命题，我们写出已知和求证，接下来我们怎么证明这个结论呢？",
+      "beginTime": 816,
+      "endTime": 825,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 16,
+      "sentenceContent": "你看我们的结果想说明a方加b方等于c方，",
+      "beginTime": 828,
+      "endTime": 834,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 16,
+      "sentenceContent": "看这个式子的，",
+      "beginTime": 836,
+      "endTime": 837,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 16,
+      "sentenceContent": "我们现在从数数的角度来对这个式子进行分析。",
+      "beginTime": 840,
+      "endTime": 846,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 17,
+      "sentenceContent": "好，观察一下，看到了a方加b方你会想到什么？",
+      "beginTime": 846,
+      "endTime": 850,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 17,
+      "sentenceContent": "唉非常好，什么公式？",
+      "beginTime": 852,
+      "endTime": 853,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 17,
+      "sentenceContent": "啊完全平方公式，完全平方公式怎么说的来着？",
+      "beginTime": 853,
+      "endTime": 857,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 17,
+      "sentenceContent": "噢 A加b的平方等于什么？",
+      "beginTime": 858,
+      "endTime": 863,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 17,
+      "sentenceContent": "A方加b方+2ab这是我们从数的角度对它进行的分析，对不对？",
+      "beginTime": 863,
+      "endTime": 874,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "那紧接着呢我们再从形的角度看到了a方，你会想到构造一个什么？",
+      "beginTime": 874,
+      "endTime": 880,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "正方形，噢以a为边长的什么形正方形，那 b方呢？",
+      "beginTime": 880,
+      "endTime": 885,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "以 B为边长。",
+      "beginTime": 886,
+      "endTime": 887,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "啊以b为边长的正方形，那这出现了二ab我怎么构造？",
+      "beginTime": 887,
+      "endTime": 892,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "以4倍的啊为314a你看看。",
+      "beginTime": 892,
+      "endTime": 897,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "如果看到了ab你会想到什么？",
+      "beginTime": 897,
+      "endTime": 899,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "三角形的。",
+      "beginTime": 899,
+      "endTime": 900,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "意思，看到了ab你会想到什么？",
+      "beginTime": 900,
+      "endTime": 902,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "1/。",
+      "beginTime": 903,
+      "endTime": 904,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "42，噢你们都想到了三角形是吗？",
+      "beginTime": 904,
+      "endTime": 907,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 18,
+      "sentenceContent": "或者说我想到长方形可不可以？",
+      "beginTime": 907,
+      "endTime": 909,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 19,
+      "sentenceContent": "这个长方形的长为a宽为b可不可以？",
+      "beginTime": 909,
+      "endTime": 911,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 19,
+      "sentenceContent": "啊可以，或者三角形也可以，啊这个三角形的两条直角边一条是 A一条是b那么这个直角三角形的面积就是1/2ab唉那这里出现了2ab需要几个？",
+      "beginTime": 911,
+      "endTime": 924,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 19,
+      "sentenceContent": "4个4个，那你们太聪明。",
+      "beginTime": 924,
+      "endTime": 926,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 19,
+      "sentenceContent": "啊那我们从形的角度你会发现唉我会想到去构造这个直角三角形，对不对？",
+      "beginTime": 926,
+      "endTime": 932,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 19,
+      "sentenceContent": "而且我刚刚分析出来了，我需要这样的直角三角形大概有几个？",
+      "beginTime": 932,
+      "endTime": 937,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "4个，好，那现在呢我们就从这4个全等的直角三角形来入手，假设我这4个三角形是全等的，啊一模一样，能够完全重合的，较短的直角边，我们令它为a较长的直角边令它为b斜边就是。",
+      "beginTime": 937,
+      "endTime": 958,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "c。",
+      "beginTime": 958,
+      "endTime": 959,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "啊那你能否利用肖老师提供的这4个直角三角形来对我们的这个猜想进行规范的推理和论证，呢谁来试一试？",
+      "beginTime": 959,
+      "endTime": 973,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "拼一拼？",
+      "beginTime": 973,
+      "endTime": 973,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "啊可以拿出你们自己的道具，在你自己的桌子上进行一个。",
+      "beginTime": 974,
+      "endTime": 980,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "拼凑，啊啊拼一拼摆一摆，谁知嗯嗯嗯这个人民政府好，试一试，啊嗯谢谢。",
+      "beginTime": 980,
+      "endTime": 996,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "嗯也嗯嗯嗯谁知嗯还是一样的，",
+      "beginTime": 997,
+      "endTime": 1013,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "可以互相研究研究探究一下，啊嗯这个拼的很好，我们来拍几张应该还不错，",
+      "beginTime": 1013,
+      "endTime": 1022,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 20,
+      "sentenceContent": "嗯谢谢谢谢。",
+      "beginTime": 1023,
+      "endTime": 1026,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "嗯嗯嗯嗯嗯嗯嗯嗯嗯看到玩具就非常明白，行，这样。",
+      "beginTime": 1026,
+      "endTime": 1034,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "听完之后可以解释一下为什么就可以得到我们想要的结论。",
+      "beginTime": 1038,
+      "endTime": 1043,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "嗯这个这个谁知就是这个号的知道什么时间时间是的规定，那我们是常见的，我们对对对。",
+      "beginTime": 1043,
+      "endTime": 1067,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "嗯嗯嗯不是你们两个啊谁知消费怎么找到了，嗯嗯嗯嗯嗯包括我们的想法。",
+      "beginTime": 1067,
+      "endTime": 1082,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "对，他这个他这个问题啊大部分同学都。",
+      "beginTime": 1083,
+      "endTime": 1087,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "拼得非常漂亮。",
+      "beginTime": 1087,
+      "endTime": 1088,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "啊",
+      "beginTime": 1088,
+      "endTime": 1088,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "对，谢谢了。",
+      "beginTime": 1089,
+      "endTime": 1089,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 21,
+      "sentenceContent": "嗯嗯嗯嗯嗯你把你的方法给他嗯嗯嗯那差不多7分钟在一起。",
+      "beginTime": 1089,
+      "endTime": 1101,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "好，那么我们现在非常的非常好的嗯嗯嗯好。",
+      "beginTime": 1101,
+      "endTime": 1107,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "一种方法结束之后再尝试着有没有其他。",
+      "beginTime": 1107,
+      "endTime": 1112,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "方式的话，谢谢，不需要。",
+      "beginTime": 1112,
+      "endTime": 1120,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "嗯这个也是",
+      "beginTime": 1120,
+      "endTime": 1124,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "这个也是在线的，啊",
+      "beginTime": 1124,
+      "endTime": 1126,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "必须要提出来。",
+      "beginTime": 1128,
+      "endTime": 1129,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "嗯就是这样高一点高一点谁知我不知道谁知谁知。",
+      "beginTime": 1130,
+      "endTime": 1140,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "谁知道他们之间问题？",
+      "beginTime": 1146,
+      "endTime": 1150,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "嗯好的，非常好。",
+      "beginTime": 1151,
+      "endTime": 1154,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "嗯嗯嗯",
+      "beginTime": 1154,
+      "endTime": 1156,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "好，来，我刚在底下转的时候，呢我们很多同学都听出来的方式非常。",
+      "beginTime": 1157,
+      "endTime": 1162,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "好的，啊",
+      "beginTime": 1162,
+      "endTime": 1163,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "我们看这位同学。",
+      "beginTime": 1163,
+      "endTime": 1164,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "是女孩，对吧？",
+      "beginTime": 1165,
+      "endTime": 1167,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "嗯",
+      "beginTime": 1167,
+      "endTime": 1168,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "那你觉得这位同学的方法其实用到了我们刚刚在讲述那种特殊情况中的割的方法还是补的。",
+      "beginTime": 1168,
+      "endTime": 1174,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 22,
+      "sentenceContent": "方法？",
+      "beginTime": 1175,
+      "endTime": 1175,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "噢哥哥。",
+      "beginTime": 1175,
+      "endTime": 1176,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "好，",
+      "beginTime": 1176,
+      "endTime": 1176,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "再。",
+      "beginTime": 1176,
+      "endTime": 1177,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "来看第二位同学，你看这他的这个模型道具做得很好，啊",
+      "beginTime": 1177,
+      "endTime": 1182,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "他。",
+      "beginTime": 1182,
+      "endTime": 1182,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "这用的是割的方法还是补的方法？",
+      "beginTime": 1182,
+      "endTime": 1184,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "割还是补？",
+      "beginTime": 1185,
+      "endTime": 1186,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "都是非常棒的，啊掌声应该送给自己。",
+      "beginTime": 1188,
+      "endTime": 1190,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "啊那紧接着呢我们再来看一下黑板上两位同学注册的一个结果。",
+      "beginTime": 1191,
+      "endTime": 1196,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "好，我们先来看第一个心仪的。",
+      "beginTime": 1196,
+      "endTime": 1200,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "好，这个是 A这个是b这个是c他利用这4块小直角三角形拼凑出一个什么形？",
+      "beginTime": 1200,
+      "endTime": 1209,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "拼凑出一个什么形？",
+      "beginTime": 1211,
+      "endTime": 1212,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 23,
+      "sentenceContent": "正方形。",
+      "beginTime": 1212,
+      "endTime": 1213,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "好，这里留给大家一个课外思考，为什么此时我们拼凑出来的图形是正方形？",
+      "beginTime": 1213,
+      "endTime": 1220,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "好，我们课后再进行思考，好，",
+      "beginTime": 1220,
+      "endTime": 1222,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "那",
+      "beginTime": 1223,
+      "endTime": 1223,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "紧接着我们如何得到a方加b方等于c方呢？",
+      "beginTime": 1223,
+      "endTime": 1228,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "我们看一下c方此时就是中间这个正方形的什么？",
+      "beginTime": 1228,
+      "endTime": 1232,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "面积，那中间这个正方形的面积，c方它应该等于什么？",
+      "beginTime": 1232,
+      "endTime": 1238,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "呢 A加b的。",
+      "beginTime": 1238,
+      "endTime": 1239,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "好，欣怡你来说，你拼的等于。",
+      "beginTime": 1239,
+      "endTime": 1242,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "a加 b的。",
+      "beginTime": 1242,
+      "endTime": 1243,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "平方噢 a加b的平方。",
+      "beginTime": 1243,
+      "endTime": 1245,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "是4倍的1/2，",
+      "beginTime": 1246,
+      "endTime": 1248,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 24,
+      "sentenceContent": "噢4×1/2，ab给大家解释一下，a加b的平方是这个图形当中大正方形大正方形的面积减去4个小三角形的面积，噢非常好，请坐。",
+      "beginTime": 1248,
+      "endTime": 1260,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "好，我们对这个式子进行化简来展开。",
+      "beginTime": 1260,
+      "endTime": 1263,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "立方加立方加二厘米，然后呢减二厘米还剩什么？",
+      "beginTime": 1264,
+      "endTime": 1270,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "立方米，",
+      "beginTime": 1270,
+      "endTime": 1271,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "所以我们得到了a方加b方等于。",
+      "beginTime": 1271,
+      "endTime": 1275,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "C方，唉你发现我们刚才的结论有没有证明出来？",
+      "beginTime": 1275,
+      "endTime": 1278,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "唉非常好好，我们再来请第二位当事人张甲义。",
+      "beginTime": 1278,
+      "endTime": 1282,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "你来对你的图形作出解释，啊你这条边是c对吧？",
+      "beginTime": 1282,
+      "endTime": 1287,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 25,
+      "sentenceContent": "然后这一条边是a这条边是b这条边是a看不出来。",
+      "beginTime": 1288,
+      "endTime": 1294,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "好，你来解释一下，",
+      "beginTime": 1294,
+      "endTime": 1296,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "呃可以得到c的平方等于。",
+      "beginTime": 1296,
+      "endTime": 1299,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": " b的平方等于。",
+      "beginTime": 1299,
+      "endTime": 1301,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "a方减b方呃不是a减b的平方，a减。",
+      "beginTime": 1301,
+      "endTime": 1305,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "b的平方，我们较短直角边是a较长，直角边是b a的，唉那么中间这个小正方形的边长就是多少？",
+      "beginTime": 1305,
+      "endTime": 1314,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "B减a那就是b减a的平方继续。",
+      "beginTime": 1314,
+      "endTime": 1318,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "唉加上4个三角形，也就是。",
+      "beginTime": 1318,
+      "endTime": 1321,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "加上4个三角形，",
+      "beginTime": 1321,
+      "endTime": 1322,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "1/2。",
+      "beginTime": 1323,
+      "endTime": 1324,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "ab4×1/2ab可不可以？",
+      "beginTime": 1324,
+      "endTime": 1327,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 26,
+      "sentenceContent": "啊好非常好，请坐。",
+      "beginTime": 1327,
+      "endTime": 1329,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "来，所以我们对左边进行化解，左边还剩下什么？",
+      "beginTime": 1329,
+      "endTime": 1333,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "A。",
+      "beginTime": 1334,
+      "endTime": 1334,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "方加b方。",
+      "beginTime": 1334,
+      "endTime": 1338,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "-2。",
+      "beginTime": 1338,
+      "endTime": 1339,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "ab-2ab然后呢。",
+      "beginTime": 1339,
+      "endTime": 1341,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "加2ab。",
+      "beginTime": 1341,
+      "endTime": 1342,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "等于a就等于什么？",
+      "beginTime": 1342,
+      "endTime": 1343,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "对的，你。",
+      "beginTime": 1343,
+      "endTime": 1345,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "看我们最终的结论有没有证出来？",
+      "beginTime": 1346,
+      "endTime": 1348,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "其实呢以上的两种方法我们古代都有人研究过，其中第一刚刚张嘉译说的这种方法，呢就是我们02年国际数学家大会它的一个会标，这种方法我们把它称为赵爽弦图法，",
+      "beginTime": 1348,
+      "endTime": 1367,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "很。",
+      "beginTime": 1367,
+      "endTime": 1367,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 27,
+      "sentenceContent": "具有纪念性的意义。",
+      "beginTime": 1367,
+      "endTime": 1368,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "我们刚刚欣怡拼凑出来的这种方法呢是谁研究的？",
+      "beginTime": 1369,
+      "endTime": 1373,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "什么？",
+      "beginTime": 1373,
+      "endTime": 1374,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "毕达哥拉斯毕达哥拉斯。",
+      "beginTime": 1374,
+      "endTime": 1376,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "噢",
+      "beginTime": 1376,
+      "endTime": 1377,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "他研究出来的一种。",
+      "beginTime": 1378,
+      "endTime": 1379,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "方法，啊他。",
+      "beginTime": 1379,
+      "endTime": 1381,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "是通过古行的方式对他进行了一个研究。",
+      "beginTime": 1381,
+      "endTime": 1384,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "那除此之外，呢我们证明这个猜想有几百种方法，有兴趣的同学呢可以课下再进行一个探究。",
+      "beginTime": 1384,
+      "endTime": 1394,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 28,
+      "sentenceContent": "噢我们再给大家展示一种美国第二十任总统加菲尔德的总统阵法，这种阵法呢其实跟我们刚刚的毕达哥拉斯阵法，它是有相似之处的，有兴趣的同学可以再对它进行一个探究。",
+      "beginTime": 1395,
+      "endTime": 1411,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "好，那通过我们刚刚严格的推理证明，同学们发现我们刚刚的这个猜想是正确的还是错误的？",
+      "beginTime": 1411,
+      "endTime": 1420,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "正确",
+      "beginTime": 1420,
+      "endTime": 1421,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "的唉正确的，",
+      "beginTime": 1421,
+      "endTime": 1422,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "那既然是正确的，我们就可以把它推广化一般化，也就是我们这节课要学习的一个新的定理，叫做什么？",
+      "beginTime": 1422,
+      "endTime": 1431,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "定理勾股定理，为什么把它称为勾股定理？",
+      "beginTime": 1431,
+      "endTime": 1434,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "呢在我们古代啊人们习惯把这种弯曲成直角的手臂上半部分称为勾，下半部分称为股，而且古人研究出来了勾股以及啊我们把直角三角形较短的直角边称为勾，较长的直角边称为骨，斜边称为什么？",
+      "beginTime": 1434,
+      "endTime": 1455,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 29,
+      "sentenceContent": "斜。",
+      "beginTime": 1455,
+      "endTime": 1456,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 30,
+      "sentenceContent": "所以这个定理呢我们还把它称为什么定理？",
+      "beginTime": 1456,
+      "endTime": 1459,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 30,
+      "sentenceContent": "啊勾股定理唉勾股定理。",
+      "beginTime": 1459,
+      "endTime": 1461,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 30,
+      "sentenceContent": "好，咱们一起读一下勾股定理的内容。",
+      "beginTime": 1461,
+      "endTime": 1464,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 30,
+      "sentenceContent": "预备，开始，谁知。",
+      "beginTime": 1465,
+      "endTime": 1466,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 30,
+      "sentenceContent": "平方和是与之间的平方直角。",
+      "beginTime": 1470,
+      "endTime": 1474,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 30,
+      "sentenceContent": "三角形两直角边的平方和等于斜边的平方。",
+      "beginTime": 1474,
+      "endTime": 1478,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 31,
+      "sentenceContent": "好，接下来我们将这个定理的规范的符号语言表述出来，首先前提条件必须是一个什么？",
+      "beginTime": 1478,
+      "endTime": 1487,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 31,
+      "sentenceContent": "三角形直角三角形直角三角形，啊直角三角形标注之后，他说两直角边的平方和等于斜边的平方，我想问一个问题，我们怎么确定斜边？",
+      "beginTime": 1487,
+      "endTime": 1500,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 31,
+      "sentenceContent": "呢斜边是哪个角所对的边。",
+      "beginTime": 1500,
+      "endTime": 1505,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 31,
+      "sentenceContent": "直角，",
+      "beginTime": 1505,
+      "endTime": 1505,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 31,
+      "sentenceContent": "所以只要确定直角就可以定下来斜边直角所对的边小c就是斜边。",
+      "beginTime": 1505,
+      "endTime": 1515,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "好，",
+      "beginTime": 1515,
+      "endTime": 1515,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "你标上这个 A。",
+      "beginTime": 1516,
+      "endTime": 1517,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "就是这。",
+      "beginTime": 1518,
+      "endTime": 1518,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "这是c好，角a所对的边是角a角b所对的边是小b好，接下来它的符号语言应该如何表述？",
+      "beginTime": 1518,
+      "endTime": 1529,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "呢",
+      "beginTime": 1530,
+      "endTime": 1531,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "首先在什么三角形中？",
+      "beginTime": 1531,
+      "endTime": 1532,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "唉对，在。",
+      "beginTime": 1534,
+      "endTime": 1535,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "而。",
+      "beginTime": 1536,
+      "endTime": 1537,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "t三角形ABC中，这是指明了它必须是什么三角形？",
+      "beginTime": 1537,
+      "endTime": 1543,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "直角三角形。",
+      "beginTime": 1543,
+      "endTime": 1544,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "好，接下来怎么确定斜边来着？",
+      "beginTime": 1544,
+      "endTime": 1546,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "先定什么角？",
+      "beginTime": 1546,
+      "endTime": 1547,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "直角，所以我们的条件因为谁是直角角，c等于90度，所以就有什么样的关系就。",
+      "beginTime": 1547,
+      "endTime": 1556,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "可以。",
+      "beginTime": 1557,
+      "endTime": 1557,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "啊所以角c是不是就是斜边，两直角边与斜边之间满足什么样的数量关系？",
+      "beginTime": 1558,
+      "endTime": 1565,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "A方加b方等于 b方，c方看明白了吗？",
+      "beginTime": 1565,
+      "endTime": 1572,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 32,
+      "sentenceContent": "好，你看我们刚刚的几个步骤，啊第一步要指明直角三角形，第二步我们要定直角，第三步才能找到斜边，才能找到这样的一个数量关系。",
+      "beginTime": 1573,
+      "endTime": 1592,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 33,
+      "sentenceContent": "好，那学习了勾股定理，呢接下来我们利用勾股定理来解决一些问题。",
+      "beginTime": 1592,
+      "endTime": 1598,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "首先看第一个，下列说法中正确的是好，可以用你的平板作答，",
+      "beginTime": 1598,
+      "endTime": 1608,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "嗯",
+      "beginTime": 1608,
+      "endTime": 1609,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "啊审清楚题目。",
+      "beginTime": 1642,
+      "endTime": 1643,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "啊",
+      "beginTime": 1643,
+      "endTime": 1643,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "嗯嗯嗯嗯嗯",
+      "beginTime": 1647,
+      "endTime": 1648,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "好，还有这位同学。",
+      "beginTime": 1677,
+      "endTime": 1679,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "嗯那",
+      "beginTime": 1679,
+      "endTime": 1679,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "结束了，啊我们。",
+      "beginTime": 1688,
+      "endTime": 1689,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "来看一下啊。",
+      "beginTime": 1689,
+      "endTime": 1690,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "29人选d看看这题正确答案是什么？",
+      "beginTime": 1694,
+      "endTime": 1697,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "D。",
+      "beginTime": 1697,
+      "endTime": 1698,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "你看一下啊正确答案是d是吧？",
+      "beginTime": 1698,
+      "endTime": 1701,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "那接下来我们从选b的人当中，",
+      "beginTime": 1701,
+      "endTime": 1703,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "嗯他从上面使用的是新的数据显示服务数据的数据。",
+      "beginTime": 1705,
+      "endTime": 1710,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "嗯嗯",
+      "beginTime": 1710,
+      "endTime": 1710,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "来梁振川来给大家解释一下。",
+      "beginTime": 1715,
+      "endTime": 1718,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "这个。",
+      "beginTime": 1718,
+      "endTime": 1718,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 34,
+      "sentenceContent": "商品。",
+      "beginTime": 1718,
+      "endTime": 1719,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "嗯好，然后b是错的，因为他说这。",
+      "beginTime": 1719,
+      "endTime": 1722,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "两边合的，两边走的两边的平方。",
+      "beginTime": 1722,
+      "endTime": 1726,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "错的是什么？",
+      "beginTime": 1726,
+      "endTime": 1727,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "嗯直接是。",
+      "beginTime": 1727,
+      "endTime": 1728,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "他没料，人家。",
+      "beginTime": 1728,
+      "endTime": 1729,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "谁知到我们，",
+      "beginTime": 1729,
+      "endTime": 1733,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 35,
+      "sentenceContent": "要找到b到底错在哪了？",
+      "beginTime": 1733,
+      "endTime": 1735,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "来一起告诉他b错在哪了，这边。",
+      "beginTime": 1737,
+      "endTime": 1739,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "是两直角边的，",
+      "beginTime": 1739,
+      "endTime": 1741,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "我们地理中的内容是两条什么边？",
+      "beginTime": 1741,
+      "endTime": 1744,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "直角边的平方和等于斜边的平方，而选项b中只显示了两边和的平方，对不对？",
+      "beginTime": 1744,
+      "endTime": 1752,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "好，很好，请坐。",
+      "beginTime": 1752,
+      "endTime": 1754,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "那么没有人选a啊那所以a一定是错的，是吧？",
+      "beginTime": 1754,
+      "endTime": 1757,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "A为什么错了？",
+      "beginTime": 1757,
+      "endTime": 1759,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "一诺a诺。",
+      "beginTime": 1759,
+      "endTime": 1760,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "选项a为什么是错的？",
+      "beginTime": 1760,
+      "endTime": 1762,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "呢",
+      "beginTime": 1762,
+      "endTime": 1762,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "嗯因为。",
+      "beginTime": 1764,
+      "endTime": 1766,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "他说ABC是三角形的三边，你觉得哪有问题？",
+      "beginTime": 1771,
+      "endTime": 1774,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "呢",
+      "beginTime": 1774,
+      "endTime": 1774,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "问题。",
+      "beginTime": 1775,
+      "endTime": 1776,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "应该是什么三角形。",
+      "beginTime": 1777,
+      "endTime": 1779,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "三角形？",
+      "beginTime": 1779,
+      "endTime": 1779,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "唉我们勾股定理应用的前提条件必须是什么三角形？",
+      "beginTime": 1779,
+      "endTime": 1783,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "直角三角形，",
+      "beginTime": 1783,
+      "endTime": 1784,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 36,
+      "sentenceContent": "对吧？",
+      "beginTime": 1784,
+      "endTime": 1785,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "好好，再来看选项c选项c唉姚可佳，你来给大家解释一下，那选项c的问题在哪呢？",
+      "beginTime": 1785,
+      "endTime": 1793,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "你觉得选项c的问题在哪？",
+      "beginTime": 1798,
+      "endTime": 1800,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "呢在rt三角形ABC中o确定了直角，所以满足这个条件貌似没有问题。",
+      "beginTime": 1800,
+      "endTime": 1810,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "啊",
+      "beginTime": 1810,
+      "endTime": 1811,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "你。",
+      "beginTime": 1814,
+      "endTime": 1814,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "看他确定的哪个角是直角角，b是90度，角b是90度，所以哪条边是斜边？",
+      "beginTime": 1814,
+      "endTime": 1823,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "B呃 B。",
+      "beginTime": 1823,
+      "endTime": 1825,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "那所以选项c中所得的三边之间的关系应该是立方加立方。",
+      "beginTime": 1825,
+      "endTime": 1832,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "等于。",
+      "beginTime": 1832,
+      "endTime": 1833,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "立方，对不对？",
+      "beginTime": 1833,
+      "endTime": 1835,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "好，坐下。",
+      "beginTime": 1835,
+      "endTime": 1836,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 37,
+      "sentenceContent": "啊所以呢我们在利用这个定义解决问题的时候，一定要注意它的前提条件一定是直角三角形，要明确直角，进而确定斜边，明白了吗？",
+      "beginTime": 1836,
+      "endTime": 1850,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 38,
+      "sentenceContent": "那接下来老师将选项c再进行一个改变，听好了，在rt三角形ABC中，角a等于90度，所以。",
+      "beginTime": 1851,
+      "endTime": 1861,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 38,
+      "sentenceContent": " b方+b方等于a方，",
+      "beginTime": 1861,
+      "endTime": 1864,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 38,
+      "sentenceContent": "为什么能够得到b方加c方等于b方？",
+      "beginTime": 1864,
+      "endTime": 1869,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "所以勾股定理不是单独的一个式子，a方加b方等于c方，对不对？",
+      "beginTime": 1869,
+      "endTime": 1876,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "那这个式子成立的前提是角c等于多少度？",
+      "beginTime": 1876,
+      "endTime": 1879,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "90度，如果角b=90度，式子就要进行改变了，是 a方 A方加c方。",
+      "beginTime": 1879,
+      "endTime": 1884,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "等于b方，",
+      "beginTime": 1884,
+      "endTime": 1886,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "如果角a是90度式子也要发生改变，是 b方加c方等于a方，对吧？",
+      "beginTime": 1886,
+      "endTime": 1892,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "好，那这种简单的问题看来难不倒，大家大部分同学做的还是可以的，接下来呢我们来唉进行书写规范的解答。",
+      "beginTime": 1892,
+      "endTime": 1901,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 39,
+      "sentenceContent": "啊而这三角形ABC中角c等于90度，三边分别为ABC。",
+      "beginTime": 1901,
+      "endTime": 1909,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "好，第一个没有了，a等于6，b=8，求c的值。",
+      "beginTime": 1911,
+      "endTime": 1918,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "我们先来分析一下c是不是这个直角三角形的一条边，对吧？",
+      "beginTime": 1920,
+      "endTime": 1927,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "好看，我 c是这个直角三角形的一条边，我们现在已经知道了这个直角三角形的几条边？",
+      "beginTime": 1928,
+      "endTime": 1934,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "两条边，",
+      "beginTime": 1935,
+      "endTime": 1936,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "唉知道两条边求第三条边的情况下，这个时候你可以选择哪个知识点来做的？",
+      "beginTime": 1936,
+      "endTime": 1942,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "勾股定理，因为我们这节课的勾股定理研究的就是三直角三角形三条边之间的数量关系，对吧？",
+      "beginTime": 1942,
+      "endTime": 1949,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "好，那我们现在是已知什么边求什么边？",
+      "beginTime": 1949,
+      "endTime": 1953,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "已知直角边求斜边",
+      "beginTime": 1954,
+      "endTime": 1956,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 40,
+      "sentenceContent": "噢已知直角边求斜边。",
+      "beginTime": 1956,
+      "endTime": 1959,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 41,
+      "sentenceContent": "为了让这个数量关系更明确，我们可以首先根据题目意思做出图形。",
+      "beginTime": 1959,
+      "endTime": 1965,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 41,
+      "sentenceContent": "角c是直角，对不对？",
+      "beginTime": 1967,
+      "endTime": 1969,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 41,
+      "sentenceContent": "好，接下来确定下来a是6，b是8，求斜边c的值，所以我们能不能采用勾股定理解答？",
+      "beginTime": 1969,
+      "endTime": 1977,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "好，我们来一起进行书写，我们看这个啊例一首先呢解求小c的值，嗯怎么规范书写？",
+      "beginTime": 1977,
+      "endTime": 1989,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "按照我们刚刚说的。",
+      "beginTime": 1989,
+      "endTime": 1990,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "二。",
+      "beginTime": 1990,
+      "endTime": 1993,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "t三角形ABC中，因为角c角c等于多少度？",
+      "beginTime": 1993,
+      "endTime": 1999,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "90。",
+      "beginTime": 1999,
+      "endTime": 1999,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "度。",
+      "beginTime": 1999,
+      "endTime": 1999,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "所以。",
+      "beginTime": 2000,
+      "endTime": 2001,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "a方加b方，a。",
+      "beginTime": 2001,
+      "endTime": 2003,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "方加b方等于c方，我不这样写，因为我想求c的对不对？",
+      "beginTime": 2003,
+      "endTime": 2009,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "啊那我们就把c方写在前等于什么？",
+      "beginTime": 2009,
+      "endTime": 2013,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "A方加b方。",
+      "beginTime": 2013,
+      "endTime": 2016,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "来等于代入a是几？",
+      "beginTime": 2016,
+      "endTime": 2018,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "6，那就是36加。",
+      "beginTime": 2018,
+      "endTime": 2021,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "64。",
+      "beginTime": 2022,
+      "endTime": 2023,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": " 64等于多少？",
+      "beginTime": 2023,
+      "endTime": 2025,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "100噢等于100。",
+      "beginTime": 2025,
+      "endTime": 2027,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "好，所以c等于根号一根号，100就是多少？",
+      "beginTime": 2028,
+      "endTime": 2032,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "是那 C能不能取-10？",
+      "beginTime": 2032,
+      "endTime": 2034,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "啊唉不可以，对不对？",
+      "beginTime": 2034,
+      "endTime": 2036,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 42,
+      "sentenceContent": "好，这是这样书写。",
+      "beginTime": 2036,
+      "endTime": 2037,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "当然还有一种比较简单的书写方式，我们可以将这一步啊替换成什么？",
+      "beginTime": 2038,
+      "endTime": 2047,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "呢 C等于。",
+      "beginTime": 2047,
+      "endTime": 2049,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "根号下。",
+      "beginTime": 2049,
+      "endTime": 2050,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "对根号下a方加b方，c就是a方加b方的什么根？",
+      "beginTime": 2050,
+      "endTime": 2058,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "算术平方根不能是平方根平方根有几个？",
+      "beginTime": 2058,
+      "endTime": 2062,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "两个，",
+      "beginTime": 2062,
+      "endTime": 2063,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "好，进而求出来等于根号下36+64，最终结果等于根号多少？",
+      "beginTime": 2063,
+      "endTime": 2070,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "100就等于10，也可以解答问题，对吧？",
+      "beginTime": 2070,
+      "endTime": 2075,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "好，那接下来同学们仿照我们例一的书写第二小问进行规范的解答，",
+      "beginTime": 2075,
+      "endTime": 2081,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "开始接下来。",
+      "beginTime": 2082,
+      "endTime": 2085,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "分析第二个让我们纠结什么？",
+      "beginTime": 2085,
+      "endTime": 2086,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "呢",
+      "beginTime": 2086,
+      "endTime": 2086,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "看到的情况。",
+      "beginTime": 2090,
+      "endTime": 2091,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "嗯嗯嗯好，我们看一下大部分同学。",
+      "beginTime": 2099,
+      "endTime": 2173,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "都已经写好了，好，刚刚拍了两位同学的，",
+      "beginTime": 2173,
+      "endTime": 2177,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 43,
+      "sentenceContent": "你们可以观察一下。",
+      "beginTime": 2177,
+      "endTime": 2178,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 44,
+      "sentenceContent": "好，",
+      "beginTime": 2182,
+      "endTime": 2182,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 44,
+      "sentenceContent": "我们先看第一位同学，首先在rt三角形ABC中，因为角c等于90度，来先是前提条件是直角三角形，对吧？",
+      "beginTime": 2182,
+      "endTime": 2196,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 44,
+      "sentenceContent": "确定直角，然后才能够定斜边，c方等于a方加b方，所以呢他对这个式子进行了一个变形，我们想求的是b对不对？",
+      "beginTime": 2196,
+      "endTime": 2206,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "所以b方等于c方减a方，求出b方是225，所以b=15，对不对？",
+      "beginTime": 2206,
+      "endTime": 2213,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "可不可以？",
+      "beginTime": 2213,
+      "endTime": 2214,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "啊啊也还不错？",
+      "beginTime": 2214,
+      "endTime": 2216,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "啊再来你看第二位同学，你看这位同学是怎么怎么求的？",
+      "beginTime": 2216,
+      "endTime": 2220,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "啊因为角c等于90度，所以直接得到b方等于c方减a方，可不可以？",
+      "beginTime": 2220,
+      "endTime": 2225,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "将a等于8c=17代入上式？",
+      "beginTime": 2226,
+      "endTime": 2230,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "非常规范，哈得到b=根号下17方减去8的平方，最终结果b=15，可不可以？",
+      "beginTime": 2230,
+      "endTime": 2239,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 45,
+      "sentenceContent": "啊好，做对的举手。",
+      "beginTime": 2239,
+      "endTime": 2241,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 46,
+      "sentenceContent": "好，大部分同学写的还是非常不错的，啊看来这个难度难不倒大家，我们稍微来一个小拓展。",
+      "beginTime": 2243,
+      "endTime": 2251,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 46,
+      "sentenceContent": "咱们注意看，若。",
+      "beginTime": 2252,
+      "endTime": 2255,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 46,
+      "sentenceContent": "角a等于多少度？",
+      "beginTime": 2255,
+      "endTime": 2256,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 46,
+      "sentenceContent": "30度。",
+      "beginTime": 2256,
+      "endTime": 2257,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 46,
+      "sentenceContent": "A等于几比一求三角形ABC的什么？",
+      "beginTime": 2257,
+      "endTime": 2263,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 46,
+      "sentenceContent": "周长，好，来。",
+      "beginTime": 2263,
+      "endTime": 2266,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "这是一个时间问题，需要求解三角形ABC的周长，我们需要将这个实际问题转化为我们这节课学习的数学问题，对不对？",
+      "beginTime": 2267,
+      "endTime": 2276,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "啊好，想一想，求三角形ABC的周长，我们已知一条边是几啊一一个角是多少度？",
+      "beginTime": 2276,
+      "endTime": 2283,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "30度。",
+      "beginTime": 2283,
+      "endTime": 2284,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "那接下来我们要干什么？",
+      "beginTime": 2285,
+      "endTime": 2287,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "噢",
+      "beginTime": 2287,
+      "endTime": 2289,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "我们可以先求谁？",
+      "beginTime": 2289,
+      "endTime": 2292,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "斜边，噢因为我们想求周长，已知一条边，所以我们肯定还要求另外两条边，对不对？",
+      "beginTime": 2292,
+      "endTime": 2298,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "我怎么求另外两条边呢这只有一条边，我怎么求另外两条边呢。",
+      "beginTime": 2298,
+      "endTime": 2304,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "我？",
+      "beginTime": 2304,
+      "endTime": 2306,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "说完了。",
+      "beginTime": 2306,
+      "endTime": 2307,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "要利用什么性质。",
+      "beginTime": 2308,
+      "endTime": 2309,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "一定要要这个这个我记得交了90多、30多、",
+      "beginTime": 2309,
+      "endTime": 2313,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "噢30度、60度、90度三角形的性质，是吧？",
+      "beginTime": 2314,
+      "endTime": 2318,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 47,
+      "sentenceContent": "好，坐下来，一起说。",
+      "beginTime": 2318,
+      "endTime": 2319,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "那个性质应该是30度角所对的直角边等于斜边的一半，好，所以首先a等于1的话，角a等于30度，我们可以求出。",
+      "beginTime": 2319,
+      "endTime": 2331,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "CC。",
+      "beginTime": 2331,
+      "endTime": 2332,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "=。",
+      "beginTime": 2332,
+      "endTime": 2333,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "2，",
+      "beginTime": 2333,
+      "endTime": 2333,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": " C=2，好，那求出c等于二之后，你发现此时的问题就转化为我们这一课学习的什么了？",
+      "beginTime": 2333,
+      "endTime": 2340,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "公共。",
+      "beginTime": 2340,
+      "endTime": 2340,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "定律。",
+      "beginTime": 2341,
+      "endTime": 2341,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "已知直角三角形的两边求第三边，口算出b的值为根号三，所以这个三角形的周长是。",
+      "beginTime": 2341,
+      "endTime": 2350,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "三加根号。",
+      "beginTime": 2350,
+      "endTime": 2351,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "三加根号三。",
+      "beginTime": 2351,
+      "endTime": 2354,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "你看我们求完问题再回归到这个实际问题当中，进而求出它的解。",
+      "beginTime": 2354,
+      "endTime": 2359,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "好，那这个问题呢留给同学们课下去规范的书写一下。",
+      "beginTime": 2359,
+      "endTime": 2363,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "好，我们继续再进行挑战。",
+      "beginTime": 2363,
+      "endTime": 2364,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "已知rt三角形ABC中ab=4，ac等于3，求BC的长，",
+      "beginTime": 2365,
+      "endTime": 2373,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "开始。",
+      "beginTime": 2373,
+      "endTime": 2374,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "因为这是一个为什么？",
+      "beginTime": 2377,
+      "endTime": 2378,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "好像没有没有，但是这肯定的，那你怎么想？",
+      "beginTime": 2379,
+      "endTime": 2383,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "好规范的书写啊。",
+      "beginTime": 2384,
+      "endTime": 2386,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "有一定规定，他们从事的就是这个。",
+      "beginTime": 2388,
+      "endTime": 2391,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 48,
+      "sentenceContent": "还有不少同学很聪明，啊他觉得这一题没有图形，对吧？",
+      "beginTime": 2444,
+      "endTime": 2449,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 49,
+      "sentenceContent": "画出图形之后呢更直观，所以在旁边先做图。",
+      "beginTime": 2449,
+      "endTime": 2453,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 50,
+      "sentenceContent": "想一想啊我们这个问题呢也是已知直角三角形的两条边去求，第三边肯定也是用勾股定理解决问题，因为这个学习的勾股定理就是直角三角形三边之间的数量关系，对吧？",
+      "beginTime": 2530,
+      "endTime": 2544,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 50,
+      "sentenceContent": "10 15号开始时间，嗯谢谢，嗯谁知谁知嗯谁知嗯嗯嗯嗯嗯就不用了。",
+      "beginTime": 2550,
+      "endTime": 2569,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "好，我们一起来看一下，啊我们先来看第一位同学做的，",
+      "beginTime": 2570,
+      "endTime": 2578,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "我们有因为什么东西我觉得你不算，你真正的认识就是说20万的这个点的问题，",
+      "beginTime": 2580,
+      "endTime": 2588,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "他说那我们一起来看，在rt三角形ABC中，因为角c是90度，请问咱们题目中有没有这个条件？",
+      "beginTime": 2588,
+      "endTime": 2598,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "没有对不对？",
+      "beginTime": 2598,
+      "endTime": 2600,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "有没有说哪个角是90度？",
+      "beginTime": 2600,
+      "endTime": 2602,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "没有，在题目中没有明确哪个角是直角的情况下，我们能不能就随便的把斜边定下来了？",
+      "beginTime": 2602,
+      "endTime": 2609,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "不可以，对不对？",
+      "beginTime": 2610,
+      "endTime": 2611,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "啊那所以这个时候一定要有一个思想，什么思想？",
+      "beginTime": 2611,
+      "endTime": 2614,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 51,
+      "sentenceContent": "分类讨论，对吧？",
+      "beginTime": 2614,
+      "endTime": 2616,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "好，我们接下来看第二位同学，唉",
+      "beginTime": 2616,
+      "endTime": 2618,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "你看。",
+      "beginTime": 2619,
+      "endTime": 2619,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "它分成了几类。",
+      "beginTime": 2621,
+      "endTime": 2622,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "两？",
+      "beginTime": 2622,
+      "endTime": 2623,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "类两。",
+      "beginTime": 2623,
+      "endTime": 2624,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "类b类ab是直角边，第二类ab是什么？",
+      "beginTime": 2624,
+      "endTime": 2629,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "边斜边。",
+      "beginTime": 2629,
+      "endTime": 2630,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "最终解答出来两个答案，一个是5，一个是根号7，可对嗯。",
+      "beginTime": 2632,
+      "endTime": 2638,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 52,
+      "sentenceContent": "对的？",
+      "beginTime": 2638,
+      "endTime": 2638,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "我们再来看第三位同学解答的，",
+      "beginTime": 2638,
+      "endTime": 2640,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "这个这个",
+      "beginTime": 2640,
+      "endTime": 2641,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "你看他是怎么分类。",
+      "beginTime": 2641,
+      "endTime": 2642,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "的？",
+      "beginTime": 2642,
+      "endTime": 2643,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "若BC为斜边，BC为直角边都是分为几类？",
+      "beginTime": 2644,
+      "endTime": 2650,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "啊两类，那现在呢我们回归到这个题目本身，到底看看应该分为几类？",
+      "beginTime": 2650,
+      "endTime": 2656,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "Ab是4，a是ac是3，想一想，啊在没有确定直角的情况下，谁会是斜边呢三，有没有可能是斜边？",
+      "beginTime": 2657,
+      "endTime": 2668,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 53,
+      "sentenceContent": "不可能，因为斜边是直角三角形中最长的边，所以四有可能是斜边，对不对？",
+      "beginTime": 2669,
+      "endTime": 2678,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 54,
+      "sentenceContent": "那还有一种可能就是未知的那条边，BC是什么？",
+      "beginTime": 2678,
+      "endTime": 2683,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 54,
+      "sentenceContent": "边斜边，所以我们刚刚两位同学分析的都非常好，有可能ab是斜边，对吧？",
+      "beginTime": 2683,
+      "endTime": 2689,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 54,
+      "sentenceContent": "那也有可能BC是斜边，分为这两种情况。",
+      "beginTime": 2689,
+      "endTime": 2694,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "对应的图形，第一种，你看一下此时ab是什么边？",
+      "beginTime": 2694,
+      "endTime": 2699,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "Ab是什么边？",
+      "beginTime": 2702,
+      "endTime": 2703,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "直角边4作为直角边，那这时候口算出BC的长为。",
+      "beginTime": 2703,
+      "endTime": 2707,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "5，",
+      "beginTime": 2707,
+      "endTime": 2709,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "对吧？",
+      "beginTime": 2709,
+      "endTime": 2709,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "勾三股四弦五，我们同学太熟悉不过了。",
+      "beginTime": 2709,
+      "endTime": 2712,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "好，再来第二种情况，想一想谁会是斜边？",
+      "beginTime": 2712,
+      "endTime": 2715,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "Ab对，ab是斜边。",
+      "beginTime": 2716,
+      "endTime": 2719,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "那此时我们要求解BC的长，BC应该等于根号下，16-9等于多少？",
+      "beginTime": 2719,
+      "endTime": 2726,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "根号。",
+      "beginTime": 2726,
+      "endTime": 2727,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "7两种情况，那注意同学们在解答的时候有两个答案的结果，最终要怎么办？",
+      "beginTime": 2727,
+      "endTime": 2733,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 55,
+      "sentenceContent": "唉综上所述综上可得啊那以上呢就是我们这节课所探究的所有内容。",
+      "beginTime": 2733,
+      "endTime": 2741,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 56,
+      "sentenceContent": "同学们一起来回顾一下，我们这节课呢先从一般的三角形出发，我们研究了一般三角形的边和角之间的关系，在此基础上将一般情况特殊化，有一个角是90度的直角三角形，它的边和角除了一般三角形满足的关系，还有哪些单独的数量关系？",
+      "beginTime": 2742,
+      "endTime": 2764,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "呢比如说直角三角形的两个锐角是互余的，直角三角形的三边之间满足两直角边的平方和等于斜边的平方，那在这样的一个探究过程当中，我们体现了什么样的一个思想？",
+      "beginTime": 2764,
+      "endTime": 2783,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "从",
+      "beginTime": 2783,
+      "endTime": 2785,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "从初一一般。",
+      "beginTime": 2785,
+      "endTime": 2787,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "到和叔叔，又由特殊到一般去探究勾股定理的一个证明，对吧？",
+      "beginTime": 2787,
+      "endTime": 2795,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "好，我们在分析在推理勾股定理的时候，呢我们还要注意从结论出发，从数和形两个角度对它进行说明，对吧？",
+      "beginTime": 2795,
+      "endTime": 2807,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "好，那这节课的作业呢我们待会体现在大屏上，啊这节课就上到这，下课。",
+      "beginTime": 2807,
+      "endTime": 2812,
+      "role": "1",
+      "roleName": "老师"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "好，时间。",
+      "beginTime": 2813,
+      "endTime": 2815,
+      "role": "2",
+      "roleName": "学生1"
+    },
+    {
+      "paragraphNum": 57,
+      "sentenceContent": "好，同学们再见。",
+      "beginTime": 2815,
+      "endTime": 2817,
+      "role": "2",
+      "roleName": "学生1"
+    }
+  ],
+  "course": {
+    "courseType": 1,
+    "phase": "04",
+    "grade": "08",
+    "subject": "02",
+    "version": "30",
+    "teachingMaterial": "08020213-002",
+    "chapter": "004,004-001",
+    "phaseName": "初中",
+    "gradeName": "八年级",
+    "subjectName": "数学",
+    "versionName": "沪科版",
+    "teachingMaterialName": "数学沪科八年级下册（2025年更新）",
+    "chapterName": "18.1 勾股定理",
+    "files": null,
+    "teacherName": "谢攀攀",
+    "teachTime": "2025-03-25T03:02:20.117+00:00"
+  }
+}

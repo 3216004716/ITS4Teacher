@@ -1,0 +1,1982 @@
+{
+  "metadata": {
+    "totalQuestions": 69,
+    "totalChains": 22,
+    "timeRange": {
+      "start": 55,
+      "end": 2733
+    },
+    "processedAt": "2025-08-25T09:42:42.060Z"
+  },
+  "chains": [
+    {
+      "id": 1,
+      "questions": [
+        {
+          "question": "紧接着呢我们又知道有一个角是90度的三角形，是特殊的什么三角形？",
+          "answer": "直角三角形。",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 55,
+          "endTime": 61,
+          "question_sentiment": {
+            "score": 0.008282956600608848,
+            "classification": "消极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "那么直角三角形除了满足一般三角形所具备的边角之间的关系，它还有哪些特殊的性质呢？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 63,
+          "endTime": 72,
+          "question_sentiment": {
+            "score": 0.025281235116235923,
+            "classification": "消极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 8
+        }
+      ],
+      "startTime": 55,
+      "endTime": 72,
+      "primaryTopic": "为何",
+      "primaryBloomLevel": "应用",
+      "duration": 17,
+      "questionCount": 2,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.016782095858422386,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "递进为主",
+          "ascending": 1,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 1
+        },
+        "intensity": 2
+      },
+      "timeline": {
+        "start": 55,
+        "end": 72,
+        "startMinute": 0,
+        "endMinute": 1,
+        "duration": 17
+      }
+    },
+    {
+      "id": 2,
+      "questions": [
+        {
+          "question": "那这题具体的应该怎么割怎么补呢？",
+          "answer": "构成的意义。",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 242,
+          "endTime": 245,
+          "question_sentiment": {
+            "score": 0.36631974110080545,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 242,
+      "endTime": 245,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "应用",
+      "duration": 3,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.36631974110080545,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 242,
+        "end": 245,
+        "startMinute": 4,
+        "endMinute": 4,
+        "duration": 3
+      }
+    },
+    {
+      "id": 3,
+      "questions": [
+        {
+          "question": "紧接着我们再来看第二个图形，观察两个小的依然是正方形，大的也是正方形，那么小正方形的边长是几？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 290,
+          "endTime": 302,
+          "question_sentiment": {
+            "score": 0.8127606097623822,
+            "classification": "积极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "采用什么样的方法？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 318,
+          "endTime": 319,
+          "question_sentiment": {
+            "score": 0.7343414573707175,
+            "classification": "积极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 28
+        },
+        {
+          "question": "可求出面积是多少？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 326,
+          "endTime": 328,
+          "question_sentiment": {
+            "score": 0.8694360383229631,
+            "classification": "积极"
+          },
+          "chainIndex": 2,
+          "relativeTime": 36
+        },
+        {
+          "question": "好，朱静然，你是怎么求的？",
+          "answer": "我们把这个 Ss三这个正方形给它组成一个大的。",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 329,
+          "endTime": 331,
+          "question_sentiment": {
+            "score": 0.5524981075301675,
+            "classification": "中性"
+          },
+          "chainIndex": 3,
+          "relativeTime": 39
+        },
+        {
+          "question": "那此时s3应该如何求解呢啊近期4个用谁的面积减谁的面积，用大的什么星？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 365,
+          "endTime": 392,
+          "question_sentiment": {
+            "score": 0.4269915492801296,
+            "classification": "中性"
+          },
+          "chainIndex": 4,
+          "relativeTime": 75
+        }
+      ],
+      "startTime": 290,
+      "endTime": 392,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "应用",
+      "duration": 102,
+      "questionCount": 5,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.6792055524532719,
+        "sentimentClassification": "积极",
+        "bloomProgression": {
+          "pattern": "递进为主",
+          "ascending": 1,
+          "descending": 0,
+          "stable": 3,
+          "progressionRatio": 0.25
+        },
+        "intensity": 2.9411764705882355
+      },
+      "timeline": {
+        "start": 290,
+        "end": 392,
+        "startMinute": 4,
+        "endMinute": 6,
+        "duration": 102
+      }
+    },
+    {
+      "id": 4,
+      "questions": [
+        {
+          "question": "每一个小三角形面积都是几？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 427,
+          "endTime": 429,
+          "question_sentiment": {
+            "score": 0.28645307268176656,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "所以一共有几个小的三角形？",
+          "answer": "",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 430,
+          "endTime": 433,
+          "question_sentiment": {
+            "score": 0.050271829972293625,
+            "classification": "消极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 3
+        },
+        {
+          "question": "所以最终结果s3等于多少？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 433,
+          "endTime": 445,
+          "question_sentiment": {
+            "score": 0.5700310884710117,
+            "classification": "中性"
+          },
+          "chainIndex": 2,
+          "relativeTime": 6
+        },
+        {
+          "question": "可不可以用割的方式来求解？",
+          "answer": "可以可以，",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 448,
+          "endTime": 459,
+          "question_sentiment": {
+            "score": 0.6612115642069477,
+            "classification": "中性"
+          },
+          "chainIndex": 3,
+          "relativeTime": 21
+        },
+        {
+          "question": "那怎么割呢？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 460,
+          "endTime": 463,
+          "question_sentiment": {
+            "score": 0.375,
+            "classification": "中性"
+          },
+          "chainIndex": 4,
+          "relativeTime": 33
+        },
+        {
+          "question": "我们也可以用戈的方法来对它进行求解，什么歌？",
+          "answer": "",
+          "comment": "",
+          "blmType": "创造",
+          "mat": "其他",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 468,
+          "endTime": 471,
+          "question_sentiment": {
+            "score": 0.8203754487876583,
+            "classification": "积极"
+          },
+          "chainIndex": 5,
+          "relativeTime": 41
+        },
+        {
+          "question": "好，同学们注意观察这2亿是怎么解决这个问题的？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 478,
+          "endTime": 482,
+          "question_sentiment": {
+            "score": 0.9151856931912838,
+            "classification": "积极"
+          },
+          "chainIndex": 6,
+          "relativeTime": 51
+        },
+        {
+          "question": "好，此时s三被分割成了几个三角形？",
+          "answer": "4。",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 512,
+          "endTime": 517,
+          "question_sentiment": {
+            "score": 0.02397756739839274,
+            "classification": "消极"
+          },
+          "chainIndex": 7,
+          "relativeTime": 85
+        },
+        {
+          "question": "个加1个什么形？",
+          "answer": "",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "其他",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 518,
+          "endTime": 520,
+          "question_sentiment": {
+            "score": 0.3294174782358068,
+            "classification": "中性"
+          },
+          "chainIndex": 8,
+          "relativeTime": 91
+        },
+        {
+          "question": "每一个三角形的面积都是6，所以4个三角形的面积加上正方形的面积在一起是多少？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 523,
+          "endTime": 531,
+          "question_sentiment": {
+            "score": 0.016580953491820427,
+            "classification": "消极"
+          },
+          "chainIndex": 9,
+          "relativeTime": 96
+        },
+        {
+          "question": "我们先来看图一，图一刚刚求出两个小正方形的面积都是9，大正方形的面积是18，这是中间这个三角形它是一个特殊的什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 544,
+          "endTime": 562,
+          "question_sentiment": {
+            "score": 0.20120747323334454,
+            "classification": "消极"
+          },
+          "chainIndex": 10,
+          "relativeTime": 117
+        }
+      ],
+      "startTime": 427,
+      "endTime": 562,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "创造",
+      "duration": 135,
+      "questionCount": 11,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.38633746997002966,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "递进为主",
+          "ascending": 6,
+          "descending": 3,
+          "stable": 1,
+          "progressionRatio": 0.6
+        },
+        "intensity": 4.888888888888889
+      },
+      "timeline": {
+        "start": 427,
+        "end": 562,
+        "startMinute": 7,
+        "endMinute": 9,
+        "duration": 135
+      }
+    },
+    {
+      "id": 5,
+      "questions": [
+        {
+          "question": "呢直角三角形三边之间满足什么样的数量关系？",
+          "answer": "",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 675,
+          "endTime": 680,
+          "question_sentiment": {
+            "score": 0.12102905622381344,
+            "classification": "消极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "直角边，c是它的什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 684,
+          "endTime": 686,
+          "question_sentiment": {
+            "score": 0.29059273703401145,
+            "classification": "中性"
+          },
+          "chainIndex": 1,
+          "relativeTime": 9
+        }
+      ],
+      "startTime": 675,
+      "endTime": 686,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "理解",
+      "duration": 11,
+      "questionCount": 2,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": false,
+        "avgSentiment": 0.20581089662891244,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "回退为主",
+          "ascending": 0,
+          "descending": 1,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 2
+      },
+      "timeline": {
+        "start": 675,
+        "end": 686,
+        "startMinute": 11,
+        "endMinute": 11,
+        "duration": 11
+      }
+    },
+    {
+      "id": 6,
+      "questions": [
+        {
+          "question": "以上关系是否对所有的直角三角形都成立，呢想一想我们刚刚猜想出来的这句话，它是不是一句文字语言？",
+          "answer": "",
+          "comment": "",
+          "blmType": "评价",
+          "mat": "其他",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 732,
+          "endTime": 745,
+          "question_sentiment": {
+            "score": 0.9632855707684062,
+            "classification": "积极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "是这样，如果这个文字命题是成立的，那么这种关系就对所有的直角三角形都适用，对吧？",
+          "answer": "",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 747,
+          "endTime": 757,
+          "question_sentiment": {
+            "score": 0.8658903219406703,
+            "classification": "积极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 15
+        },
+        {
+          "question": "同学们还记得证明文字命题的一般步骤吗？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 763,
+          "endTime": 766,
+          "question_sentiment": {
+            "score": 0.9974862275333346,
+            "classification": "积极"
+          },
+          "chainIndex": 2,
+          "relativeTime": 31
+        },
+        {
+          "question": "啊将文字语言转化为什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 771,
+          "endTime": 775,
+          "question_sentiment": {
+            "score": 0.9243219575489646,
+            "classification": "积极"
+          },
+          "chainIndex": 3,
+          "relativeTime": 39
+        },
+        {
+          "question": "你觉得它的提示它的条件是什么？",
+          "answer": "噢是直角。",
+          "comment": "三角形在什么三角形中rt三角形中，好。",
+          "blmType": "分析",
+          "mat": "是何",
+          "feedbackType": "指导性",
+          "answered": true,
+          "beginTime": 782,
+          "endTime": 789,
+          "question_sentiment": {
+            "score": 0.31162334336766995,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.19135833463684526,
+            "classification": "消极"
+          },
+          "chainIndex": 4,
+          "relativeTime": 50
+        },
+        {
+          "question": "那他的结论是什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "评价",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 800,
+          "endTime": 801,
+          "question_sentiment": {
+            "score": 0.5217391304347825,
+            "classification": "中性"
+          },
+          "chainIndex": 5,
+          "relativeTime": 68
+        },
+        {
+          "question": "我们写出已知和求证，接下来我们怎么证明这个结论呢？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 816,
+          "endTime": 825,
+          "question_sentiment": {
+            "score": 0.2620435616236715,
+            "classification": "中性"
+          },
+          "chainIndex": 6,
+          "relativeTime": 84
+        },
+        {
+          "question": "观察一下，看到了a方加b方你会想到什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "其他",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 846,
+          "endTime": 850,
+          "question_sentiment": {
+            "score": 0.47404435054091454,
+            "classification": "中性"
+          },
+          "chainIndex": 7,
+          "relativeTime": 114
+        },
+        {
+          "question": "A加b的平方等于什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 858,
+          "endTime": 863,
+          "question_sentiment": {
+            "score": 0.312761989106794,
+            "classification": "中性"
+          },
+          "chainIndex": 8,
+          "relativeTime": 126
+        },
+        {
+          "question": "那紧接着呢我们再从形的角度看到了a方，你会想到构造一个什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 874,
+          "endTime": 880,
+          "question_sentiment": {
+            "score": 0.5933312156193951,
+            "classification": "中性"
+          },
+          "chainIndex": 9,
+          "relativeTime": 142
+        },
+        {
+          "question": "如果看到了ab你会想到什么？",
+          "answer": "三角形的。",
+          "comment": "意思，看到了ab你会想到什么？",
+          "blmType": "分析",
+          "mat": "若何",
+          "feedbackType": "指导性",
+          "answered": true,
+          "beginTime": 897,
+          "endTime": 899,
+          "question_sentiment": {
+            "score": 0.5871136513768597,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.5871136513768597,
+            "classification": "中性"
+          },
+          "chainIndex": 10,
+          "relativeTime": 165
+        },
+        {
+          "question": "或者说我想到长方形可不可以？",
+          "answer": "",
+          "comment": "啊可以，或者三角形也可以，啊这个三角形的两条直角边一条是 A一条是b那么这个直角三角形的面积就是1/2ab唉那这里出现了2ab需要几个？",
+          "blmType": "应用",
+          "mat": "若何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 907,
+          "endTime": 909,
+          "question_sentiment": {
+            "score": 0.3056635683105924,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.05051949788272048,
+            "classification": "消极"
+          },
+          "chainIndex": 11,
+          "relativeTime": 175
+        }
+      ],
+      "startTime": 732,
+      "endTime": 909,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "评价",
+      "duration": 177,
+      "questionCount": 12,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.5932754073476713,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 5,
+          "descending": 5,
+          "stable": 1,
+          "progressionRatio": 0.45454545454545453
+        },
+        "intensity": 4.067796610169491
+      },
+      "timeline": {
+        "start": 732,
+        "end": 909,
+        "startMinute": 12,
+        "endMinute": 15,
+        "duration": 177
+      }
+    },
+    {
+      "id": 7,
+      "questions": [
+        {
+          "question": "这用的是割的方法还是补的方法？",
+          "answer": "他。",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 1182,
+          "endTime": 1184,
+          "question_sentiment": {
+            "score": 0.778261655570485,
+            "classification": "积极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "拼凑出一个什么形？",
+          "answer": "",
+          "comment": "好，这里留给大家一个课外思考，为什么此时我们拼凑出来的图形是正方形？",
+          "blmType": "创造",
+          "mat": "是何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1211,
+          "endTime": 1212,
+          "question_sentiment": {
+            "score": 0.30839171523329134,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.9896169442564161,
+            "classification": "积极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 29
+        },
+        {
+          "question": "我们看一下c方此时就是中间这个正方形的什么？",
+          "answer": "",
+          "comment": "呢 A加b的。",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "评价性",
+          "answered": false,
+          "beginTime": 1228,
+          "endTime": 1232,
+          "question_sentiment": {
+            "score": 0.2276112446962757,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.6547613641141011,
+            "classification": "中性"
+          },
+          "chainIndex": 2,
+          "relativeTime": 46
+        }
+      ],
+      "startTime": 1182,
+      "endTime": 1232,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "创造",
+      "duration": 50,
+      "questionCount": 3,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.43808820516668395,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 1,
+          "descending": 1,
+          "stable": 0,
+          "progressionRatio": 0.5
+        },
+        "intensity": 3
+      },
+      "timeline": {
+        "start": 1182,
+        "end": 1232,
+        "startMinute": 19,
+        "endMinute": 20,
+        "duration": 50
+      }
+    },
+    {
+      "id": 8,
+      "questions": [
+        {
+          "question": "立方加立方加二厘米，然后呢减二厘米还剩什么？",
+          "answer": "立方米，",
+          "comment": "所以我们得到了a方加b方等于。",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "评价性",
+          "answered": true,
+          "beginTime": 1264,
+          "endTime": 1270,
+          "question_sentiment": {
+            "score": 0.09519752902894352,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.1256934822186877,
+            "classification": "消极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "唉你发现我们刚才的结论有没有证明出来？",
+          "answer": "",
+          "comment": "唉非常好好，我们再来请第二位当事人张甲义。",
+          "blmType": "理解",
+          "mat": "其他",
+          "feedbackType": "鼓励性",
+          "answered": false,
+          "beginTime": 1275,
+          "endTime": 1278,
+          "question_sentiment": {
+            "score": 0.1744819805451524,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.1877012543811365,
+            "classification": "消极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 11
+        },
+        {
+          "question": "你来对你的图形作出解释，啊你这条边是c对吧？",
+          "answer": "",
+          "comment": "好，你来解释一下，",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1282,
+          "endTime": 1287,
+          "question_sentiment": {
+            "score": 0.04467843447213604,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.34600279287773816,
+            "classification": "中性"
+          },
+          "chainIndex": 2,
+          "relativeTime": 18
+        }
+      ],
+      "startTime": 1264,
+      "endTime": 1287,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "应用",
+      "duration": 23,
+      "questionCount": 3,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.10478598134874399,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "递进为主",
+          "ascending": 2,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 1
+        },
+        "intensity": 3
+      },
+      "timeline": {
+        "start": 1264,
+        "end": 1287,
+        "startMinute": 21,
+        "endMinute": 21,
+        "duration": 23
+      }
+    },
+    {
+      "id": 9,
+      "questions": [
+        {
+          "question": "ab4×1/2ab可不可以？",
+          "answer": "",
+          "comment": "啊好非常好，请坐。",
+          "blmType": "分析",
+          "mat": "如何",
+          "feedbackType": "鼓励性",
+          "answered": false,
+          "beginTime": 1324,
+          "endTime": 1327,
+          "question_sentiment": {
+            "score": 0.3750780384166793,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.6910025477887506,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "来，所以我们对左边进行化解，左边还剩下什么？",
+          "answer": "A。",
+          "comment": "方加b方。",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "评价性",
+          "answered": true,
+          "beginTime": 1329,
+          "endTime": 1333,
+          "question_sentiment": {
+            "score": 0.05621318248095142,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.23972906332481692,
+            "classification": "消极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 5
+        },
+        {
+          "question": "等于a就等于什么？",
+          "answer": "",
+          "comment": "看我们最终的结论有没有证出来？",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1342,
+          "endTime": 1343,
+          "question_sentiment": {
+            "score": 0.29944171059228397,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.5201210010075802,
+            "classification": "中性"
+          },
+          "chainIndex": 2,
+          "relativeTime": 18
+        }
+      ],
+      "startTime": 1324,
+      "endTime": 1343,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "分析",
+      "duration": 19,
+      "questionCount": 3,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.24357764382997157,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "回退为主",
+          "ascending": 0,
+          "descending": 2,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 3
+      },
+      "timeline": {
+        "start": 1324,
+        "end": 1343,
+        "startMinute": 22,
+        "endMinute": 22,
+        "duration": 19
+      }
+    },
+    {
+      "id": 10,
+      "questions": [
+        {
+          "question": "我们刚刚欣怡拼凑出来的这种方法呢是谁研究的？",
+          "answer": "什么？",
+          "comment": "毕达哥拉斯毕达哥拉斯。",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "鼓励性",
+          "answered": true,
+          "beginTime": 1369,
+          "endTime": 1373,
+          "question_sentiment": {
+            "score": 0.9944653534102297,
+            "classification": "积极"
+          },
+          "comment_sentiment": {
+            "score": 0.6378130119203385,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1369,
+      "endTime": 1373,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "记忆",
+      "duration": 4,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.9944653534102297,
+        "sentimentClassification": "积极",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1369,
+        "end": 1373,
+        "startMinute": 22,
+        "endMinute": 22,
+        "duration": 4
+      }
+    },
+    {
+      "id": 11,
+      "questions": [
+        {
+          "question": "好，那通过我们刚刚严格的推理证明，同学们发现我们刚刚的这个猜想是正确的还是错误的？",
+          "answer": "正确",
+          "comment": "那既然是正确的，我们就可以把它推广化一般化，也就是我们这节课要学习的一个新的定理，叫做什么？",
+          "blmType": "评价",
+          "mat": "其他",
+          "feedbackType": "指导性",
+          "answered": true,
+          "beginTime": 1411,
+          "endTime": 1420,
+          "question_sentiment": {
+            "score": 0.9995000751257173,
+            "classification": "积极"
+          },
+          "comment_sentiment": {
+            "score": 0.9967824951991112,
+            "classification": "积极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "为什么把它称为勾股定理？",
+          "answer": "",
+          "comment": "斜。",
+          "blmType": "理解",
+          "mat": "为何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1431,
+          "endTime": 1434,
+          "question_sentiment": {
+            "score": 0.7352653883388867,
+            "classification": "积极"
+          },
+          "comment_sentiment": {
+            "score": 0.7187500000000002,
+            "classification": "积极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 20
+        },
+        {
+          "question": "斜边称为什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 1434,
+          "endTime": 1455,
+          "question_sentiment": {
+            "score": 0.5981887771912235,
+            "classification": "中性"
+          },
+          "chainIndex": 2,
+          "relativeTime": 23
+        }
+      ],
+      "startTime": 1411,
+      "endTime": 1455,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "评价",
+      "duration": 44,
+      "questionCount": 3,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.7776514135519426,
+        "sentimentClassification": "积极",
+        "bloomProgression": {
+          "pattern": "回退为主",
+          "ascending": 0,
+          "descending": 2,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 3
+      },
+      "timeline": {
+        "start": 1411,
+        "end": 1455,
+        "startMinute": 23,
+        "endMinute": 24,
+        "duration": 44
+      }
+    },
+    {
+      "id": 12,
+      "questions": [
+        {
+          "question": "好，接下来我们将这个定理的规范的符号语言表述出来，首先前提条件必须是一个什么？",
+          "answer": "",
+          "comment": "呢斜边是哪个角所对的边。",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1478,
+          "endTime": 1487,
+          "question_sentiment": {
+            "score": 0.7145731899927146,
+            "classification": "积极"
+          },
+          "comment_sentiment": {
+            "score": 0.4737672181921908,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "它的符号语言应该如何表述？",
+          "answer": "呢",
+          "comment": "首先在什么三角形中？",
+          "blmType": "理解",
+          "mat": "如何",
+          "feedbackType": "指导性",
+          "answered": true,
+          "beginTime": 1518,
+          "endTime": 1529,
+          "question_sentiment": {
+            "score": 0.4751256725356673,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.42954729051344387,
+            "classification": "中性"
+          },
+          "chainIndex": 1,
+          "relativeTime": 40
+        }
+      ],
+      "startTime": 1478,
+      "endTime": 1529,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "应用",
+      "duration": 51,
+      "questionCount": 2,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.594849431264191,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "回退为主",
+          "ascending": 0,
+          "descending": 1,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 2
+      },
+      "timeline": {
+        "start": 1478,
+        "end": 1529,
+        "startMinute": 24,
+        "endMinute": 25,
+        "duration": 51
+      }
+    },
+    {
+      "id": 13,
+      "questions": [
+        {
+          "question": "A方加b方等于 b方，c方看明白了吗？",
+          "answer": "",
+          "comment": "好，那学习了勾股定理，呢接下来我们利用勾股定理来解决一些问题。",
+          "blmType": "理解",
+          "mat": "其他",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1565,
+          "endTime": 1572,
+          "question_sentiment": {
+            "score": 0.053239828630950115,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.9629812939965487,
+            "classification": "积极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1565,
+      "endTime": 1572,
+      "primaryTopic": "其他",
+      "primaryBloomLevel": "理解",
+      "duration": 7,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": true,
+        "avgSentiment": 0.053239828630950115,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1565,
+        "end": 1572,
+        "startMinute": 26,
+        "endMinute": 26,
+        "duration": 7
+      }
+    },
+    {
+      "id": 14,
+      "questions": [
+        {
+          "question": "你看一下啊正确答案是d是吧？",
+          "answer": "D。",
+          "comment": "那接下来我们从选b的人当中，",
+          "blmType": "应用",
+          "mat": "其他",
+          "feedbackType": "其他",
+          "answered": true,
+          "beginTime": 1698,
+          "endTime": 1701,
+          "question_sentiment": {
+            "score": 0.9123692550952213,
+            "classification": "积极"
+          },
+          "comment_sentiment": {
+            "score": 0.8590190795488217,
+            "classification": "积极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1698,
+      "endTime": 1701,
+      "primaryTopic": "其他",
+      "primaryBloomLevel": "应用",
+      "duration": 3,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.9123692550952213,
+        "sentimentClassification": "积极",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1698,
+        "end": 1701,
+        "startMinute": 28,
+        "endMinute": 28,
+        "duration": 3
+      }
+    },
+    {
+      "id": 15,
+      "questions": [
+        {
+          "question": "直角边的平方和等于斜边的平方，而选项b中只显示了两边和的平方，对不对？",
+          "answer": "",
+          "comment": "那么没有人选a啊那所以a一定是错的，是吧？",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "评价性",
+          "answered": false,
+          "beginTime": 1744,
+          "endTime": 1752,
+          "question_sentiment": {
+            "score": 0.006823850585699898,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.23467052824618184,
+            "classification": "消极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "A为什么错了？",
+          "answer": "嗯因为。",
+          "comment": "他说ABC是三角形的三边，你觉得哪有问题？",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "指导性",
+          "answered": true,
+          "beginTime": 1757,
+          "endTime": 1759,
+          "question_sentiment": {
+            "score": 0.6364699288841942,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.2678258943995604,
+            "classification": "中性"
+          },
+          "chainIndex": 1,
+          "relativeTime": 13
+        }
+      ],
+      "startTime": 1744,
+      "endTime": 1759,
+      "primaryTopic": "为何",
+      "primaryBloomLevel": "分析",
+      "duration": 15,
+      "questionCount": 2,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.32164688973494704,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 1,
+          "progressionRatio": 0
+        },
+        "intensity": 2
+      },
+      "timeline": {
+        "start": 1744,
+        "end": 1759,
+        "startMinute": 29,
+        "endMinute": 29,
+        "duration": 15
+      }
+    },
+    {
+      "id": 16,
+      "questions": [
+        {
+          "question": "你觉得选项c的问题在哪？",
+          "answer": "",
+          "comment": "啊",
+          "blmType": "评价",
+          "mat": "其他",
+          "feedbackType": "其他",
+          "answered": false,
+          "beginTime": 1798,
+          "endTime": 1800,
+          "question_sentiment": {
+            "score": 0.40415324263403307,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.5262327818078083,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1798,
+      "endTime": 1800,
+      "primaryTopic": "其他",
+      "primaryBloomLevel": "评价",
+      "duration": 2,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": true,
+        "avgSentiment": 0.40415324263403307,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1798,
+        "end": 1800,
+        "startMinute": 29,
+        "endMinute": 30,
+        "duration": 2
+      }
+    },
+    {
+      "id": 17,
+      "questions": [
+        {
+          "question": "啊所以呢我们在利用这个定义解决问题的时候，一定要注意它的前提条件一定是直角三角形，要明确直角，进而确定斜边，明白了吗？",
+          "answer": "",
+          "comment": "那接下来老师将选项c再进行一个改变，听好了，在rt三角形ABC中，角a等于90度，所以。",
+          "blmType": "理解",
+          "mat": "如何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 1836,
+          "endTime": 1850,
+          "question_sentiment": {
+            "score": 0.43395109358829675,
+            "classification": "中性"
+          },
+          "comment_sentiment": {
+            "score": 0.3364584777929308,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1836,
+      "endTime": 1850,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "理解",
+      "duration": 14,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": true,
+        "avgSentiment": 0.43395109358829675,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1836,
+        "end": 1850,
+        "startMinute": 30,
+        "endMinute": 30,
+        "duration": 14
+      }
+    },
+    {
+      "id": 18,
+      "questions": [
+        {
+          "question": "那这个式子成立的前提是角c等于多少度？",
+          "answer": "",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 1876,
+          "endTime": 1879,
+          "question_sentiment": {
+            "score": 0.26007626378946636,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1876,
+      "endTime": 1879,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "理解",
+      "duration": 3,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": false,
+        "avgSentiment": 0.26007626378946636,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1876,
+        "end": 1879,
+        "startMinute": 31,
+        "endMinute": 31,
+        "duration": 3
+      }
+    },
+    {
+      "id": 19,
+      "questions": [
+        {
+          "question": "好，那我们现在是已知什么边求什么边？",
+          "answer": "已知直角边求斜边。",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 1949,
+          "endTime": 1953,
+          "question_sentiment": {
+            "score": 0.4775979328548796,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 1949,
+      "endTime": 1953,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "应用",
+      "duration": 4,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.4775979328548796,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 1949,
+        "end": 1953,
+        "startMinute": 32,
+        "endMinute": 32,
+        "duration": 4
+      }
+    },
+    {
+      "id": 20,
+      "questions": [
+        {
+          "question": "啊因为角c等于90度，所以直接得到b方等于c方减a方，可不可以？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2220,
+          "endTime": 2225,
+          "question_sentiment": {
+            "score": 0.0005200051828460062,
+            "classification": "消极"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "将a等于8c=17代入上式？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2226,
+          "endTime": 2230,
+          "question_sentiment": {
+            "score": 0.42516145507420233,
+            "classification": "中性"
+          },
+          "chainIndex": 1,
+          "relativeTime": 6
+        },
+        {
+          "question": "非常规范，哈得到b=根号下17方减去8的平方，最终结果b=15，可不可以？",
+          "answer": "",
+          "comment": "",
+          "blmType": "理解",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2230,
+          "endTime": 2239,
+          "question_sentiment": {
+            "score": 0.1874647519514615,
+            "classification": "消极"
+          },
+          "chainIndex": 2,
+          "relativeTime": 10
+        },
+        {
+          "question": "A等于几比一求三角形ABC的什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2257,
+          "endTime": 2263,
+          "question_sentiment": {
+            "score": 0.4802144181176631,
+            "classification": "中性"
+          },
+          "chainIndex": 3,
+          "relativeTime": 37
+        },
+        {
+          "question": "求三角形ABC的周长，我们已知一条边是几啊一一个角是多少度？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2276,
+          "endTime": 2283,
+          "question_sentiment": {
+            "score": 0.09392402306146486,
+            "classification": "消极"
+          },
+          "chainIndex": 4,
+          "relativeTime": 56
+        },
+        {
+          "question": "那接下来我们要干什么？",
+          "answer": "噢",
+          "comment": "",
+          "blmType": "其他",
+          "mat": "其他",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 2285,
+          "endTime": 2287,
+          "question_sentiment": {
+            "score": 0.11043706666510511,
+            "classification": "消极"
+          },
+          "chainIndex": 5,
+          "relativeTime": 65
+        },
+        {
+          "question": "我们可以先求谁？",
+          "answer": "",
+          "comment": "",
+          "blmType": "其他",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2289,
+          "endTime": 2292,
+          "question_sentiment": {
+            "score": 0.5,
+            "classification": "中性"
+          },
+          "chainIndex": 6,
+          "relativeTime": 69
+        },
+        {
+          "question": "噢30度、60度、90度三角形的性质，是吧？",
+          "answer": "",
+          "comment": "那个性质应该是30度角所对的直角边等于斜边的一半，好，所以首先a等于1的话，角a等于30度，我们可以求出。",
+          "blmType": "理解",
+          "mat": "是何",
+          "feedbackType": "指导性",
+          "answered": false,
+          "beginTime": 2314,
+          "endTime": 2318,
+          "question_sentiment": {
+            "score": 0.058359812984436155,
+            "classification": "消极"
+          },
+          "comment_sentiment": {
+            "score": 0.019721748042262677,
+            "classification": "消极"
+          },
+          "chainIndex": 7,
+          "relativeTime": 94
+        }
+      ],
+      "startTime": 2220,
+      "endTime": 2318,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "应用",
+      "duration": 98,
+      "questionCount": 8,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": true,
+        "avgSentiment": 0.23201019162964737,
+        "sentimentClassification": "消极",
+        "bloomProgression": {
+          "pattern": "回退为主",
+          "ascending": 2,
+          "descending": 3,
+          "stable": 2,
+          "progressionRatio": 0.2857142857142857
+        },
+        "intensity": 4.8979591836734695
+      },
+      "timeline": {
+        "start": 2220,
+        "end": 2318,
+        "startMinute": 37,
+        "endMinute": 38,
+        "duration": 98
+      }
+    },
+    {
+      "id": 21,
+      "questions": [
+        {
+          "question": "那还有一种可能就是未知的那条边，BC是什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2678,
+          "endTime": 2683,
+          "question_sentiment": {
+            "score": 0.5982345941363738,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        }
+      ],
+      "startTime": 2678,
+      "endTime": 2683,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "分析",
+      "duration": 5,
+      "questionCount": 1,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": false,
+        "avgSentiment": 0.5982345941363738,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 0
+        },
+        "intensity": 1
+      },
+      "timeline": {
+        "start": 2678,
+        "end": 2683,
+        "startMinute": 44,
+        "endMinute": 44,
+        "duration": 5
+      }
+    },
+    {
+      "id": 22,
+      "questions": [
+        {
+          "question": "Ab是什么边？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2702,
+          "endTime": 2703,
+          "question_sentiment": {
+            "score": 0.5,
+            "classification": "中性"
+          },
+          "chainIndex": 0,
+          "relativeTime": 0
+        },
+        {
+          "question": "好，再来第二种情况，想一想谁会是斜边？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2712,
+          "endTime": 2715,
+          "question_sentiment": {
+            "score": 0.13547087505893962,
+            "classification": "消极"
+          },
+          "chainIndex": 1,
+          "relativeTime": 10
+        },
+        {
+          "question": "那此时我们要求解BC的长，BC应该等于根号下，16-9等于多少？",
+          "answer": "根号。",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 2719,
+          "endTime": 2726,
+          "question_sentiment": {
+            "score": 0.52367823423779,
+            "classification": "中性"
+          },
+          "chainIndex": 2,
+          "relativeTime": 17
+        },
+        {
+          "question": "两种情况，那注意同学们在解答的时候有两个答案的结果，最终要怎么办？",
+          "answer": "",
+          "comment": "",
+          "blmType": "评价",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2727,
+          "endTime": 2733,
+          "question_sentiment": {
+            "score": 0.9181795288814242,
+            "classification": "积极"
+          },
+          "chainIndex": 3,
+          "relativeTime": 25
+        }
+      ],
+      "startTime": 2702,
+      "endTime": 2733,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "评价",
+      "duration": 31,
+      "questionCount": 4,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.5193321595445385,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "递进为主",
+          "ascending": 3,
+          "descending": 0,
+          "stable": 0,
+          "progressionRatio": 1
+        },
+        "intensity": 4
+      },
+      "timeline": {
+        "start": 2702,
+        "end": 2733,
+        "startMinute": 45,
+        "endMinute": 45,
+        "duration": 31
+      }
+    }
+  ]
+}
