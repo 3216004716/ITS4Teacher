@@ -1,8 +1,8 @@
 <script setup>
 import { reactive, onMounted, ref, nextTick } from "vue";
 import * as d3 from 'd3';
-
-import questionChainsData from '../../data/structured_question_chains.json'
+import questionChainsData from '../../data/structured_question_chains.json';
+import classStructure from '../../data/class_structure.json';
 
 const qMap2 = ref(null);
 
@@ -13,13 +13,28 @@ const state = reactive({
   hoveredQuestion: null,
 });
 
-// 话题颜色映射
-const TOPIC_COLORS = {
-  "是何": "#FFAA64",  // 橙色
-  "如何": "#FF6B6B",  // 红色
-  "为何": "#45B7D1",  // 蓝色
-  "若何": "#FFBE0B",  // 黄色
-  "其他": "#A882DD"   // 紫色
+// 处理教学环节名称，去除序号前缀
+function processPhaseNames(content) {
+  // 匹配模式：一、二、三、四、等
+  const pattern = /^[一二三四五六七八九十]+、(.+)/;
+  const match = content.match(pattern);
+  return match ? match[1] : content;
+}
+
+// 教学环节颜色映射
+const PHASE_COLORS = [
+  '#8FBC8F',  // 浅绿色
+  '#FFB366',  // 橙色
+  '#87CEEB',  // 天蓝色
+  '#DDA0DD',  // 梅花紫
+  '#F0E68C'   // 卡其色
+];
+
+// 认知模式类型
+const COGNITIVE_PATTERNS = {
+  'ascending': '递进型',
+  'stable': '平行型',
+  'descending': '下降型'
 };
 
 const methods = reactive({
@@ -30,8 +45,6 @@ const methods = reactive({
       console.log('等待问题链数据加载...');
       return;
     }
-    
-    console.log('开始绘制问题链时间轴，共有', state.questionChains.chains.length, '个问题链');
     
     try {
       if (!qMap2.value) {
@@ -46,13 +59,10 @@ const methods = reactive({
       const containerWidth = qMap2.value.clientWidth || 1200;
       const containerHeight = qMap2.value.clientHeight || 700;
       
-      // 设置图表尺寸和边距
-      const margin = { top: 20, right: 20, bottom: 0, left: 20 };
+      // 设置图表尺寸和边距（增加左右边距以确保内容完全可见）
+      const margin = { top: 40, right: 30, bottom: 10, left: 30 };
       const width = containerWidth - margin.left - margin.right;
       const height = containerHeight - margin.top - margin.bottom;
-      
-      console.log('容器尺寸:', containerWidth, containerHeight);
-      console.log('图表尺寸:', width, height);
       
       // 创建主SVG
       const svg = d3.select(qMap2.value)
@@ -65,353 +75,503 @@ const methods = reactive({
       const mainGroup = svg.append('g')
         .attr('transform', `translate(${margin.left},${margin.top})`);
       
-      // 获取时间范围和问题链
-      const timeRange = state.questionChains.metadata.timeRange;
+      // 获取教学环节数据
+      const phases = classStructure.child || [];
       const chains = state.questionChains.chains;
+      const timeRange = state.questionChains.metadata.timeRange;
       
-      // 创建时间比例尺（横轴）
+      // 创建时间比例尺
       const xScale = d3.scaleLinear()
         .domain([timeRange.start, timeRange.end])
         .range([0, width]);
       
-      // 绘制主时间轴（渐变横线）
-      this.drawMainTimeline(mainGroup, xScale, width, height);
+      // 绘制教学环节条形图
+      this.drawPhaseBars(mainGroup, phases, chains, xScale, width, height);
       
-      // 绘制问题链
-      this.drawQuestionChains(mainGroup, chains, xScale, height);
+      // 处理并绘制问题链（基于第二级child）
+      this.processAndDrawQuestionChains(mainGroup, phases, chains, xScale, width, height);
       
     } catch (error) {
       console.error('绘制问题链时间轴时出错:', error);
     }
   },
   
-  // 绘制主时间轴
-  drawMainTimeline(container, xScale, width, height) {
-    // 创建渐变定义
-    const defs = container.append('defs');
-    const gradient = defs.append('linearGradient')
-      .attr('id', 'timelineGradient')
-      .attr('x1', '0%')
-      .attr('x2', '100%');
+  // 绘制教学环节条形图
+  drawPhaseBars(container, phases, chains, xScale, width, height) {
+    const barHeight = 30;
+    const barY = 20;
     
-    gradient.append('stop')
-      .attr('offset', '0%')
-      .attr('stop-color', '#4CAF50'); // 绿色开始
+    // 先创建矩形组
+    const rectGroup = container.append('g').attr('class', 'phase-rects');
     
-    gradient.append('stop')
-      .attr('offset', '100%')
-      .attr('stop-color', '#2196F3'); // 蓝色结束
+    // 用于存储矩形和相关信息
+    const phaseData = [];
     
-    // 绘制主时间轴
-    const timelineY = height * 0.15; // 时间轴位置
-    
-    // 添加标题
-    // container.append('text')
-    //   .attr('x', width / 2)
-    //   .attr('y', 20)
-    //   .attr('text-anchor', 'middle')
-    //   .attr('font-size', '16px')
-    //   .attr('font-weight', 'bold')
-    //   .attr('fill', '#333')
-    //   .text('课堂时间推进');
-    
-    container.append('line')
-      .attr('x1', 0)
-      .attr('x2', width)
-      .attr('y1', timelineY)
-      .attr('y2', timelineY)
-      .attr('stroke', 'url(#timelineGradient)')
-      .attr('stroke-width', 8)
-      .attr('stroke-linecap', 'round');
-    
-    // 添加箭头
-    const arrowGroup = container.append('g')
-      .attr('transform', `translate(${width}, ${timelineY})`);
-    
-    arrowGroup.append('path')
-      .attr('d', 'M -15,-8 L 5,0 L -15,8 Z')
-      .attr('fill', '#2196F3')
-      .attr('stroke', '#2196F3')
-      .attr('stroke-width', 2);
-    
-    // 添加时间刻度
-    const timePoints = xScale.ticks(10);
-    timePoints.forEach(time => {
-      const x = xScale(time);
+    // 第一步：绘制所有矩形并收集信息
+    phases.forEach((phase, index) => {
+      const phaseName = processPhaseNames(phase.content);
+      const phaseColor = PHASE_COLORS[index % PHASE_COLORS.length];
       
-      // 时间刻度点
-      // container.append('circle')
-      //   .attr('cx', x)
-      //   .attr('cy', timelineY)
-      //   .attr('r', 4)
-      //   .attr('fill', '#E91E63')
-      //   .attr('stroke', '#fff')
-      //   .attr('stroke-width', 2);
+      // 计算环节的起始和结束时间
+      const beginTime = phase.beginTime || 0;
+      const endTime = phases[index + 1]?.beginTime || 2800;
       
-      // 添加垂直网格线
-      container.append('line')
-        .attr('x1', x)
-        .attr('x2', x)
-        .attr('y1', timelineY + 10)
-        .attr('y2', height - 20)
-        .attr('stroke', '#E0E0E0')
-        .attr('stroke-width', 1)
-        .attr('stroke-dasharray', '2,2')
-        .attr('opacity', 0.5);
+      const startX = xScale(beginTime);
+      const endX = xScale(endTime);
+      const segmentWidth = endX - startX;
+      
+      // 绘制环节条形
+      const rect = rectGroup.append('rect')
+        .attr('x', startX)
+        .attr('y', barY)
+        .attr('width', segmentWidth)
+        .attr('height', barHeight)
+        .attr('fill', phaseColor)
+        .attr('opacity', 0.8)
+        .attr('stroke', '#fff')
+        .attr('stroke-width', 2)
+        .style('cursor', 'pointer');
+      
+      // 创建临时文本元素来测量文本宽度
+      const tempText = container.append('text')
+        .style('visibility', 'hidden')
+        .style('font-size', '12px')
+        .style('font-weight', 'bold')
+        .text(phaseName);
+      const textWidth = tempText.node().getComputedTextLength();
+      tempText.remove();
+      
+      // 判断文本是否能完整显示在矩形中
+      const canFitText = textWidth < segmentWidth - 10;
+      
+      // 保存数据供后续使用
+      phaseData.push({
+        rect,
+        phaseName,
+        startX,
+        segmentWidth,
+        canFitText
+      });
+    });
+    
+    // 第二步：创建文本组（在所有矩形之后）
+    const textGroup = container.append('g').attr('class', 'phase-texts');
+    const textElements = [];
+    
+    // 第三步：添加所有文本并设置交互
+    phaseData.forEach((data, index) => {
+      const { rect, phaseName, startX, segmentWidth, canFitText } = data;
+      
+      // 添加环节名称
+      const phaseText = textGroup.append('text')
+        .attr('x', startX + segmentWidth / 2)
+        .attr('y', barY + barHeight / 2 + 4)
+        .attr('text-anchor', 'middle')
+        .attr('font-size', '12px')
+        .attr('font-weight', 'bold')
+        .attr('fill', '#333')
+        .style('opacity', canFitText ? 1 : 0)
+        .style('pointer-events', 'none')
+        .text(phaseName);
+      
+      // 保存文本元素信息
+      textElements.push({
+        element: phaseText,
+        canFit: canFitText
+      });
+      
+      // 只为无法完整显示的文本添加交互效果
+      if (!canFitText) {
+        rect
+          .on('mouseover', function(event) {
+            // 隐藏其他所有环节名称
+            textElements.forEach(item => {
+              if (item.element !== phaseText) {
+                item.element.style('opacity', 0);
+              }
+            });
+            
+            // 显示当前环节名称
+            phaseText.style('opacity', 1);
+            
+            // 高亮当前矩形
+            d3.select(this)
+              .transition()
+              .duration(200)
+              .attr('opacity', 1);
+          })
+          .on('mouseout', function() {
+            // 恢复矩形透明度
+            d3.select(this)
+              .transition()
+              .duration(200)
+              .attr('opacity', 0.8);
+            
+            // 恢复所有文本的初始显示状态
+            textElements.forEach(item => {
+              item.element.style('opacity', item.canFit ? 1 : 0);
+            });
+          });
+      }
     });
   },
   
-  // 绘制问题链
-  drawQuestionChains(container, chains, xScale, height) {
-    const timelineY = height * 0.15;
-    const chainStartY = timelineY + 60;
-    const maxChainHeight = height - chainStartY - 40; // 留出底部边距
-    const questionSpacing = 25;
+  // 处理并绘制问题链（基于第二级child）
+  processAndDrawQuestionChains(container, phases, chains, xScale, width, height) {
+    const barY = 20;
+    const barHeight = 30;
+    const questionStartY = barY + barHeight + 20;
+    const availableHeight = height - questionStartY - 10;
     
-    // 按开始时间排序并计算位置
-    const sortedChains = [...chains].sort((a, b) => a.timeline.start - b.timeline.start);
-    const chainPositions = this.calculateChainPositions(sortedChains, chainStartY, questionSpacing, maxChainHeight);
+    // 收集所有需要显示的问题链
+    const chainsToDisplay = [];
     
-    // 为每个问题链创建组
-    const chainGroups = container.selectAll('.chain-group')
-      .data(sortedChains)
-      .enter()
-      .append('g')
-      .attr('class', 'chain-group');
+    // 遍历每个一级教学环节
+    phases.forEach((phase, phaseIndex) => {
+      const beginTime = phase.beginTime || 0;
+      const endTime = phases[phaseIndex + 1]?.beginTime || 2800;
+      
+      // 获取该环节内的所有问题链
+      const phaseChains = chains.filter(chain => 
+        chain.timeline.start >= beginTime && 
+        chain.timeline.start < endTime
+      );
+      
+      // 检查是否有第二级child
+      if (phase.child && phase.child.length > 0) {
+        // 第二级child的数量决定要显示的问题链数量
+        const numChainsNeeded = phase.child.length;
+        
+        // 如果实际问题链数量不足，需要拆分现有问题链
+        if (phaseChains.length < numChainsNeeded && phaseChains.length > 0) {
+          // 取第一条问题链并拆分其问题
+          const mainChain = phaseChains[0];
+          const questionsPerChild = Math.ceil(mainChain.questions.length / numChainsNeeded);
+          
+          phase.child.forEach((subPhase, subIndex) => {
+            // 计算子环节的时间范围
+            const subDuration = (endTime - beginTime) / numChainsNeeded;
+            const subBeginTime = beginTime + subDuration * subIndex;
+            const subEndTime = beginTime + subDuration * (subIndex + 1);
+            
+            // 创建虚拟问题链，包含部分问题
+            const startIdx = subIndex * questionsPerChild;
+            const endIdx = Math.min(startIdx + questionsPerChild, mainChain.questions.length);
+            const virtualChain = {
+              ...mainChain,
+              questions: mainChain.questions.slice(startIdx, endIdx),
+              timeline: {
+                ...mainChain.timeline,
+                start: subBeginTime
+              }
+            };
+            
+            // 确保每个虚拟链至少有2个问题
+            if (virtualChain.questions.length < 2) {
+              // 如果原分段问题不足2个，从整个链中选取问题
+              const minQuestions = Math.min(2, mainChain.questions.length);
+              if (virtualChain.questions.length === 0) {
+                // 如果没有问题，使用链的前几个问题
+                virtualChain.questions = mainChain.questions.slice(0, minQuestions);
+              } else if (virtualChain.questions.length === 1) {
+                // 如果只有1个问题，补充一个邻近的问题
+                const nextIdx = Math.min(endIdx, mainChain.questions.length - 1);
+                if (nextIdx > startIdx) {
+                  virtualChain.questions.push(mainChain.questions[nextIdx]);
+                } else if (startIdx > 0) {
+                  virtualChain.questions.unshift(mainChain.questions[startIdx - 1]);
+                }
+              }
+            }
+            
+            chainsToDisplay.push({
+              chain: virtualChain,
+              subPhase: subPhase,
+              timeRange: { start: subBeginTime, end: subEndTime }
+            });
+          });
+        } else {
+          // 有足够的问题链，按原逻辑处理
+          const topChains = phaseChains
+            .sort((a, b) => b.characteristics.avgValueScore - a.characteristics.avgValueScore)
+            .slice(0, numChainsNeeded);
+          
+          phase.child.forEach((subPhase, subIndex) => {
+            if (subIndex < topChains.length) {
+              // 计算子环节的时间范围
+              let subBeginTime = subPhase.beginTime || beginTime;
+              let subEndTime;
+              
+              if (phase.child[subIndex + 1]) {
+                subEndTime = phase.child[subIndex + 1].beginTime || endTime;
+              } else {
+                subEndTime = endTime;
+              }
+              
+              const selectedChain = topChains[subIndex];
+              
+              chainsToDisplay.push({
+                chain: selectedChain,
+                subPhase: subPhase,
+                timeRange: { start: subBeginTime, end: subEndTime }
+              });
+            }
+          });
+        }
+      } else {
+        // 如果没有第二级child，显示1条最高价值的问题链
+        if (phaseChains.length > 0) {
+          const bestChain = phaseChains.reduce((prev, curr) => 
+            curr.characteristics.avgValueScore > prev.characteristics.avgValueScore ? curr : prev
+          );
+          
+          chainsToDisplay.push({
+            chain: bestChain,
+            subPhase: phase,
+            timeRange: { start: beginTime, end: endTime }
+          });
+        }
+      }
+    });
     
-    // 绘制每个问题链
-    chainGroups.each((chainData, chainIndex) => {
-      const chainGroup = d3.select(chainGroups.nodes()[chainIndex]);
-      const chainX = xScale(chainData.timeline.start);
-      const chainY = chainPositions[chainData.id];
+    // 绘制筛选出的问题链
+    chainsToDisplay.forEach((item, index) => {
+      const { chain, subPhase, timeRange } = item;
       
-      // 根据时间位置获取渐变颜色
-      const timeRange = state.questionChains.metadata.timeRange;
-      const timeRatio = (chainData.timeline.start - timeRange.start) / (timeRange.end - timeRange.start);
-      const chainColor = d3.interpolate('#4CAF50', '#2196F3')(timeRatio);
+      // 根据时间范围决定显示的问题数
+      const duration = (timeRange.end - timeRange.start) / 60; // 转换为分钟
+      let maxQuestions = 3;
+      if (duration >= 10) {
+        maxQuestions = 6;
+      } else if (duration >= 5) {
+        maxQuestions = 5;
+      } else if (duration >= 3) {
+        maxQuestions = 4;
+      }
       
-      // 计算这个问题链的最大高度
-      const availableHeight = height - chainY - 40;
-      const maxQuestions = Math.floor(availableHeight / questionSpacing);
-      const displayQuestions = chainData.questions.slice(0, maxQuestions);
+      // 只显示在时间范围内的问题
+      const filteredChain = {
+        ...chain,
+        questions: chain.questions.filter(q => 
+          q.beginTime >= timeRange.start && q.beginTime <= timeRange.end
+        )
+      };
       
-      // 绘制问题链的垂直线
-      const chainHeight = (displayQuestions.length - 1) * questionSpacing;
+      // 如果没有符合时间的问题，使用原始链的问题
+      if (filteredChain.questions.length === 0) {
+        filteredChain.questions = chain.questions;
+      }
+      
+      this.drawSingleChain(container, filteredChain, xScale, questionStartY, availableHeight, maxQuestions);
+    });
+  },
+  
+  // 绘制单个问题链
+  drawSingleChain(container, chain, xScale, startY, availableHeight, maxQuestions) {
+    const barY = 20;
+    const barHeight = 30;
+    
+    // 筛选高价值问题
+    let importantQuestions = chain.questions
+      .filter(q => q.valueScore >= 2.0)
+      .sort((a, b) => b.valueScore - a.valueScore)
+      .slice(0, maxQuestions);
+    
+    // 确保至少有2个问题（如果链中有足够的问题）
+    const minQuestionsRequired = Math.min(2, chain.questions.length);
+    
+    // 如果没有足够的高价值问题，选择最高分的几个
+    if (importantQuestions.length < minQuestionsRequired) {
+      importantQuestions = chain.questions
+        .sort((a, b) => b.valueScore - a.valueScore)
+        .slice(0, Math.max(minQuestionsRequired, Math.min(maxQuestions, chain.questions.length)));
+    }
+    
+    // 按时间顺序排序
+    importantQuestions.sort((a, b) => a.beginTime - b.beginTime);
+    
+    // 如果问题少于2个，不绘制这条链
+    if (importantQuestions.length < 2) return;
+    
+    const chainX = xScale(chain.timeline.start);
+    
+    // 创建问题链组
+    const chainGroup = container.append('g')
+      .attr('class', `chain-group`);
+    
+    // 绘制起始节点（红点）
+    chainGroup.append('circle')
+      .attr('cx', chainX)
+      .attr('cy', barY + barHeight)
+      .attr('r', 4)
+      .attr('fill', '#FF4444')
+      .attr('stroke', '#fff')
+      .attr('stroke-width', 1);
+    
+    // 在红点上方绘制认知模式标注
+    if (chain.characteristics && chain.characteristics.bloomProgression) {
+      const progression = chain.characteristics.bloomProgression;
+      const total = progression.ascending + progression.stable + progression.descending;
+      if (total > 0) {
+        const patternType = this.determinePatternType({
+          ascending: progression.ascending / total,
+          stable: progression.stable / total,
+          descending: progression.descending / total
+        });
+        this.drawCognitivePattern(chainGroup, chainX, barY - 5, patternType);
+      }
+    }
+    
+    // 计算问题节点位置（基于时间间隔）
+    const timeRange = importantQuestions[importantQuestions.length - 1].beginTime - importantQuestions[0].beginTime;
+    const maxSpacing = availableHeight / importantQuestions.length;
+    const minSpacing = 15;
+    
+    let nodePositions = [];
+    if (timeRange > 0 && importantQuestions.length > 1) {
+      // 基于时间间隔计算位置
+      importantQuestions.forEach((question, index) => {
+        if (index === 0) {
+          nodePositions.push(startY);
+        } else {
+          const timeDiff = question.beginTime - importantQuestions[index - 1].beginTime;
+          const timeRatio = timeDiff / timeRange;
+          const spacing = Math.min(Math.max(timeRatio * availableHeight * 0.4, minSpacing), maxSpacing);
+          nodePositions.push(nodePositions[index - 1] + spacing);
+        }
+      });
+    } else {
+      // 均匀分布
+      const spacing = Math.min(availableHeight / (importantQuestions.length + 1), 25);
+      importantQuestions.forEach((question, index) => {
+        nodePositions.push(startY + spacing * index);
+      });
+    }
+    
+    // 确保不超出可视范围
+    const maxY = startY + availableHeight - 10;
+    nodePositions = nodePositions.map(y => Math.min(y, maxY));
+    
+    // 绘制垂直连接线（终止于最后一个节点）
+    if (nodePositions.length > 0) {
+      const lastY = nodePositions[nodePositions.length - 1];
       chainGroup.append('line')
         .attr('x1', chainX)
         .attr('x2', chainX)
-        .attr('y1', timelineY)
-        .attr('y2', chainY + chainHeight)
-        .attr('stroke', chainColor)
-        .attr('stroke-width', 4)
-        .attr('opacity', 0.8);
+        .attr('y1', barY + barHeight)
+        .attr('y2', lastY)
+        .attr('stroke', '#999')
+        .attr('stroke-width', 1.5)
+        .attr('opacity', 0.6);
+    }
+    
+    // 绘制问题节点
+    importantQuestions.forEach((question, qIndex) => {
+      const nodeY = nodePositions[qIndex];
       
-      // 绘制每个问题链
-      displayQuestions.forEach((question, qIndex) => {
-        const nodeY = chainY + qIndex * questionSpacing;
-        
-        // 问题节点
-        chainGroup.append('circle')
-          .attr('class', 'question-node') // 添加CSS类
-          .attr('cx', chainX)
-          .attr('cy', nodeY)
-          .attr('r', 8) // 稍微增大节点
-          .attr('fill', chainColor)
-          .attr('stroke', '#fff')
-          .attr('stroke-width', 3)
-          .style('cursor', 'pointer')
-          .on('mouseover', (event) => methods.handleNodeHover(event, question, chainData))
-          .on('mouseout', () => methods.handleNodeOut())
-          .on('click', () => methods.handleNodeClick(question, chainData));
-        
-        // 问题文本 - 显示价值分数
-        if (qIndex < 5) { // 显示前5个问题的价值分数
-          chainGroup.append('text')
-            .attr('x', chainX + 15)
-            .attr('y', nodeY + 4)
-            .attr('font-size', '10px')
-            .attr('fill', '#666')
-            .text(`Q${qIndex + 1}(${question.valueScore})`)
-            .style('cursor', 'pointer')
-            .on('mouseover', (event) => methods.handleNodeHover(event, question, chainData))
-            .on('mouseout', () => methods.handleNodeOut());
-        }
-      });
+      // 问题节点组
+      const node = chainGroup.append('g')
+        .attr('class', 'question-node')
+        .style('cursor', 'pointer');
       
-      // 如果有更多问题没有显示，添加省略号指示器
-      if (chainData.questions.length > displayQuestions.length) {
-        const lastY = chainY + (displayQuestions.length - 1) * questionSpacing;
-        chainGroup.append('text')
-          .attr('x', chainX + 15)
-          .attr('y', lastY + questionSpacing)
-          .attr('font-size', '12px')
-          .attr('fill', '#999')
-          .text(`+${chainData.questions.length - displayQuestions.length} more`)
-          .style('cursor', 'pointer')
-          .on('mouseover', (event) => {
-            // 显示完整问题链信息的tooltip
-            this.showChainTooltip(event, chainData);
-          })
-          .on('mouseout', () => this.hideChainTooltip());
-      }
-      
-      // 添加教学环节标签
-      chainGroup.append('rect')
-        .attr('x', chainX - 80)
-        .attr('y', timelineY - 45)
-        .attr('width', 160)
-        .attr('height', 20)
-        .attr('rx', 10)
-        .attr('fill', chainColor)
-        .attr('opacity', 0.8);
-      
-      chainGroup.append('text')
-        .attr('x', chainX)
-        .attr('y', timelineY - 32)
-        .attr('text-anchor', 'middle')
-        .attr('font-size', '10px')
-        .attr('fill', '#fff')
-        .attr('font-weight', 'bold')
-        .text(`教学环节 ${chainData.id}`)
-        .style('cursor', 'pointer')
+      // 节点圆形
+      node.append('circle')
+        .attr('cx', chainX)
+        .attr('cy', nodeY)
+        .attr('r', 5)
+        .attr('fill', '#ddd')
+        .attr('stroke', '#999')
+        .attr('stroke-width', 1)
         .on('mouseover', (event) => {
-          this.showTeachingPhaseTooltip(event, chainData);
+          d3.select(event.currentTarget)
+            .transition()
+            .duration(200)
+            .attr('r', 7)
+            .attr('fill', '#bbb');
+          this.showQuestionTooltip(event, question, chain);
         })
-        .on('mouseout', () => this.hideTeachingPhaseTooltip());
+        .on('mouseout', (event) => {
+          d3.select(event.currentTarget)
+            .transition()
+            .duration(200)
+            .attr('r', 5)
+            .attr('fill', '#ddd');
+          this.hideQuestionTooltip();
+        });
       
-      // 添加认知层级变化指示器
-      this.addCognitiveIndicator(chainGroup, chainX, timelineY - 15, chainData);
+      // 问题标签
+      node.append('text')
+        .attr('x', chainX +7)
+        .attr('y', nodeY + 3)
+        .attr('text-anchor', 'start')
+        .attr('font-size', '9px')
+        .attr('fill', '#666')
+        .text(`Q${qIndex + 1}`);
     });
   },
   
-  // 计算问题链的垂直位置（避免重叠）
-  calculateChainPositions(chains, startY, questionSpacing, maxHeight) {
-    const positions = {};
-    const lanes = []; // 存储每个车道的结束时间和Y位置
+  // 计算平均认知进程
+  calculateAvgProgression(chains) {
+    let totalAscending = 0;
+    let totalStable = 0;
+    let totalDescending = 0;
     
     chains.forEach(chain => {
-      const chainEnd = chain.timeline.end;
-      // 计算这个问题链在可视区域内能显示的问题数量
-      const maxQuestions = Math.floor(maxHeight / questionSpacing);
-      const displayQuestions = Math.min(chain.questions.length, maxQuestions);
-      const chainHeight = (displayQuestions - 1) * questionSpacing + 40; // 问题链占用高度
-      
-      // 找到一个空闲的车道
-      let laneIndex = 0;
-      while (laneIndex < lanes.length && 
-             lanes[laneIndex].endTime > chain.timeline.start && 
-             lanes[laneIndex].endY + chainHeight > startY) {
-        laneIndex++;
-      }
-      
-      // 如果没有空闲车道，创建新车道
-      if (laneIndex >= lanes.length) {
-        lanes.push({ endTime: 0, endY: startY });
-      }
-      
-      // 更新车道信息，确保不超出可视范围
-      const yPosition = Math.max(lanes[laneIndex].endY + 30, startY);
-      const maxAllowedY = startY + maxHeight - chainHeight;
-      const finalY = Math.min(yPosition, maxAllowedY);
-      
-      lanes[laneIndex] = {
-        endTime: chainEnd + 30, // 添加30秒缓冲
-        endY: finalY + chainHeight
-      };
-      
-      positions[chain.id] = finalY;
+      const prog = chain.characteristics.bloomProgression;
+      totalAscending += prog.ascending || 0;
+      totalStable += prog.stable || 0;
+      totalDescending += prog.descending || 0;
     });
     
-    return positions;
+    const total = totalAscending + totalStable + totalDescending;
+    return {
+      ascending: total > 0 ? totalAscending / total : 0,
+      stable: total > 0 ? totalStable / total : 0,
+      descending: total > 0 ? totalDescending / total : 0
+    };
   },
   
-  // 添加认知层级变化指示器
-  addCognitiveIndicator(container, x, y, chainData) {
-    const progression = chainData.characteristics.bloomProgression;
-    let iconType = 'stable';
-    let iconColor = '#FFA726'; // 橙色为默认
+  // 确定认知模式类型
+  determinePatternType(progression) {
+    if (progression.ascending > 0.5) return 'ascending';
+    if (progression.descending > 0.3) return 'descending';
+    return 'stable';
+  },
+  
+  // 绘制认知模式标注
+  drawCognitivePattern(container, x, y, patternType) {
+    const patternGroup = container.append('g')
+      .attr('transform', `translate(${x}, ${y})`);
     
-    // 根据认知递进模式选择图标
-    if (progression.progressionRatio > 0.6) {
-      iconType = 'ascending';
-      iconColor = '#4CAF50'; // 绿色表示递进
-    } else if (progression.progressionRatio < 0.3 && progression.descending > progression.ascending) {
-      iconType = 'descending';
-      iconColor = '#F44336'; // 红色表示下降
-    }
-    
-    // 绘制指示器背景
-    container.append('rect')
-      .attr('x', x - 12)
-      .attr('y', y - 12)
-      .attr('width', 24)
-      .attr('height', 24)
-      .attr('rx', 12)
-      .attr('fill', iconColor)
-      .attr('opacity', 0.8)
-      .attr('stroke', '#fff')
-      .attr('stroke-width', 2);
-    
-    // 绘制箭头指示器
-    let arrowPath;
-    if (iconType === 'ascending') {
-      arrowPath = 'M 0,-6 L -4,2 L -2,2 L -2,6 L 2,6 L 2,2 L 4,2 Z';
-    } else if (iconType === 'descending') {
-      arrowPath = 'M 0,6 L -4,-2 L -2,-2 L -2,-6 L 2,-6 L 2,-2 L 4,-2 Z';
+    // 绘制不同样式的图标
+    let pathData;
+    if (patternType === 'ascending') {
+      // 阶梯向上形状
+      pathData = 'M -10,2 L -10,0 L -6,0 L -6,-2 L -2,-2 L -2,-4 L 2,-4 L 2,-6 L 6,-6 L 6,-8 L 10,-8';
+    } else if (patternType === 'descending') {
+      // 阶梯向下形状
+      pathData = 'M -10,-8 L -10,-6 L -6,-6 L -6,-4 L -2,-4 L -2,-2 L 2,-2 L 2,0 L 6,0 L 6,2 L 10,2';
     } else {
-      arrowPath = 'M -6,0 L 6,0 M 3,-3 L 6,0 L 3,3';
+      // 平行线
+      pathData = 'M -10,-3 L 10,-3';
     }
     
-    container.append('path')
-      .attr('d', arrowPath)
-      .attr('transform', `translate(${x}, ${y})`)
-      .attr('fill', iconType === 'stable' ? 'none' : '#fff')
-      .attr('stroke', '#fff')
-      .attr('stroke-width', iconType === 'stable' ? 2 : 0)
-      .attr('stroke-linecap', 'round');
+    patternGroup.append('path')
+      .attr('d', pathData)
+      .attr('fill', 'none')
+      .attr('stroke', '#666')
+      .attr('stroke-width', 1.5)
+      .attr('stroke-linecap', 'round')
+      .attr('stroke-linejoin', 'round');
     
-    // 添加工具提示
-    container.append('circle')
-      .attr('cx', x)
-      .attr('cy', y)
-      .attr('r', 12)
-      .attr('fill', 'transparent')
-      .style('cursor', 'pointer')
-      .on('mouseover', (event) => methods.showCognitiveTooltip(event, chainData, iconType))
-      .on('mouseout', () => methods.hideCognitiveTooltip());
-  },
-  
-  // 处理节点悬停
-  handleNodeHover(event, questionData, chainData) {
-    state.hoveredQuestion = questionData;
-    this.showQuestionTooltip(event, questionData, chainData);
-    
-    // 高亮当前节点
-    d3.select(event.currentTarget)
-      .transition()
-      .duration(150)
-      .attr('r', 12)
-      .attr('stroke-width', 4);
-  },
-  
-  // 处理节点移出
-  handleNodeOut() {
-    state.hoveredQuestion = null;
-    this.hideQuestionTooltip();
-    
-    // 只恢复当前组件内的问题节点大小
-    d3.select(qMap2.value).selectAll('.question-node')
-      .transition()
-      .duration(150)
-      .attr('r', 8)
-      .attr('stroke-width', 3);
-  },
-  
-  // 处理节点点击
-  handleNodeClick(questionData, chainData) {
-    state.selectedChain = chainData.id;
-    console.log('选中问题:', questionData.question);
-    console.log('所属问题链:', chainData.id);
+    // 添加文字标注
+    patternGroup.append('text')
+      .attr('x', 0)
+      .attr('y', -10)
+      .attr('text-anchor', 'middle')
+      .attr('font-size', '9px')
+      .attr('fill', '#666')
+      .text(`(${COGNITIVE_PATTERNS[patternType]})`);
   },
   
   // 显示问题工具提示
@@ -424,31 +584,35 @@ const methods = reactive({
       .style('position', 'absolute')
       .style('background', 'rgba(0,0,0,0.9)')
       .style('color', 'white')
-      .style('padding', '12px')
-      .style('border-radius', '8px')
-      .style('font-size', '12px')
-      .style('max-width', '300px')
+      .style('padding', '10px')
+      .style('border-radius', '6px')
+      .style('font-size', '11px')
+      .style('max-width', '350px')
       .style('z-index', '1000')
       .style('pointer-events', 'none');
     
     tooltip.html(`
-      <div style="font-weight: bold; margin-bottom: 8px; color: ${TOPIC_COLORS[chainData.primaryTopic]};">
-        问题 ${questionData.chainIndex + 1} - ${questionData.blmType} (${questionData.mat})
+      <div style="font-weight: bold; margin-bottom: 6px;">
+        问题详情
       </div>
-      <div style="margin-bottom: 6px;">
+      <div style="margin-bottom: 4px;">
         <strong>问题:</strong> ${questionData.question}
       </div>
       ${questionData.answer ? `
-      <div style="margin-bottom: 6px;">
+      <div style="margin-bottom: 4px;">
         <strong>回答:</strong> ${questionData.answer}
       </div>` : ''}
-      <div style="font-size: 10px; color: #ccc;">
+      <div style="margin-bottom: 4px;">
+        <strong>认知层级:</strong> ${questionData.blmType}
+      </div>
+      <div style="margin-bottom: 4px;">
+        <strong>价值分数:</strong> ${questionData.valueScore}
+      </div>
+      <div style="font-size: 9px; color: #ccc;">
         时间: ${Math.floor(questionData.beginTime / 60)}:${String(questionData.beginTime % 60).padStart(2, '0')}
-        ${questionData.question_sentiment ? ` | 情感: ${questionData.question_sentiment.classification}` : ''}
       </div>
     `);
     
-    // 定位tooltip
     const [x, y] = d3.pointer(event, document.body);
     tooltip
       .style('left', (x + 10) + 'px')
@@ -462,175 +626,6 @@ const methods = reactive({
   // 隐藏问题工具提示
   hideQuestionTooltip() {
     d3.select('#question-tooltip')
-      .transition()
-      .duration(200)
-      .style('opacity', 0)
-      .remove();
-  },
-  
-  // 显示认知指示器工具提示
-  showCognitiveTooltip(event, chainData, iconType) {
-    const progression = chainData.characteristics.bloomProgression;
-    const tooltip = d3.select('body')
-      .selectAll('#cognitive-tooltip')
-      .data([1])
-      .join('div')
-      .attr('id', 'cognitive-tooltip')
-      .style('position', 'absolute')
-      .style('background', 'rgba(0,0,0,0.9)')
-      .style('color', 'white')
-      .style('padding', '10px')
-      .style('border-radius', '6px')
-      .style('font-size', '11px')
-      .style('z-index', '1000')
-      .style('pointer-events', 'none');
-    
-    const typeText = {
-      ascending: '认知递进',
-      stable: '认知平行',
-      descending: '认知下降'
-    };
-    
-    tooltip.html(`
-      <div style="font-weight: bold; margin-bottom: 4px;">
-        ${typeText[iconType]}
-      </div>
-      <div style="font-size: 10px;">
-        递进: ${progression.ascending} | 平行: ${progression.stable} | 下降: ${progression.descending}
-      </div>
-    `);
-    
-    const [x, y] = d3.pointer(event, document.body);
-    tooltip
-      .style('left', (x + 10) + 'px')
-      .style('top', (y - 30) + 'px')
-      .style('opacity', 0)
-      .transition()
-      .duration(200)
-      .style('opacity', 1);
-  },
-  
-  // 隐藏认知指示器工具提示
-  hideCognitiveTooltip() {
-    d3.select('#cognitive-tooltip')
-      .transition()
-      .duration(200)
-      .style('opacity', 0)
-      .remove();
-  },
-  
-  // 显示教学环节工具提示
-  showTeachingPhaseTooltip(event, chainData) {
-    const tooltip = d3.select('body')
-      .selectAll('#teaching-phase-tooltip')
-      .data([1])
-      .join('div')
-      .attr('id', 'teaching-phase-tooltip')
-      .style('position', 'absolute')
-      .style('background', 'rgba(0,0,0,0.9)')
-      .style('color', 'white')
-      .style('padding', '12px')
-      .style('border-radius', '8px')
-      .style('font-size', '12px')
-      .style('max-width', '400px')
-      .style('z-index', '1000')
-      .style('pointer-events', 'none');
-    
-    tooltip.html(`
-      <div style="font-weight: bold; margin-bottom: 8px; color: #4CAF50;">
-        ${chainData.teachingPhase}
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>核心问题:</strong> ${chainData.coreQuestion}
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>问题数量:</strong> ${chainData.questionCount}个 (显示${Math.min(chainData.questionCount, 5)}个)
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>时间范围:</strong> ${Math.floor(chainData.timeline.start / 60)}:${String(chainData.timeline.start % 60).padStart(2, '0')} - ${Math.floor(chainData.timeline.end / 60)}:${String(chainData.timeline.end % 60).padStart(2, '0')}
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>主要话题:</strong> ${chainData.primaryTopic}
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>认知层级:</strong> ${chainData.primaryBloomLevel}
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>平均价值分:</strong> ${chainData.characteristics.avgValueScore.toFixed(2)}
-      </div>
-      <div style="font-size: 10px; color: #ccc;">
-        ${chainData.characteristics.bloomProgression.pattern} | 问题密度: ${chainData.characteristics.intensity.toFixed(1)}/分钟
-      </div>
-    `);
-    
-    const [x, y] = d3.pointer(event, document.body);
-    tooltip
-      .style('left', (x + 10) + 'px')
-      .style('top', (y - 10) + 'px')
-      .style('opacity', 0)
-      .transition()
-      .duration(200)
-      .style('opacity', 1);
-  },
-  
-  // 隐藏教学环节工具提示
-  hideTeachingPhaseTooltip() {
-    d3.select('#teaching-phase-tooltip')
-      .transition()
-      .duration(200)
-      .style('opacity', 0)
-      .remove();
-  },
-  
-  // 显示问题链工具提示
-  showChainTooltip(event, chainData) {
-    const tooltip = d3.select('body')
-      .selectAll('#chain-tooltip')
-      .data([1])
-      .join('div')
-      .attr('id', 'chain-tooltip')
-      .style('position', 'absolute')
-      .style('background', 'rgba(0,0,0,0.9)')
-      .style('color', 'white')
-      .style('padding', '12px')
-      .style('border-radius', '8px')
-      .style('font-size', '12px')
-      .style('max-width', '400px')
-      .style('z-index', '1000')
-      .style('pointer-events', 'none');
-    
-    const allQuestions = chainData.questions.map((q, i) => 
-      `${i + 1}. ${q.question.substring(0, 60)}${q.question.length > 60 ? '...' : ''} (价值分: ${q.valueScore})`
-    ).join('<br/>');
-    
-    tooltip.html(`
-      <div style="font-weight: bold; margin-bottom: 8px; color: #4CAF50;">
-        教学环节: ${chainData.teachingPhase.substring(0, 30)}...
-      </div>
-      <div style="margin-bottom: 6px;">
-        <strong>核心问题:</strong> ${chainData.coreQuestion}
-      </div>
-      <div style="margin-bottom: 8px;">
-        <strong>共${chainData.questions.length}个问题，平均价值分: ${chainData.characteristics.avgValueScore.toFixed(2)}</strong>
-      </div>
-      <div style="font-size: 10px; border-top: 1px solid #333; padding-top: 8px; max-height: 200px; overflow-y: auto;">
-        ${allQuestions}
-      </div>
-    `);
-    
-    const [x, y] = d3.pointer(event, document.body);
-    tooltip
-      .style('left', (x + 10) + 'px')
-      .style('top', (y - 10) + 'px')
-      .style('opacity', 0)
-      .transition()
-      .duration(200)
-      .style('opacity', 1);
-  },
-  
-  // 隐藏问题链工具提示
-  hideChainTooltip() {
-    d3.select('#chain-tooltip')
       .transition()
       .duration(200)
       .style('opacity', 0)
@@ -663,29 +658,22 @@ onMounted(() => {
   position: relative;
   overflow: hidden;
   background: #ffffff;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 4px;
+  /* box-shadow: 0 1px 4px rgba(0,0,0,0.1); */
+  box-sizing: border-box;
 }
 
-/* D3.js 生成的SVG样式优化 */
-:deep(.chain-group) {
-  transition: opacity 0.3s ease;
+/* 问题节点样式 */
+:deep(.question-node circle) {
+  transition: all 0.2s ease;
 }
 
 :deep(.question-node circle:hover) {
-  filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+  filter: drop-shadow(0 2px 4px rgba(0,0,0,0.3));
 }
 
-:deep(.cognitive-indicator:hover) {
-  transform: scale(1.1);
-  transition: transform 0.2s ease;
-}
-
-/* 工具提示样式增强 */
-:deep(#question-tooltip),
-:deep(#cognitive-tooltip),
-:deep(#chain-tooltip),
-:deep(#teaching-phase-tooltip) {
+/* 工具提示样式 */
+:deep(#question-tooltip) {
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   border: 1px solid rgba(255,255,255,0.2);
   backdrop-filter: blur(8px);
@@ -695,18 +683,17 @@ onMounted(() => {
 /* 响应式设计 */
 @media (max-width: 768px) {
   .question-chains-container {
-    padding: 5px;
+    padding: 2px;
   }
 }
 
-/* 加载状态 */
-.question-chains-container.loading::after {
-  content: "正在加载问题链数据...";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #666;
-  font-size: 16px;
+/* 教学环节矩形样式 */
+:deep(rect) {
+  transition: opacity 0.2s ease;
+}
+
+/* 隐藏溢出内容 */
+:deep(svg) {
+  overflow: hidden;
 }
 </style>

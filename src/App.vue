@@ -3,6 +3,7 @@ import ChatView from './components/ChatView.vue'
 import DataVisualView from './components/DataVisualView.vue'
 import LearningPathView from './components/LearningPathView.vue'
 import PortraitView from './components/PortraitView.vue'
+import CoherenceView from './components/visualization/CoherenceView.vue'
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import PortraitView from './components/PortraitView.vue'
     <div id="columnContainer">
       <!-- 左侧：上下结构 -->
       <div class='columns' id="leftColumn">
+        <!-- <CoherenceView /> -->
         <!-- 上方：数据可视化区和证据卡片区的左右布局 -->
         <div class="left-top-section">
           <!-- 数据可视化区 -->

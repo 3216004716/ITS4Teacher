@@ -13,7 +13,7 @@ import ClassStructureView from './visualization/ClassStructureView.vue';
 import InteractionView from './visualization/InteractionView.vue';
 import QuestionStringView from './visualization/QuestionStringView.vue';
 import CoherenceView from './visualization/CoherenceView.vue';
-import LanguageAffectionView from './visualization/LanguageAffectionView.vue';
+import ContextualAnalysisView from './visualization/ContextualAnalysisView.vue';
 
 const qMap2 = ref();
 const classStructure = ref();
@@ -554,7 +554,7 @@ onMounted(() => {
       <div class="visualization-item">
         <!-- <span>语言情感分析</span> -->
         <span>问题情境化分析</span>
-        <LanguageAffectionView />
+        <ContextualAnalysisView />
       </div>
     </div>
   </div>

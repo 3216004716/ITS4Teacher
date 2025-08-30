@@ -1,0 +1,432 @@
+{
+  "questions": [
+    {
+      "question": "紧接着呢我们又知道有一个角是90度的三角形，是特殊的什么三角形？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 55
+    },
+    {
+      "question": "那么直角三角形除了满足一般三角形所具备的边角之间的关系，它还有哪些特殊的性质呢？",
+      "mat": "为何",
+      "three": "又何",
+      "beginTime": 63
+    },
+    {
+      "question": "那这题具体的应该怎么割怎么补呢？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 242
+    },
+    {
+      "question": "紧接着我们再来看第二个图形，观察两个小的依然是正方形，大的也是正方形，那么小正方形的边长是几？",
+      "mat": "是何",
+      "three": "然何",
+      "beginTime": 290
+    },
+    {
+      "question": "采用什么样的方法？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 318
+    },
+    {
+      "question": "可求出面积是多少？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 326
+    },
+    {
+      "question": "好，朱静然，你是怎么求的？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 329
+    },
+    {
+      "question": "那此时s3应该如何求解呢啊近期4个用谁的面积减谁的面积，用大的什么星？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 365
+    },
+    {
+      "question": "每一个小三角形面积都是几？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 427
+    },
+    {
+      "question": "所以一共有几个小的三角形？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 430
+    },
+    {
+      "question": "所以最终结果s3等于多少？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 433
+    },
+    {
+      "question": "可不可以用割的方式来求解？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 448
+    },
+    {
+      "question": "那怎么割呢？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 460
+    },
+    {
+      "question": "我们也可以用戈的方法来对它进行求解，什么歌？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 468
+    },
+    {
+      "question": "好，同学们注意观察这2亿是怎么解决这个问题的？",
+      "mat": "若何",
+      "three": "然何",
+      "beginTime": 478
+    },
+    {
+      "question": "好，此时s三被分割成了几个三角形？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 512
+    },
+    {
+      "question": "个加1个什么形？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 518
+    },
+    {
+      "question": "每一个三角形的面积都是6，所以4个三角形的面积加上正方形的面积在一起是多少？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 523
+    },
+    {
+      "question": "我们先来看图一，图一刚刚求出两个小正方形的面积都是9，大正方形的面积是18，这是中间这个三角形它是一个特殊的什么？",
+      "mat": "为何",
+      "three": "由何",
+      "beginTime": 544
+    },
+    {
+      "question": "呢直角三角形三边之间满足什么样的数量关系？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 675
+    },
+    {
+      "question": "直角边，c是它的什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 684
+    },
+    {
+      "question": "以上关系是否对所有的直角三角形都成立，呢想一想我们刚刚猜想出来的这句话，它是不是一句文字语言？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 732
+    },
+    {
+      "question": "是这样，如果这个文字命题是成立的，那么这种关系就对所有的直角三角形都适用，对吧？",
+      "mat": "若何",
+      "three": "然何",
+      "beginTime": 747
+    },
+    {
+      "question": "同学们还记得证明文字命题的一般步骤吗？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 763
+    },
+    {
+      "question": "啊将文字语言转化为什么？",
+      "mat": "是何",
+      "three": "然何",
+      "beginTime": 771
+    },
+    {
+      "question": "你觉得它的提示它的条件是什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 782
+    },
+    {
+      "question": "那他的结论是什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 800
+    },
+    {
+      "question": "我们写出已知和求证，接下来我们怎么证明这个结论呢？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 816
+    },
+    {
+      "question": "观察一下，看到了a方加b方你会想到什么？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 846
+    },
+    {
+      "question": "A加b的平方等于什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 858
+    },
+    {
+      "question": "那紧接着呢我们再从形的角度看到了a方，你会想到构造一个什么？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 874
+    },
+    {
+      "question": "如果看到了ab你会想到什么？",
+      "mat": "若何",
+      "three": "由何",
+      "beginTime": 897
+    },
+    {
+      "question": "或者说我想到长方形可不可以？",
+      "mat": "若何",
+      "three": "由何",
+      "beginTime": 907
+    },
+    {
+      "question": "这用的是割的方法还是补的方法？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1182
+    },
+    {
+      "question": "拼凑出一个什么形？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1211
+    },
+    {
+      "question": "我们看一下c方此时就是中间这个正方形的什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1228
+    },
+    {
+      "question": "立方加立方加二厘米，然后呢减二厘米还剩什么？",
+      "mat": "是何",
+      "three": "然何",
+      "beginTime": 1264
+    },
+    {
+      "question": "唉你发现我们刚才的结论有没有证明出来？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 1275
+    },
+    {
+      "question": "你来对你的图形作出解释，啊你这条边是c对吧？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1282
+    },
+    {
+      "question": "ab4×1/2ab可不可以？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 1324
+    },
+    {
+      "question": "来，所以我们对左边进行化解，左边还剩下什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1329
+    },
+    {
+      "question": "等于a就等于什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1342
+    },
+    {
+      "question": "我们刚刚欣怡拼凑出来的这种方法呢是谁研究的？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1369
+    },
+    {
+      "question": "好，那通过我们刚刚严格的推理证明，同学们发现我们刚刚的这个猜想是正确的还是错误的？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 1411
+    },
+    {
+      "question": "为什么把它称为勾股定理？",
+      "mat": "为何",
+      "three": "然何",
+      "beginTime": 1431
+    },
+    {
+      "question": "好，接下来我们将这个定理的规范的符号语言表述出来，首先前提条件必须是一个什么？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 1478
+    },
+    {
+      "question": "斜边称为什么？",
+      "mat": "是何",
+      "three": "然何",
+      "beginTime": 1434
+    },
+    {
+      "question": "它的符号语言应该如何表述？",
+      "mat": "如何",
+      "three": "然何",
+      "beginTime": 1518
+    },
+    {
+      "question": "A方加b方等于 b方，c方看明白了吗？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 1565
+    },
+    {
+      "question": "你看一下啊正确答案是d是吧？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 1698
+    },
+    {
+      "question": "直角边的平方和等于斜边的平方，而选项b中只显示了两边和的平方，对不对？",
+      "mat": "为何",
+      "three": "由何",
+      "beginTime": 1744
+    },
+    {
+      "question": "A为什么错了？",
+      "mat": "为何",
+      "three": "然何",
+      "beginTime": 1757
+    },
+    {
+      "question": "你觉得选项c的问题在哪？",
+      "mat": "其他",
+      "three": "由何",
+      "beginTime": 1798
+    },
+    {
+      "question": "啊所以呢我们在利用这个定义解决问题的时候，一定要注意它的前提条件一定是直角三角形，要明确直角，进而确定斜边，明白了吗？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 1836
+    },
+    {
+      "question": "那这个式子成立的前提是角c等于多少度？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1876
+    },
+    {
+      "question": "好，那我们现在是已知什么边求什么边？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 1949
+    },
+    {
+      "question": "啊因为角c等于90度，所以直接得到b方等于c方减a方，可不可以？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 2220
+    },
+    {
+      "question": "将a等于8c=17代入上式？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 2226
+    },
+    {
+      "question": "非常规范，哈得到b=根号下17方减去8的平方，最终结果b=15，可不可以？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 2230
+    },
+    {
+      "question": "A等于几比一求三角形ABC的什么？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 2257
+    },
+    {
+      "question": "求三角形ABC的周长，我们已知一条边是几啊一一个角是多少度？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 2276
+    },
+    {
+      "question": "那接下来我们要干什么？",
+      "mat": "其他",
+      "three": "然何",
+      "beginTime": 2285
+    },
+    {
+      "question": "我们可以先求谁？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 2289
+    },
+    {
+      "question": "噢30度、60度、90度三角形的性质，是吧？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 2314
+    },
+    {
+      "question": "那还有一种可能就是未知的那条边，BC是什么？",
+      "mat": "是何",
+      "three": "又何",
+      "beginTime": 2678
+    },
+    {
+      "question": "Ab是什么边？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 2702
+    },
+    {
+      "question": "好，再来第二种情况，想一想谁会是斜边？",
+      "mat": "是何",
+      "three": "由何",
+      "beginTime": 2712
+    },
+    {
+      "question": "那此时我们要求解BC的长，BC应该等于根号下，16-9等于多少？",
+      "mat": "如何",
+      "three": "由何",
+      "beginTime": 2719
+    },
+    {
+      "question": "两种情况，那注意同学们在解答的时候有两个答案的结果，最终要怎么办？",
+      "mat": "若何",
+      "three": "然何",
+      "beginTime": 2727
+    }
+  ],
+  "statistics": {
+    "mat": {
+      "是何": 31,
+      "如何": 18,
+      "为何": 5,
+      "若何": 5
+    },
+    "three_he": {
+      "由何": 50,
+      "又何": 2,
+      "然何": 17
+    },
+    "total": 69
+  }
+}

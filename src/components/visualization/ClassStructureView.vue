@@ -13,6 +13,15 @@ import { getLessonMinute, length } from '../../utils/tools'
 const classStructure = ref();
 const efficientA = 0.2
 
+// 教学环节颜色映射（与QuestionStringView保持一致）
+const PHASE_COLORS = [
+  '#8FBC8F',  // 浅绿色
+  '#FFB366',  // 橙色
+  '#87CEEB',  // 天蓝色
+  '#DDA0DD',  // 梅花紫
+  '#F0E68C'   // 卡其色
+];
+
 const state = reactive({
   id: 0,
 });
@@ -85,6 +94,8 @@ const treeData = {
 const drawIndentedTree = (data, svgElement) => {
   let nodeId = 0;
   let nodes = [];
+  let firstLevelIndex = 0; // 记录第一级教学环节的索引
+  
   function traverse(node, depth, parent, groupParent) {
     const thisNode = {
       id: nodeId++,
@@ -96,8 +107,16 @@ const drawIndentedTree = (data, svgElement) => {
       isGroup: !!node.child,
       children: node.child || [],
       collapsed: false,
-      raw: node
+      raw: node,
+      phaseColor: null // 添加颜色属性
     };
+    
+    // 为第一级教学环节（depth = 1）分配颜色
+    if (depth === 1) {
+      thisNode.phaseColor = PHASE_COLORS[firstLevelIndex % PHASE_COLORS.length];
+      firstLevelIndex++;
+    }
+    
     nodes.push(thisNode);
     if (node.child && node.child.length > 0) {
       node.child.forEach(child => {
@@ -159,17 +178,13 @@ const drawIndentedTree = (data, svgElement) => {
 
     // 计算实际需要的高度和宽度
     const height = Math.max(visibleNodes.length * dx + margin.top + margin.bottom, 100);
-    const width = Math.max(d3.max(visibleNodes, d => d.y) + 220, 100);
+    const width = Math.max(d3.max(visibleNodes, d => d.y) + 280, 100); // 增加宽度以适应文本
 
     // 获取容器的实际尺寸
     const containerWidth = svgElement.parentNode.clientWidth || 400;
     const containerHeight = svgElement.parentNode.clientHeight || 300;
 
-    // 计算缩放比例，确保图表能完全显示并填满容器
-    const scaleX = containerWidth / width;
-    const scaleY = containerHeight / height;
-    const scale = Math.min(scaleX, scaleY) * 0.92; // 留一点边距
-
+    // 直接使用viewBox，不需要手动缩放
     const svg = d3.select(svgElement)
       .attr("width", "100%")
       .attr("height", "100%")
@@ -178,9 +193,8 @@ const drawIndentedTree = (data, svgElement) => {
 
     svg.selectAll('*').remove();
 
-    // 创建一个缩放的容器
-    const g = svg.append("g")
-      .attr("transform", `scale(${scale}) translate(${0}, ${margin.top})`);
+    // 不再使用缩放，直接绘制
+    const g = svg.append("g");
 
     // 横线
     g.append("g")
@@ -262,6 +276,33 @@ const drawIndentedTree = (data, svgElement) => {
           .remove()
       );
 
+    // 为第一级教学环节添加背景矩形
+    g.append("g")
+      .selectAll("rect.phase-bg")
+      .data(visibleNodes.filter(d => d.depth === 1), d => d.id)
+      .join(
+        enter => enter.append("rect")
+          .attr("class", "phase-bg")
+          .attr("x", d => d.y - 2)
+          .attr("y", d => d.x - dx/2 + 1)
+          .attr("width", d => width - d.y - 10)
+          .attr("height", dx - 2)
+          .attr("fill", d => d.phaseColor)
+          .attr("rx", 2)
+          .attr("ry", 2)
+          .attr("opacity", 0)
+          .transition().duration(300)
+          .attr("opacity", 0.3),
+        update => update.transition().duration(300)
+          .attr("x", d => d.y - 2)
+          .attr("y", d => d.x - dx/2 + 1)
+          .attr("width", d => width - d.y - 10)
+          .attr("height", dx - 2),
+        exit => exit.transition().duration(300)
+          .attr("opacity", 0)
+          .remove()
+      );
+
     // 文本
     g.append("g")
       .selectAll("text.tree-label")
@@ -298,7 +339,7 @@ const drawIndentedTree = (data, svgElement) => {
           .transition().duration(300)
           .attr("opacity", 1),
         update => update.transition().duration(300)
-          .attr("x", d => d.y + 12)
+          .attr("x", d => d.y + fontSize)
           .attr("y", d => d.x),
         exit => exit.transition().duration(300)
           .attr("opacity", 0)
