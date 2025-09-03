@@ -9,11 +9,16 @@ import {
   BLOOM_REMEMBER, BLOOM_UNDERSTAND, BLOOM_APPLY, BLOOM_ANALYZE, BLOOM_EVALUATE, BLOOM_CREATE, BLOOM_OTHERS,
 } from '../utils/const'
 import { getLessonMinute, length } from '../utils/tools'
+import { useStore } from 'vuex';
+import { key } from '../store';
 import ClassStructureView from './visualization/ClassStructureView.vue';
 import InteractionView from './visualization/InteractionView.vue';
 import QuestionStringView from './visualization/QuestionStringView.vue';
 import CoherenceView from './visualization/CoherenceView.vue';
 import ContextualAnalysisView from './visualization/ContextualAnalysisView.vue';
+import { Modal } from 'ant-design-vue';
+import ideaIcon from '../assets/idea.png';
+import VisualizationChatModal from './VisualizationChatModal.vue';
 
 const qMap2 = ref();
 const classStructure = ref();
@@ -21,10 +26,13 @@ const qBloom = ref();
 const qInteract = ref();
 const qDistribution = ref(null);
 const efficientA = 0.2
+const store = useStore(key);
 
 const state = reactive({
   id: 0,
   currentQ: "你认为英雄应该具有什么样的品质？",
+  showChatModal: false,
+  currentVisualizationName: '',
   procedures: [
     {
       index: 0,
@@ -519,11 +527,17 @@ const methods = reactive({
     return [qData2vis, max]
   },
   visTeachingProcedures() {
-    // Specify the chart’s dimensions (except for the height).
+    // Specify the chart's dimensions (except for the height).
     methods.visStackedBar()
     methods.visStackedDot()
     methods.visQMap()
-
+  },
+  openVisualizationChat(name) {
+    state.currentVisualizationName = name;
+    state.showChatModal = true;
+  },
+  closeChatModal() {
+    state.showChatModal = false;
   }
 });
 
@@ -539,24 +553,41 @@ onMounted(() => {
   <div class="vis" ref="qMap2">
     <div class="visualization-grid">
       <div class="visualization-item">
-        <span>课堂结构分析</span>
+        <div class="item-header">
+          <span>课堂结构分析</span>
+          <img :src="ideaIcon" alt="对话图标" class="chat-icon" @click="methods.openVisualizationChat('课堂结构分析')" />
+        </div>
         <ClassStructureView />
       </div>
       <div class="visualization-item">
-        <span>问题连贯性分析</span>
+        <div class="item-header">
+          <span>问题类型分析</span>
+          <img :src="ideaIcon" alt="对话图标" class="chat-icon" @click="methods.openVisualizationChat('问题类型分析')" />
+        </div>
         <CoherenceView />
       </div>
       <div class="visualization-item">
-        <!-- <span>师生互动分析</span> -->
-        <span>师生互动分析</span>
+        <div class="item-header">
+          <span>问题链整体分析</span>
+          <img :src="ideaIcon" alt="对话图标" class="chat-icon" @click="methods.openVisualizationChat('问题链整体分析')" />
+        </div>
         <QuestionStringView />
       </div>
       <div class="visualization-item">
-        <!-- <span>语言情感分析</span> -->
-        <span>问题情境化分析</span>
+        <div class="item-header">
+          <span>问题情境化分析</span>
+          <img :src="ideaIcon" alt="对话图标" class="chat-icon" @click="methods.openVisualizationChat('问题情境化分析')" />
+        </div>
         <ContextualAnalysisView />
       </div>
     </div>
+
+    <!-- 可视化对话弹窗 -->
+    <VisualizationChatModal
+      :visible="state.showChatModal"
+      :visualizationName="state.currentVisualizationName"
+      @close="methods.closeChatModal"
+    />
   </div>
 </template>
 
@@ -573,7 +604,7 @@ onMounted(() => {
 
 .visualization-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 0.9fr;
   grid-template-rows: 1fr 1fr;
   gap: 4px;
   width: 100%;
@@ -591,17 +622,47 @@ onMounted(() => {
   display: flex;
   flex-direction: column;
 }
-span{
-  padding: 4px;
+
+/* 隐藏所有可视化组件的滚动条 */
+.visualization-item :deep(*) {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.visualization-item :deep(*::-webkit-scrollbar) {
+  display: none; /* Chrome, Safari, Edge */
+  width: 0;
+  height: 0;
+}
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px 4px 4px;
   border-radius: 4px 4px 0 0;
   background-color: transparent;
-  /* border: 1px solid #eaeaea; */
+  width: 100%;
+  box-sizing: border-box;
+}
+
+span {
   font-size: 12px;
   font-weight: 600;
   color: #333;
-  width: 100%;
   text-align: center;
-  /* box-sizing: border-box; */
+  flex: 1;
+}
+
+.chat-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.chat-icon:hover {
+  opacity: 1;
 }
 
 </style>

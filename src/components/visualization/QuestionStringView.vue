@@ -605,14 +605,14 @@ const methods = reactive({
       <div style="margin-bottom: 4px;">
         <strong>认知层级:</strong> ${questionData.blmType}
       </div>
-      <div style="margin-bottom: 4px;">
-        <strong>价值分数:</strong> ${questionData.valueScore}
-      </div>
+
       <div style="font-size: 9px; color: #ccc;">
         时间: ${Math.floor(questionData.beginTime / 60)}:${String(questionData.beginTime % 60).padStart(2, '0')}
       </div>
     `);
-    
+          // <div style="margin-bottom: 4px;">
+      //   <strong>价值分数:</strong> ${questionData.valueScore}
+      // </div>
     const [x, y] = d3.pointer(event, document.body);
     tooltip
       .style('left', (x + 10) + 'px')

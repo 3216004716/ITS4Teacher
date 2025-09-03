@@ -27,6 +27,7 @@ import {
   CHAT_VUEX_NAMESPACE,
   GET_CHAT_MESSAGES,
   GET_NEW_DIALOGUE_FLAG,
+  GET_VISUALIZATION_DIALOGUES,
   ChatMessageItem,
 } from '../store/modules/chat';
 import OpenAI from "openai";
@@ -51,6 +52,7 @@ const store = useStore(key);
 // 获取store中的数据
 const chatMessages = computed(() => store.getters[CHAT_VUEX_NAMESPACE + GET_CHAT_MESSAGES]);
 const newDialogueFlag = computed(() => store.getters[CHAT_VUEX_NAMESPACE + GET_NEW_DIALOGUE_FLAG]);
+const visualizationDialogues = computed(() => store.getters[CHAT_VUEX_NAMESPACE + GET_VISUALIZATION_DIALOGUES]);
 
 // deepseek大模型接口
 const ds = new OpenAI({
@@ -60,7 +62,7 @@ const ds = new OpenAI({
 });
 
 const state = reactive({
-  cardTypes: ["知识点", "方法论", "技术", "理论", "实践", "概念", "新观点"],
+  cardTypes: ["陈述性知识", "程序性知识", "解释性知识", "条件性知识", "元认知知识"],
   // cardColors: ["#264653", "#277370","#2A9D92",  "#8AB17C", "#E7C56B", "#F3A263", "#E47051"],
   cardColors: ["#4E659D", "#8B8CC0", "#B7A8CF", "#E7BDC7", "#FECEA1", "#EFA484", "#B7766C"],
   topicTag: "", // 添加topicTag属性
@@ -72,38 +74,38 @@ const state = reactive({
     //   "importance": "高",
     //   "content": "元认知提问（如“你用什么方法解决这个问题？”）帮助学生觉察自身思维策略，培养自主学习能力。"
     // },
-    {
-      "id": 5,
-      "title": "非言语反馈、鼓励机制",
-      "type": "实践",
-      "importance": "中",
-      "content": "提问后通过眼神接触、点头等非言语反馈传递鼓励，减少学生焦虑，尤其适用于高风险课堂环境（如公开课）。"
-    },
-    {
-      "id": 4,
-      "title": "面对错误回答、正面引导",
-      "type": "实践",
-      "importance": "高",
-      "content": "面对学生的错误回答，教师需及时反馈，正面引导，通过追问“你是怎么想的？”暴露思维过程，引导全班共同反思和修正。"
-    },
-    {
-      "id": 3,
-      "title": "问题链设计、逻辑递进",
-      "type": "方法论",
-      "importance": "高",
-      "content": "通过设计环环相扣的“问题链”（如“是什么-为什么-怎么做”），引导学生的思维从浅层向深层自然过渡，形成连贯的知识建构。"
-    },
-    {
-      "id": 2,
-      "title": "候答时间、学生参与",
-      "type": "知识点",
-      "importance": "高",
-      "content": "教师提问后预留3-5秒“候答时间”，能显著提高学生回答质量和参与度，尤其有利于思维较慢或内向的学生。"
-    },
+    // {
+    //   "id": 5,
+    //   "title": "非言语反馈、鼓励机制",
+    //   "type": "实践",
+    //   "importance": "中",
+    //   "content": "提问后通过眼神接触、点头等非言语反馈传递鼓励，减少学生焦虑，尤其适用于高风险课堂环境（如公开课）。"
+    // },
+    // {
+    //   "id": 4,
+    //   "title": "面对错误回答、正面引导",
+    //   "type": "实践",
+    //   "importance": "高",
+    //   "content": "面对学生的错误回答，教师需及时反馈，正面引导，通过追问“你是怎么想的？”暴露思维过程，引导全班共同反思和修正。"
+    // },
+    // {
+    //   "id": 3,
+    //   "title": "问题链设计、逻辑递进",
+    //   "type": "方法论",
+    //   "importance": "高",
+    //   "content": "通过设计环环相扣的“问题链”（如“是什么-为什么-怎么做”），引导学生的思维从浅层向深层自然过渡，形成连贯的知识建构。"
+    // },
+    // {
+    //   "id": 2,
+    //   "title": "候答时间、学生参与",
+    //   "type": "知识点",
+    //   "importance": "高",
+    //   "content": "教师提问后预留3-5秒“候答时间”，能显著提高学生回答质量和参与度，尤其有利于思维较慢或内向的学生。"
+    // },
     {
       "id": 1,
       "title": "提问层次、认知发展",
-      "type": "知识点",
+      "type": "陈述性知识",
       "importance": "高",
       "content": "课堂教学提问可分为低阶（记忆/理解）和高阶（应用/分析/评价/创造）问题，低阶问题巩固基础，高阶问题促进学生深度思考和认知发展。"
     },
@@ -124,10 +126,107 @@ const recommendedTags = ref([
 
 // 学习路径卡片数据
 const learningCards = ref<LearningCard[]>([]);
-let cardIdCounter = state.learningCards.length + 1;
+// 计算正确的ID计数器，基于现有卡片的最大ID
+let cardIdCounter = Math.max(...state.learningCards.map(card => card.id), 0) + 1;
 
 // 动画状态
 const isAddingCard = ref(false);
+
+// 从可视化对话中提取知识点
+const extractVisualizationLearningPoints = async (dialogName: string, messages: ChatMessageItem[]) => {
+  try {
+    if (!messages || messages.length < 2) {
+      console.log(`${dialogName}对话消息不足，跳过知识点提取`);
+      return;
+    }
+
+    // 获取最后两条消息（用户问题和AI回答）
+    const lastUserMsg = messages.slice().reverse().find((msg: ChatMessageItem) => msg.status === DISPLAY_ROLE_LOCAL);
+    const lastAiMsg = messages.slice().reverse().find((msg: ChatMessageItem) => msg.status === DISPLAY_ROLE_AI);
+
+    if (!lastUserMsg || !lastAiMsg) {
+      console.log(`${dialogName}未找到完整的用户-AI对话对，跳过知识点提取`);
+      return;
+    }
+
+    console.log(`正在从${dialogName}提取知识点...`, { userMsg: lastUserMsg.content, aiMsg: lastAiMsg.content });
+
+    // 使用AI提取知识点，并包含可视化背景信息
+    const completion = await ds.chat.completions.create({
+      model: "deepseek-chat",
+      messages: [
+        {
+          role: REQUEST_ROLE_USER,
+          content: `请分析以下关于"${dialogName}"的教师和AI的对话，提取一个关键教学知识点，并按照以下JSON格式组织（不要输出任何其他内容，只返回JSON）:
+          {
+            "title": "知识点简短标题（20字以内）",
+            "type": "从以下类型中选择一个最贴合的：陈述性知识、程序性知识、解释性知识、条件性知识、元认知知识",
+            "importance": "高、中或低",
+            "content": "提取的关键知识（80字以内，语言精简），来源：${dialogName}分析对话"
+          }
+          
+          对话背景：${dialogName}
+          教师问题: ${lastUserMsg.content}
+          AI回复: ${lastAiMsg.content}`
+        }
+      ]
+    });
+
+    const jsonStr = completion.choices[0].message.content || '';
+    console.log(`${dialogName} AI回复的JSON:`, jsonStr);
+
+    try {
+      // 尝试解析JSON
+      const startPos = jsonStr.indexOf('{');
+      const endPos = jsonStr.lastIndexOf('}') + 1;
+      const cleanJson = jsonStr.substring(startPos, endPos);
+
+      const knowledgePoint = JSON.parse(cleanJson) as LearningCard;
+
+      // 添加唯一ID
+      knowledgePoint.id = cardIdCounter;
+
+      // 检查是否已存在相似知识点（更严格的去重逻辑）
+      const exists = state.learningCards.some(card => {
+        const titleSimilarity = card.title.trim() === knowledgePoint.title.trim();
+        const contentSimilarity = card.content.trim() === knowledgePoint.content.trim();
+        
+        // 检查标题前缀相似度（超过10字符时）
+        const titlePrefixSimilarity = card.title.length > 10 && knowledgePoint.title.length > 10 && 
+          card.title.substring(0, 10) === knowledgePoint.title.substring(0, 10);
+        
+        // 检查内容相似度（前30个字符）
+        const contentPrefixSimilarity = card.content.length > 30 && knowledgePoint.content.length > 30 &&
+          card.content.substring(0, 30) === knowledgePoint.content.substring(0, 30);
+        
+        return titleSimilarity || contentSimilarity || titlePrefixSimilarity || contentPrefixSimilarity;
+      });
+
+      if (!exists) {
+        // 添加动画效果
+        isAddingCard.value = true;
+
+        // 延迟添加卡片以触发过渡动画
+        setTimeout(() => {
+          state.learningCards.unshift(knowledgePoint); // 添加到开头
+          cardIdCounter++; // 添加成功后更新计数器
+          console.log(`从${dialogName}添加新知识点`, knowledgePoint);
+
+          // 同时生成新的推荐主题
+          generateNewRecommendedTopic(knowledgePoint);
+
+          setTimeout(() => {
+            isAddingCard.value = false;
+          }, 300);
+        }, 100);
+      }
+    } catch (err) {
+      console.error(`${dialogName}解析知识点失败`, err, jsonStr);
+    }
+  } catch (error) {
+    console.error(`${dialogName}提取知识点错误`, error);
+  }
+};
 
 // 对话知识点提取函数
 const extractLearningPoints = async () => {
@@ -160,7 +259,7 @@ const extractLearningPoints = async () => {
           content: `请分析以下教师和AI的对话，提取一个关键教学知识点，并按照以下JSON格式组织（不要输出任何其他内容，只返回JSON）:
           {
             "title": "知识点简短标题（20字以内）",
-            "type": "从以下类型中选择一个：知识点、方法论、技术、理论、实践、概念、新观点",
+            "type": "从以下类型中选择一个最贴合的：陈述性知识、程序性知识、解释性知识、条件性知识、元认知知识",
             "importance": "高、中或低",
             "content": "提取的关键知识（80字以内，语言精简）"
           }
@@ -183,13 +282,23 @@ const extractLearningPoints = async () => {
       const knowledgePoint = JSON.parse(cleanJson) as LearningCard;
 
       // 添加唯一ID
-      knowledgePoint.id = cardIdCounter++;
+      knowledgePoint.id = cardIdCounter;
 
-      // 检查是否已存在相似知识点
-      const exists = state.learningCards.some(card =>
-        card.title === knowledgePoint.title ||
-        card.content === knowledgePoint.content
-      );
+      // 检查是否已存在相似知识点（更严格的去重逻辑）
+      const exists = state.learningCards.some(card => {
+        const titleSimilarity = card.title.trim() === knowledgePoint.title.trim();
+        const contentSimilarity = card.content.trim() === knowledgePoint.content.trim();
+        
+        // 检查标题前缀相似度（超过10字符时）
+        const titlePrefixSimilarity = card.title.length > 10 && knowledgePoint.title.length > 10 && 
+          card.title.substring(0, 10) === knowledgePoint.title.substring(0, 10);
+        
+        // 检查内容相似度（前30个字符）
+        const contentPrefixSimilarity = card.content.length > 30 && knowledgePoint.content.length > 30 &&
+          card.content.substring(0, 30) === knowledgePoint.content.substring(0, 30);
+        
+        return titleSimilarity || contentSimilarity || titlePrefixSimilarity || contentPrefixSimilarity;
+      });
 
       if (!exists) {
         // 添加动画效果
@@ -198,6 +307,7 @@ const extractLearningPoints = async () => {
         // 延迟添加卡片以触发过渡动画
         setTimeout(() => {
           state.learningCards.unshift(knowledgePoint); // 添加到开头
+          cardIdCounter++; // 添加成功后更新计数器
           console.log("添加新知识点", knowledgePoint);
 
           // 同时生成新的推荐主题
@@ -267,11 +377,37 @@ onMounted(() => {
   console.log("LearningPathView mounted, 监听新对话通知");
 });
 
+// 添加一个Set来跟踪已处理的对话，避免重复提取
+const processedDialogues = new Set<string>();
+
 // 监听新对话标志变化
 watch(newDialogueFlag, (newValue) => {
   console.log("检测到新对话标志变化:", newValue);
-  // 当标志变化时，提取知识点
+  
+  // 当标志变化时，提取主对话的知识点
   extractLearningPoints();
+  
+  // 延迟检查可视化对话，确保store更新完成
+  nextTick(() => {
+    Object.entries(visualizationDialogues.value).forEach(([dialogName, dialog]: [string, any]) => {
+      if (dialog.messages && dialog.messages.length >= 2) {
+        const lastMsg = dialog.messages[dialog.messages.length - 1];
+        const secondLastMsg = dialog.messages[dialog.messages.length - 2];
+        
+        // 创建唯一标识，避免重复处理同一个对话
+        const dialogKey = `${dialogName}_${lastMsg.content.substring(0, 20)}_${dialog.messages.length}`;
+        
+        if (secondLastMsg.status === DISPLAY_ROLE_LOCAL && 
+            lastMsg.status === DISPLAY_ROLE_AI && 
+            !processedDialogues.has(dialogKey)) {
+          
+          console.log(`检测到${dialogName}的新对话，准备提取知识点`);
+          processedDialogues.add(dialogKey);
+          extractVisualizationLearningPoints(dialogName, dialog.messages);
+        }
+      }
+    });
+  });
 }, { immediate: false });
 
 
@@ -301,7 +437,7 @@ watch(newDialogueFlag, (newValue) => {
     </div>
 
     <div class="recommended-tags">
-      <span class="topic-tag-title">推荐主题</span>
+      <span class="topic-tag-title">推荐话题</span>
       <transition-group name="tag-list" tag="div" class="tag-transition-group">
         <span v-for="tag in recommendedTags" :key="tag" class="topic-tag" :class="{ active: state.topicTag === tag }"
           :style="{
@@ -416,6 +552,9 @@ watch(newDialogueFlag, (newValue) => {
 .topic-tag-title {
   font-weight: bold;
   padding: 4px 0;
+  white-space: nowrap;
+  flex-shrink: 0;
+  min-width: fit-content;
 }
 
 .topic-tag {

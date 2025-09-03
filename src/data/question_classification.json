@@ -27,13 +27,13 @@
     {
       "question": "采用什么样的方法？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 318
     },
     {
       "question": "可求出面积是多少？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 326
     },
     {
@@ -51,25 +51,25 @@
     {
       "question": "每一个小三角形面积都是几？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 427
     },
     {
       "question": "所以一共有几个小的三角形？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 430
     },
     {
       "question": "所以最终结果s3等于多少？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 433
     },
     {
       "question": "可不可以用割的方式来求解？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 448
     },
     {
@@ -81,7 +81,7 @@
     {
       "question": "我们也可以用戈的方法来对它进行求解，什么歌？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 468
     },
     {
@@ -93,43 +93,43 @@
     {
       "question": "好，此时s三被分割成了几个三角形？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 512
     },
     {
       "question": "个加1个什么形？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 518
     },
     {
       "question": "每一个三角形的面积都是6，所以4个三角形的面积加上正方形的面积在一起是多少？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 523
     },
     {
       "question": "我们先来看图一，图一刚刚求出两个小正方形的面积都是9，大正方形的面积是18，这是中间这个三角形它是一个特殊的什么？",
       "mat": "为何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 544
     },
     {
       "question": "呢直角三角形三边之间满足什么样的数量关系？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 675
     },
     {
       "question": "直角边，c是它的什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 684
     },
     {
       "question": "以上关系是否对所有的直角三角形都成立，呢想一想我们刚刚猜想出来的这句话，它是不是一句文字语言？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 732
     },
     {
@@ -141,7 +141,7 @@
     {
       "question": "同学们还记得证明文字命题的一般步骤吗？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 763
     },
     {
@@ -153,13 +153,13 @@
     {
       "question": "你觉得它的提示它的条件是什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 782
     },
     {
       "question": "那他的结论是什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 800
     },
     {
@@ -171,49 +171,49 @@
     {
       "question": "观察一下，看到了a方加b方你会想到什么？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 846
     },
     {
       "question": "A加b的平方等于什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 858
     },
     {
       "question": "那紧接着呢我们再从形的角度看到了a方，你会想到构造一个什么？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 874
     },
     {
       "question": "如果看到了ab你会想到什么？",
       "mat": "若何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 897
     },
     {
       "question": "或者说我想到长方形可不可以？",
       "mat": "若何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 907
     },
     {
       "question": "这用的是割的方法还是补的方法？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1182
     },
     {
       "question": "拼凑出一个什么形？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1211
     },
     {
       "question": "我们看一下c方此时就是中间这个正方形的什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1228
     },
     {
@@ -225,43 +225,43 @@
     {
       "question": "唉你发现我们刚才的结论有没有证明出来？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1275
     },
     {
       "question": "你来对你的图形作出解释，啊你这条边是c对吧？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1282
     },
     {
       "question": "ab4×1/2ab可不可以？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1324
     },
     {
       "question": "来，所以我们对左边进行化解，左边还剩下什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1329
     },
     {
       "question": "等于a就等于什么？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1342
     },
     {
       "question": "我们刚刚欣怡拼凑出来的这种方法呢是谁研究的？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1369
     },
     {
       "question": "好，那通过我们刚刚严格的推理证明，同学们发现我们刚刚的这个猜想是正确的还是错误的？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1411
     },
     {
@@ -291,19 +291,19 @@
     {
       "question": "A方加b方等于 b方，c方看明白了吗？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1565
     },
     {
       "question": "你看一下啊正确答案是d是吧？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1698
     },
     {
       "question": "直角边的平方和等于斜边的平方，而选项b中只显示了两边和的平方，对不对？",
       "mat": "为何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1744
     },
     {
@@ -315,43 +315,43 @@
     {
       "question": "你觉得选项c的问题在哪？",
       "mat": "其他",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1798
     },
     {
       "question": "啊所以呢我们在利用这个定义解决问题的时候，一定要注意它的前提条件一定是直角三角形，要明确直角，进而确定斜边，明白了吗？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1836
     },
     {
       "question": "那这个式子成立的前提是角c等于多少度？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1876
     },
     {
       "question": "好，那我们现在是已知什么边求什么边？",
       "mat": "是何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 1949
     },
     {
       "question": "啊因为角c等于90度，所以直接得到b方等于c方减a方，可不可以？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 2220
     },
     {
       "question": "将a等于8c=17代入上式？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 2226
     },
     {
       "question": "非常规范，哈得到b=根号下17方减去8的平方，最终结果b=15，可不可以？",
       "mat": "如何",
-      "three": "由何",
+      "three": "无",
       "beginTime": 2230
     },
     {
