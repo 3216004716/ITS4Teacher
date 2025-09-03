@@ -87,7 +87,7 @@ const createVisualization = () => {
   // 创建容器
   const container = d3.select(qMap2.value)
     .style('background', '#ffffff')
-    .style('padding', '10px')
+    .style('padding', '5px')
     .style('display', 'flex')
     .style('justify-content', 'center')
     .style('align-items', 'center');
@@ -97,7 +97,7 @@ const createVisualization = () => {
     .style('width', '100%')
     .style('height', '100%')
     .style('display', 'flex')
-    .style('gap', '20px');
+    .style('gap', '5px');
 
   // 绘制雷达图和三何分类
   drawRadarAndThreeHe(mainPanel);
@@ -107,17 +107,17 @@ const createVisualization = () => {
 const drawRadarAndThreeHe = (container) => {
   // 左侧雷达图
   const leftPanel = container.append('div')
-    .style('width', '50%')
+    .style('width', '60%')
     .style('height', '100%')
     .style('background', 'white')
-    .style('padding', '5px');
+    .style('padding', '2px');
 
   // 右侧三何分类
   const rightPanel = container.append('div')
-    .style('width', '50%')
+    .style('width', '40%')
     .style('height', '100%')
     .style('background', 'white')
-    .style('padding', '5px');
+    .style('padding', '2px');
 
   drawRadarChart(leftPanel);
   drawThreeHeChart(rightPanel);
@@ -183,14 +183,27 @@ const drawRadarChart = (container) => {
     .style('stroke', '#ccc')
     .style('stroke-width', '2px');
   
-  // 绘制标签
-  axis.append('text')
-    .attr('x', (d, i) => (radius + 15) * Math.cos(angleSlice * i - Math.PI/2))
-    .attr('y', (d, i) => (radius + 15) * Math.sin(angleSlice * i - Math.PI/2))
+  // 绘制标签 - 分两行显示
+  const labels = axis.append('g')
+    .attr('transform', (d, i) => `translate(${(radius + 15) * Math.cos(angleSlice * i - Math.PI/2)}, ${(radius + 15) * Math.sin(angleSlice * i - Math.PI/2)})`);
+  
+  // 第一行：标签名称
+  labels.append('text')
+    .attr('x', 0)
+    .attr('y', -6)
     .style('text-anchor', 'middle')
-    .style('font-size', '13px')
+    .style('font-size', '11px')
     .style('font-weight', '500')
-    .text(d => `${d.axis} (${d.value})`);
+    .text(d => d.axis);
+  
+  // 第二行：数值
+  labels.append('text')
+    .attr('x', 0)
+    .attr('y', 6)
+    .style('text-anchor', 'middle')
+    .style('font-size', '10px')
+    .style('font-weight', '400')
+    .text(d => `(${d.value})`);
   
   // 绘制数据区域
   const radarLine = d3.lineRadial()
@@ -220,9 +233,9 @@ const drawRadarChart = (container) => {
   // 标题
   svg.append('text')
     .attr('x', width / 2)
-    .attr('y', 18)
+    .attr('y', 10)
     .attr('text-anchor', 'middle')
-    .style('font-size', '15px')
+    .style('font-size', '11px')
     .style('font-weight', 'bold')
     .text('四何问题分布');
 };
@@ -231,7 +244,7 @@ const drawRadarChart = (container) => {
 const drawThreeHeChart = (container) => {
   const width = container.node().getBoundingClientRect().width;
   const height = container.node().getBoundingClientRect().height;
-  const margin = { top: 35, right: 15, bottom: 45, left: 50 };
+  const margin = { top: 25, right: 10, bottom: 35, left: 40 };
   const innerWidth = width - margin.left - margin.right;
   const innerHeight = height - margin.top - margin.bottom;
   
@@ -242,12 +255,22 @@ const drawThreeHeChart = (container) => {
   const g = svg.append('g')
     .attr('transform', `translate(${margin.left},${margin.top})`);
   
-  // 获取三何数据
-  const threeHeStats = questionClassification.statistics.three_he;
-  const data = Object.entries(threeHeStats).map(([key, value]) => ({
+  // 重新统计三何数据
+  const threeHeCount = { '由何': 0, '又何': 0, '然何': 0 };
+  let totalValidQuestions = 0;
+  
+  questionClassification.questions.forEach(q => {
+    if (q.three && q.three !== '无') {
+      threeHeCount[q.three] = (threeHeCount[q.three] || 0) + 1;
+      totalValidQuestions++;
+    }
+  });
+  
+  console.log('重新统计的三何数据:', threeHeCount);
+  const data = Object.entries(threeHeCount).map(([key, value]) => ({
     type: key,
     count: value,
-    percentage: (value / questionClassification.statistics.total * 100).toFixed(1)
+    percentage: totalValidQuestions > 0 ? (value / totalValidQuestions * 100).toFixed(1) : '0.0'
   }));
   
   // 比例尺
@@ -284,8 +307,8 @@ const drawThreeHeChart = (container) => {
     .attr('x', d => xScale(d.type) + xScale.bandwidth() / 2)
     .attr('y', d => yScale(d.count) - 5)
     .attr('text-anchor', 'middle')
-    .style('font-size', '12px')
-    .text(d => `${d.count} (${d.percentage}%)`);
+    .style('font-size', '11px')
+    .text(d => `${d.count}`);
   
   // X轴
   g.append('g')
@@ -299,22 +322,22 @@ const drawThreeHeChart = (container) => {
   // 标题
   svg.append('text')
     .attr('x', width / 2)
-    .attr('y', 18)
+    .attr('y', 10)
     .attr('text-anchor', 'middle')
-    .style('font-size', '15px')
+    .style('font-size', '11px')
     .style('font-weight', 'bold')
     .text('三何问题分类');
   
   // 添加说明文字
-  const legend = svg.append('g')
-    .attr('transform', `translate(${margin.left}, ${height - 10})`);
+  // const legend = svg.append('g')
+  //   .attr('transform', `translate(${margin.left}, ${height - 10})`);
   
-  legend.append('text')
-    .attr('x', 0)
-    .attr('y', 0)
-    .style('font-size', '11px')
-    .style('fill', '#666')
-    .text('由何:情境融合 | 又何:关联延伸 | 然何:深度挖掘');
+  // legend.append('text')
+  //   .attr('x', 0)
+  //   .attr('y', 0)
+  //   .style('font-size', '11px')
+  //   .style('fill', '#666')
+  //   .text('由何:情境融合 | 又何:关联延伸 | 然何:深度挖掘');
 };
 
 const methods = reactive({

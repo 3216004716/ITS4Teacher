@@ -126,14 +126,38 @@ const drawIndentedTree = (data, svgElement) => {
   }
   traverse(data, 0, null, null);
 
-  const dx = 14; // 增加垂直间距
-  const indent = 22; // 增加缩进
-  const hLine = 20;
-  const lineWidth = 1.5;
-  const circleRadius = 3;
-  const margin = { top: 10, right: 10, bottom: 10, left: 10 }; // 减小边距
-  const maxTextLen = 20; // 增加显示的文本长度
-  const fontSize = 10;
+  // 获取容器的实际尺寸
+  let containerWidth, containerHeight;
+  let fontSize, dx, indent, hLine, lineWidth, circleRadius, margin;
+  
+  // 动态计算布局参数的函数
+  function calculateLayoutParams() {
+    containerWidth = svgElement.parentNode.clientWidth || 400;
+    containerHeight = svgElement.parentNode.clientHeight || 300;
+
+    // 获取当前可见节点数量
+    const visibleNodeCount = getVisibleNodes().length;
+    
+    // 根据容器高度和可见节点数量计算最佳字体大小
+    const minFontSize = 8;
+    const maxFontSize = 24;
+    const verticalMargin = 20; // 上下边距总和
+    
+    // 计算可用高度
+    const availableHeight = containerHeight - verticalMargin;
+    
+    // 基于每行高度计算字体大小，考虑到增大的垂直间距
+    const targetRowHeight = availableHeight / Math.max(visibleNodeCount, 1);
+    fontSize = Math.max(minFontSize, Math.min(maxFontSize, targetRowHeight * 0.55)); // 调整比例以适应更大的垂直间距
+    
+    // 其他参数也根据字体大小调整
+    dx = Math.max(fontSize * 1.8, 16); // 增加垂直间距，让布局更加舒展
+    indent = Math.max(fontSize * 2.2, 18); // 缩进
+    hLine = Math.max(fontSize * 2, 16);
+    lineWidth = Math.max(fontSize * 0.12, 1);
+    circleRadius = Math.max(fontSize * 0.25, 2);
+    margin = { top: verticalMargin/2, right: 10, bottom: verticalMargin/2, left: 10 };
+  }
 
   // tooltip
   d3.selectAll('.d3-tooltip').remove();
@@ -145,7 +169,7 @@ const drawIndentedTree = (data, svgElement) => {
     .style("border", "1px solid #bbb")
     .style("border-radius", "4px")
     .style("padding", "6px 10px")
-    .style("font-size", fontSize)
+    .style("font-size", fontSize + "px")
     .style("color", "#222")
     .style("box-shadow", "0 2px 8px rgba(0,0,0,0.08)")
     .style("pointer-events", "none")
@@ -170,19 +194,91 @@ const drawIndentedTree = (data, svgElement) => {
 
   // 画图主函数
   function render() {
+    // 重新计算布局参数（适应窗口大小和节点展开/收缩）
+    calculateLayoutParams();
+    
     const visibleNodes = getVisibleNodes();
+    
+    // 计算树的实际高度
+    const treeHeight = visibleNodes.length * dx;
+    
+    // 计算垂直居中的偏移量
+    const verticalOffset = (containerHeight - treeHeight) / 2;
+    
     visibleNodes.forEach((d, i) => {
-      d.x = i * dx + margin.top;
+      d.x = i * dx + verticalOffset;
       d.y = d.depth * indent + margin.left;
     });
 
-    // 计算实际需要的高度和宽度
-    const height = Math.max(visibleNodes.length * dx + margin.top + margin.bottom, 100);
-    const width = Math.max(d3.max(visibleNodes, d => d.y) + 280, 100); // 增加宽度以适应文本
 
-    // 获取容器的实际尺寸
-    const containerWidth = svgElement.parentNode.clientWidth || 400;
-    const containerHeight = svgElement.parentNode.clientHeight || 300;
+    // 创建一个临时SVG和文本元素来测量文本宽度
+    const tempSvg = d3.select("body").append("svg")
+      .style("visibility", "hidden")
+      .style("position", "absolute")
+      .style("top", "-9999px");
+    
+    const tempText = tempSvg.append("text")
+      .attr("font-size", fontSize + "px")
+      .attr("font-family", "sans-serif");
+
+    // 计算每个节点的可用文本宽度
+    function getMaxTextForNode(node) {
+      const nodeX = node.y + fontSize; // 文本起始位置
+      const availableWidth = containerWidth - nodeX - 20; // 20px右边距
+      
+      if (availableWidth <= 0) return { text: "...", needsTooltip: true };
+      
+      const fullText = node.content;
+      if (!fullText) return { text: "", needsTooltip: false };
+      
+      try {
+        // 测量完整文本宽度
+        tempText.text(fullText);
+        const fullTextWidth = tempText.node().getBBox().width;
+        
+        if (fullTextWidth <= availableWidth) {
+          return { text: fullText, needsTooltip: false };
+        }
+        
+        // 二分查找最佳截取长度
+        let left = 1;
+        let right = fullText.length;
+        let bestLength = 1;
+        
+        while (left <= right) {
+          const mid = Math.floor((left + right) / 2);
+          const testText = fullText.slice(0, mid) + '...';
+          tempText.text(testText);
+          const testWidth = tempText.node().getBBox().width;
+          
+          if (testWidth <= availableWidth) {
+            bestLength = mid;
+            left = mid + 1;
+          } else {
+            right = mid - 1;
+          }
+        }
+        
+        const truncatedText = fullText.slice(0, bestLength) + '...';
+        return { text: truncatedText, needsTooltip: true };
+      } catch (error) {
+        // 如果文本测量失败，使用估算方法
+        console.warn('Text measurement failed, using fallback method:', error);
+        const estimatedCharWidth = fontSize * 0.6;
+        const maxChars = Math.floor(availableWidth / estimatedCharWidth);
+        
+        if (fullText.length <= maxChars) {
+          return { text: fullText, needsTooltip: false };
+        } else {
+          const truncatedText = fullText.slice(0, Math.max(1, maxChars - 3)) + '...';
+          return { text: truncatedText, needsTooltip: true };
+        }
+      }
+    }
+
+    // 计算实际需要的高度和宽度 - 使用容器高度以充满垂直空间
+    const height = containerHeight;
+    const width = containerWidth;
 
     // 直接使用viewBox，不需要手动缩放
     const svg = d3.select(svgElement)
@@ -285,7 +381,7 @@ const drawIndentedTree = (data, svgElement) => {
           .attr("class", "phase-bg")
           .attr("x", d => d.y - 2)
           .attr("y", d => d.x - dx/2 + 1)
-          .attr("width", d => width - d.y - 10)
+          .attr("width", d => Math.max(width - d.y - 20, 100))
           .attr("height", dx - 2)
           .attr("fill", d => d.phaseColor)
           .attr("rx", 2)
@@ -296,7 +392,7 @@ const drawIndentedTree = (data, svgElement) => {
         update => update.transition().duration(300)
           .attr("x", d => d.y - 2)
           .attr("y", d => d.x - dx/2 + 1)
-          .attr("width", d => width - d.y - 10)
+          .attr("width", d => Math.max(width - d.y - 20, 100))
           .attr("height", dx - 2),
         exit => exit.transition().duration(300)
           .attr("opacity", 0)
@@ -313,8 +409,11 @@ const drawIndentedTree = (data, svgElement) => {
           .attr("x", d => d.y + fontSize)
           .attr("y", d => d.x)
           .attr("dy", "0.32em")
-          .text(d => d.content.length > maxTextLen ? d.content.slice(0, maxTextLen) + '...' : d.content)
-          .attr("font-size", fontSize)
+          .text(d => {
+            const textInfo = getMaxTextForNode(d);
+            return textInfo.text;
+          })
+          .attr("font-size", fontSize + "px")
           .attr("fill", "#222")
           .attr("font-family", "sans-serif")
           .style("cursor", d => d.children && d.children.length > 0 ? "pointer" : "default")
@@ -325,7 +424,8 @@ const drawIndentedTree = (data, svgElement) => {
             }
           })
           .on("mouseover", function (event, d) {
-            if (d.content.length > maxTextLen) {
+            const textInfo = getMaxTextForNode(d);
+            if (textInfo.needsTooltip) {
               tooltip.style("display", "block").html(d.content);
             }
           })
@@ -340,11 +440,18 @@ const drawIndentedTree = (data, svgElement) => {
           .attr("opacity", 1),
         update => update.transition().duration(300)
           .attr("x", d => d.y + fontSize)
-          .attr("y", d => d.x),
+          .attr("y", d => d.x)
+          .text(d => {
+            const textInfo = getMaxTextForNode(d);
+            return textInfo.text;
+          }),
         exit => exit.transition().duration(300)
           .attr("opacity", 0)
           .remove()
       );
+
+    // 清理临时SVG元素
+    tempSvg.remove();
   }
 
   render();
