@@ -102,13 +102,13 @@ const state = reactive({
     //   "importance": "高",
     //   "content": "教师提问后预留3-5秒“候答时间”，能显著提高学生回答质量和参与度，尤其有利于思维较慢或内向的学生。"
     // },
-    {
-      "id": 1,
-      "title": "提问层次、认知发展",
-      "type": "陈述性知识",
-      "importance": "高",
-      "content": "课堂教学提问可分为低阶（记忆/理解）和高阶（应用/分析/评价/创造）问题，低阶问题巩固基础，高阶问题促进学生深度思考和认知发展。"
-    },
+    // {
+    //   "id": 1,
+    //   "title": "提问层次、认知发展",
+    //   "type": "陈述性知识",
+    //   "importance": "高",
+    //   "content": "课堂教学提问可分为低阶（记忆/理解）和高阶（应用/分析/评价/创造）问题，低阶问题巩固基础，高阶问题促进学生深度思考和认知发展。"
+    // },
   ],
 
 });
@@ -215,6 +215,13 @@ const extractVisualizationLearningPoints = async (dialogName: string, messages: 
           // 同时生成新的推荐主题
           generateNewRecommendedTopic(knowledgePoint);
 
+          // 保存到localStorage供导出使用
+          try {
+            localStorage.setItem('research_learning_cards', JSON.stringify(state.learningCards));
+          } catch (error) {
+            console.error('保存学习卡片到localStorage失败:', error);
+          }
+
           setTimeout(() => {
             isAddingCard.value = false;
           }, 300);
@@ -242,6 +249,12 @@ const extractLearningPoints = async () => {
 
     const lastUserMsg = messages.slice().reverse().find((msg: ChatMessageItem) => msg.status === DISPLAY_ROLE_LOCAL);
     const lastAiMsg = messages.slice().reverse().find((msg: ChatMessageItem) => msg.status === DISPLAY_ROLE_AI);
+
+    console.log("查找对话对结果:", { 
+      lastUserMsg: lastUserMsg ? `${lastUserMsg.content.substring(0, 30)}...` : '未找到',
+      lastAiMsg: lastAiMsg ? `${lastAiMsg.content.substring(0, 30)}...` : '未找到',
+      totalMessages: messages.length
+    });
 
     if (!lastUserMsg || !lastAiMsg) {
       console.log("未找到完整的用户-AI对话对，跳过知识点提取");
@@ -313,6 +326,13 @@ const extractLearningPoints = async () => {
           // 同时生成新的推荐主题
           generateNewRecommendedTopic(knowledgePoint);
 
+          // 保存到localStorage供导出使用
+          try {
+            localStorage.setItem('research_learning_cards', JSON.stringify(state.learningCards));
+          } catch (error) {
+            console.error('保存学习卡片到localStorage失败:', error);
+          }
+
           setTimeout(() => {
             isAddingCard.value = false;
           }, 300);
@@ -382,7 +402,8 @@ const processedDialogues = new Set<string>();
 
 // 监听新对话标志变化
 watch(newDialogueFlag, (newValue) => {
-  console.log("检测到新对话标志变化:", newValue);
+  console.log("LearningPathView检测到新对话标志变化:", newValue);
+  console.log("当前主对话消息数量:", chatMessages.value.length);
   
   // 当标志变化时，提取主对话的知识点
   extractLearningPoints();
