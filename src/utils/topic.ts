@@ -111,7 +111,7 @@ export const AIM_STEPS_CN =
 export const INTERPRET_STEPS_CN = {
   id: 2,
   name: "解读",
-  fullName: "多视角解读课堂",
+  fullName: "解读课堂现象",
   description: "从专家视角，基于数据驱动对课例进行分析。",
   icon: AreaChartOutlined,
   topicTagsItems: CN_EXPLAIN_STEPS,
@@ -119,8 +119,8 @@ export const INTERPRET_STEPS_CN = {
 }
 export const EXPLORE_STEPS_CN = {
   id: 3,
-  name: "探究",
-  fullName: "关联课堂变量",
+  name: "循证",
+  fullName: "探究多源证据",
   description: "探究课例中主要特征之间的关系。",
   icon: ShareAltOutlined,
   topicTagsItems: CN_INTERCONNECT_STEPS,
@@ -129,7 +129,7 @@ export const EXPLORE_STEPS_CN = {
 export const DERIVE_STEPS_CN = {
   id: 4,
   name: "萃取",
-  fullName: "萃取实践性知识",
+  fullName: "萃取实践智慧",
   description: "从学习与研究过程中推导实践知识。",
   icon: BulbOutlined,
   topicTagsItems: CN_DERIVE_STEPS,

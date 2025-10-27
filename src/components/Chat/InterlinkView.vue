@@ -770,76 +770,10 @@ const handleMessageSubmit = async (content: string) => {
   };
   store.commit(CHAT_VUEX_NAMESPACE + ADD_CHAT_MESSAGE, { message: content, status: 'local' });
 
-
-  // try {
-  //   if (!state.learningPlan) {
-  //     await handleSeedQuestionAnswer(content);
-  //   } else {
-  //     const dialogueMessage = {
-  //       message: content,
-  //       status: 'local' as ChatMessageItem
-  //     };
-  //     await onDialogueRequest(dialogueMessage);
-  //     const latestMessage = dialogueMessages.value[dialogueMessages.value.length - 1];
-  //     if (latestMessage && latestMessage.message) {
-  //       store.commit(CHAT_VUEX_NAMESPACE + ADD_CHAT_MESSAGE, {
-  //         id: String(state.id++),
-  //         message: latestMessage.message,
-  //         status: 'response' as ChatMessageItem
-  //       });
-
-  //     }
-  //     if (state.questionProgress.current === state.questionProgress.total) {
-  //       await onFeedbackRequest({ message: content, status: 'local' });
-  //       const feedbackMessage = feedbackMessages.value[feedbackMessages.value.length - 1];
-  //       if (feedbackMessage && feedbackMessage.message) {
-  //         chatMessagesList.value.push({
-  //           id: String(state.id++),
-  //           message: feedbackMessage.message,
-  //           status: 'response'
-  //         });
-  //       }
-  //     }
-  //   }
-  // } catch (error) {
-  //   console.error('Error handling message:', error);
-  //   chatMessagesList.value.push({
-  //     id: String(state.id++),
-  //     message: '抱歉，处理消息时出现错误。',
-  //     status: 'error'
-  //   });
-  //   console.log("messages", chatMessagesList.value);
-  // }
   userInput.value = '';
   chatBegin.value = true;
   scrollToBottom();
 };
-
-// 修改问题生成方法
-// const generateNextQuestion = async () => {
-//   try {
-//     const response = await ds.chat.completions.create({
-//       model: "deepseek-chat",
-//       messages: [
-//         {
-//           role: "system" as const,
-//           content: `你是一个专业的教研专家。这是第 ${state.questionProgress.current + 1} 个问题。
-// 请根据用户之前的回答，生成一个开放性的问题，帮助了解教师的教学情况。
-// 要求：问题要简洁、专业、有针对性。`
-//         },
-//         ...chatMessagesList.value.map(msg => ({
-//           role: msg.status === 'local' ? 'user' as const : 'assistant' as const,
-//           content: msg.message
-//         }))
-//       ],
-//     });
-
-//     return response.choices[0]?.message?.content || null;
-//   } catch (error) {
-//     console.error('Error generating next question:', error);
-//     return null;
-//   }
-// };
 
 // 新增：获取步骤详细信息的方法
 const getStepFullName = (stepName: string) => {
