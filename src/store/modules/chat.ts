@@ -1,7 +1,13 @@
 import { message } from 'ant-design-vue';
 // import axios from 'axios'
 // import moment from 'moment'
-// import { PRACTICE, INPUT_INFO, SAVE_GAZE_DATA, CLICK_NODE, EXPERIMENT } from '../../const'
+import {
+  DISPLAY_ROLE_LOCAL,
+  DISPLAY_ROLE_AI,
+  DISPLAY_ROLE_SUGGESTION,
+  REQUEST_ROLE_USER,
+  REQUEST_ROLE_ASSISTANT
+} from '../../utils/const';
 import { Module } from 'vuex';
 
 export const CHAT_VUEX_NAMESPACE = "chat/";
@@ -134,13 +140,24 @@ const chat: Module<ChatState, any> = {
     [SET_TOPIC_TAG](state, topicTag: string) {
       state.topicTag = topicTag;
     },
-    [ADD_CHAT_MESSAGE](state: ChatState, payload: { message: string; status: string }) {
-      let temp = {
+    [ADD_CHAT_MESSAGE](state: ChatState, payload: { message: string; status: string; agentRole?: any }) {
+      let temp: any = {
         id: String(state.chatIndex++),
-        content: payload.message,
+        content: {
+          text: payload.message,
+          actionNode: payload.status == DISPLAY_ROLE_LOCAL ? '🎯 精准 ████  85 │ 🧠 高阶 ███   75  │ 🔍 深度 ████  80 ' : null,
+        },
         status: payload.status
       }
+
+      // 如果传入了 agentRole，添加到消息中
+      if (payload.agentRole) {
+        temp.agentRole = payload.agentRole;
+      }
+
       state.chatMessagesList.push(temp);
+      console.log("add message:", temp);
+
     },
     [NOTIFY_NEW_DIALOGUE](state: ChatState) {
       // 翻转标志，触发watcher
