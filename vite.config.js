@@ -13,10 +13,18 @@ export default defineConfig({
   // components({
   //   resolvers: [AntDesignXVueResolver()]
   // })],
+  resolve: {
+    alias: {
+      'mermaid': 'mermaid/dist/mermaid.esm.mjs'
+    }
+  },
   optimizeDeps: {
     include: ['mermaid']
   },
   build: {
+    commonjsOptions: {
+      include: [/mermaid/, /node_modules/]
+    },
     rollupOptions: {
       output: {
         format: 'es'
