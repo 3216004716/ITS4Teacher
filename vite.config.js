@@ -13,6 +13,9 @@ export default defineConfig({
   // components({
   //   resolvers: [AntDesignXVueResolver()]
   // })],
+  optimizeDeps: {
+    include: ['mermaid']
+  },
   build: {
     rollupOptions: {
       output: {
