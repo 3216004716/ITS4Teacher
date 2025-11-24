@@ -1,0 +1,3287 @@
+[
+  {
+    "question": "前面呢我们学习了三角形，同学们都知道三角形在边的方面有什么样的性质？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 9,
+    "endTime": 15,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "任意一个三角形的两边之和大于第三边，两边之差呢小于小于第三边，那么第三边大于两边之，差小于两边之和，那么三角形在角的方面又具备什么样的性质呢？",
+    "answer": "内角和三角形。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 18,
+    "endTime": 34,
+    "question_sentiment": {
+      "score": 0.31,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那如果现在呢我们给一般的三角形特殊化，令它有一个角为多少度？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "若何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 44,
+    "endTime": 51,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "三角形，那同学们再来回忆，直角三角形除了具备普通三角形在边和角的性质外，它还有没有一些特殊的性质？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 56,
+    "endTime": 67,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "呢比如说直角三角形的内角和为多少度？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 67,
+    "endTime": 73,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "它还有两个锐角什么关系？",
+    "answer": "布局，唉",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 75,
+    "endTime": 78,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那么直角三角形在边方面是否具备一些特殊的关系呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 82,
+    "endTime": 89,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "正方形正方形，那么s一它的面积应该是边长的平方等于99，对于这个正方形是9个小方格的面积，所以s1=9个单位面积，用同样的方法s2呢它的面积也是几啊9？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 191,
+    "endTime": 210,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那 S三这个正方形，我们不好直接求出它的边长，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 213,
+    "endTime": 218,
+    "question_sentiment": {
+      "score": 0.39999999999999997,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "竖着的，徐静宇，你是怎么割的？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 226,
+    "endTime": 227,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "从上到下竖着割，来你来，你来到前面演示一下，啊其他同学注意观察，噢这样割割成左右两个什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 231,
+    "endTime": 249,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角三角形可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 249,
+    "endTime": 250,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊可以，那左边这个三角形它的面积怎么求呢？",
+    "answer": "他喵。",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 251,
+    "endTime": 255,
+    "question_sentiment": {
+      "score": 0.48000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "此时它的底是多少？",
+    "answer": "66。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 258,
+    "endTime": 259,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "还有没有其他的高的方法？",
+    "answer": "肯定是好赖，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 263,
+    "endTime": 265,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 293,
+    "endTime": 294,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊那此时的方法也就是我们做出了这个正方形的两条什么线？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 297,
+    "endTime": 303,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "对角线将这个正方形分割成4个面积相等的什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 303,
+    "endTime": 309,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角三角形，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 309,
+    "endTime": 312,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那这种割的方法呢也是可以的，每一个直角三角形面积都是可求的，最终我们得出s3等于多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 312,
+    "endTime": 319,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，再来看图二，图二对应的s一几？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 320,
+    "endTime": 325,
+    "question_sentiment": {
+      "score": 0.7,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "那s3应该如何求解它的面积呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 329,
+    "endTime": 334,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "此时还能不能像刚刚那种特殊情况一样，直接连两条对角线吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 334,
+    "endTime": 341,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "不行，那你是用什么样的方法求出s三了呢？",
+    "answer": "我说的那个啊哥哥图，好，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 341,
+    "endTime": 344,
+    "question_sentiment": {
+      "score": 0.31,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "我们刚刚通过将一般图形通过割或补的方法转化为特殊的，可以求解出面积的图形，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 348,
+    "endTime": 357,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 378,
+    "endTime": 379,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "补的方法？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 382,
+    "endTime": 383,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "补的方法补成了外面这个大正方形的面积是多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 383,
+    "endTime": 387,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那每一个小的直角三角形面积都是66减去几个？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 395,
+    "endTime": 400,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "除此之外，还有没有其他方法？",
+    "answer": "割。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 406,
+    "endTime": 408,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "那如果割的话又应该怎么操作呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 409,
+    "endTime": 411,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "谁？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 413,
+    "endTime": 413,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "我们来看一下工艺的这种做法可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 442,
+    "endTime": 445,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "有4个全等的什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 451,
+    "endTime": 453,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角三角形，每1个小直角三角形的面积都是6，那4个呢？",
+    "answer": "24。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 453,
+    "endTime": 458,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "个那最中间的这是一个什么形？",
+    "answer": "正方形，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 460,
+    "endTime": 462,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那最终我们也可以求解s3等于多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 465,
+    "endTime": 467,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "观察图一中，我们以直角三角形acb的三边为边，分别向外做出三个正方形，这三个正方形的面积有什么样的关系？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 481,
+    "endTime": 497,
+    "question_sentiment": {
+      "score": 0.29,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "你能得到什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 498,
+    "endTime": 500,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "S一、s二s三之间有什么样的数量关系？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 500,
+    "endTime": 503,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "s2=s3，那我们刚刚三角形acb它是一个特殊的什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 508,
+    "endTime": 513,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那如果接下来我们将 s一、s二、s三分别替换成ABC，你能够得到ABC之间的数量关系吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "若何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 539,
+    "endTime": 551,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "有什么样的数量关系？",
+    "answer": "B方加c方。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 553,
+    "endTime": 554,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那我们再来看c是这两个直角三角形所对应的什么边？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 562,
+    "endTime": 566,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "斜边，a和b是这两个直角三角形所对应的什么边？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 567,
+    "endTime": 571,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角直角边，那由此我们可以猜想直角三角形三边之间有什么样的数量关系？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 571,
+    "endTime": 578,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "呢 C是什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 578,
+    "endTime": 583,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "斜边的平方等于什么？",
+    "answer": "直角边，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 585,
+    "endTime": 588,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "对，啊什么边？",
+    "answer": "直角边唉",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 600,
+    "endTime": 602,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那么以上猜想所有直角三角形都成立吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 617,
+    "endTime": 623,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "可成立？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 623,
+    "endTime": 627,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "成立成立，那如果成立的话，想一想我们刚刚这个猜想是一个什么命题？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "若何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 627,
+    "endTime": 631,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊什么命题？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 631,
+    "endTime": 634,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "文字命题那现在呢我们需要用规范的推理证明的方式证明这个文字命题是成立的，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 634,
+    "endTime": 643,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊那我们证明文字命题的一般步骤是什么？",
+    "answer": "啊先。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 643,
+    "endTime": 646,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "将文字命题转化为什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 649,
+    "endTime": 652,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "语言几何语言几何语言分为什么？",
+    "answer": "符号语言和高手语言。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 653,
+    "endTime": 656,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那你分析一下直角三角形的直角边的平方和等于斜边的平方，我们需要做出一个什么？",
+    "answer": "形直角。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 659,
+    "endTime": 665,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那接下来我们将这句文字语言转化为已知求证和证明的形式，已知条件应该是什么？",
+    "answer": "已知三角形。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 690,
+    "endTime": 695,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊三角形ABC是一个什么形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 700,
+    "endTime": 702,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角三角形，求证什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 702,
+    "endTime": 704,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，接下来我们从结构出发，如果我们想证明这样的一个结论成立，观察a方加b方等于c方，从数的角度出现了a方加b方，你会想到什么？",
+    "answer": "唉",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "若何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 713,
+    "endTime": 729,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "非常好，完全平方公式是吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 733,
+    "endTime": 735,
+    "question_sentiment": {
+      "score": 0.7,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "那完全平方公式的内容是什么？",
+    "answer": "平方米的平方的平方根，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 735,
+    "endTime": 737,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "完全平方公式它的内容是a加b的平方等于什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 743,
+    "endTime": 748,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "这是我们从数的角度，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 757,
+    "endTime": 759,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那紧接着如果从形的角度，你看到了这个 A方、b方、c方你会想到什么图形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "若何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 759,
+    "endTime": 767,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "长方形，它的长和宽分别是ab或者还可以想到什么形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 782,
+    "endTime": 787,
+    "question_sentiment": {
+      "score": 0.31,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "我们需要4个，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 800,
+    "endTime": 802,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，那所以从形的角度，呢我们可以结合这些来进行探究，那接下来呢老师也准备了4个全等的，我们试一试用这4个全等的直角三角形来拼凑，能不能把我们刚刚的猜想给证明了吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 802,
+    "endTime": 821,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "方法啊你这个图形很漂亮，如果摆的再优美一点就好了，唉这种是什么样的方法？",
+    "answer": "中石化各种。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 976,
+    "endTime": 984,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，我们先来看第一个同学拼的这个小的直角三角形它的斜边是c两条直角边分别为a和 b的话，来，冯梦瑶，你来给大家解释一下，你这种拼凑的方法怎么能够证明a方加b方等于c方呢？",
+    "answer": "C的平方等于。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1005,
+    "endTime": 1026,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "整个大正方形的面积，那现在老师就要留给大家一个课后思考了，你如何说明这个大的图形是一个正方形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1033,
+    "endTime": 1044,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "正方形需要满足哪些条件？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1045,
+    "endTime": 1047,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，那外观是一个大正方形，里面的这一块呢是一个什么形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1055,
+    "endTime": 1061,
+    "question_sentiment": {
+      "score": 0.6100000000000001,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "小正方形，那里面这个小正方形的边长是多少？",
+    "answer": "1-1-1减。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1061,
+    "endTime": 1064,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "谁减谁？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1066,
+    "endTime": 1067,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "a好，b-1，那接下来你能列出什么样的算式呢？",
+    "answer": "一个b的b×1/2，b。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1067,
+    "endTime": 1071,
+    "question_sentiment": {
+      "score": 0.6100000000000001,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "×1/2，ab1/2ab是什么？",
+    "answer": "呃一个三角形的面积，唉",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1081,
+    "endTime": 1085,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "唉再加上b减a的平方，可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1095,
+    "endTime": 1098,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊那它基本上利用的是什么样的方法？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1099,
+    "endTime": 1102,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "它是根据大正方形的面积等于c的平方，大正方形的面积还可以割成5个其他图形的面积，利用等积法来解决这个问题，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1102,
+    "endTime": 1114,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "最终我们能够得到什么式子？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1123,
+    "endTime": 1124,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "有没有证出来那刚刚朋友要提供的这种方法？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1131,
+    "endTime": 1135,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "小正方形边长是c因为这个是a这是b对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1175,
+    "endTime": 1178,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "面积，噢也是根据等面积法，对吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1184,
+    "endTime": 1187,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "小正方形的面积我们可以表示成什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1187,
+    "endTime": 1189,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "2面积减去4个小的直角三角形的面积，对吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1199,
+    "endTime": 1202,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，这是通过对图形干什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1226,
+    "endTime": 1228,
+    "question_sentiment": {
+      "score": 0.74,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "割的方法还是补的方法补？",
+    "answer": "补补。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1228,
+    "endTime": 1230,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "成了一个什么形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1233,
+    "endTime": 1234,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "是吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1234,
+    "endTime": 1235,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "正方形，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1235,
+    "endTime": 1236,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "拼成了一个什么形什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1261,
+    "endTime": 1264,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角梯形，那你能够利用这个得出a方加b方等于c方吗？",
+    "answer": "想一想，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1266,
+    "endTime": 1271,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "怎么？",
+    "answer": "得王。",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1276,
+    "endTime": 1276,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "这个梯形的面积怎么求？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1280,
+    "endTime": 1281,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "/2×1/2，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1289,
+    "endTime": 1291,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "这是梯形的面积，那此时梯形被分割成了三个什么形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1292,
+    "endTime": 1298,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "三角形，唉三个直角三角形的面积，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1298,
+    "endTime": 1302,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，那以上呢我们通过严格的推理证明，发现我们刚刚的这个猜想是不是对于任意的一个普通的直角三角形都是成立的，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1308,
+    "endTime": 1319,
+    "question_sentiment": {
+      "score": 0.57,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "所以呢这个猜想它一定是正确的那正确的猜想以后我们就可以直接拿来用了，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1319,
+    "endTime": 1327,
+    "question_sentiment": {
+      "score": 0.74,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "那我们也给它起一个名字叫做什么定理？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1327,
+    "endTime": 1330,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，同学们来看一看为什么叫做勾股定理呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1331,
+    "endTime": 1334,
+    "question_sentiment": {
+      "score": 0.63,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "在中国古代，我们人们把弯曲的这个手臂的上半部分称为什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1341,
+    "endTime": 1347,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "因为我们刚刚讲这个勾股定理，啊最早发现应该是毕达哥拉斯发现的，就是用这样的一种方法发现的，所以呢这个定理有时候我们还把它称为毕达哥拉斯定理，比达格拉斯定理，那紧接着想一想，我们勾股定理应用的前提条件一定是什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1365,
+    "endTime": 1384,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "他探究的是直角三角形中谁的数量关系？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1386,
+    "endTime": 1390,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "唉三边之间的数量关系，三边之间都有什么样的数量关系呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1391,
+    "endTime": 1396,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角边两直角边的平方和等于斜边的平方，那关键问题是斜边我们应该如何确定呢要先确定什么角？",
+    "answer": "直角，",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1397,
+    "endTime": 1407,
+    "question_sentiment": {
+      "score": 0.48000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那所以接下来根据以上分析，啊我们用规范的符号语言把勾股定理的内容表述出来，那我们应该怎么表述？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1408,
+    "endTime": 1416,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "首先大的前提条件在什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1416,
+    "endTime": 1418,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，所以在 rt三角形ABC中，然后我们直接就可以说两直角边的平方和等于斜边的平方了吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1420,
+    "endTime": 1433,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1434,
+    "endTime": 1434,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "不？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1434,
+    "endTime": 1434,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "可以，那你还要做什么？",
+    "answer": "好，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1435,
+    "endTime": 1437,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "我还要明确哪个角角c角唉角c等于角c因为角c等于90度，把直角明确之后，啊我们就可以定下来谁了？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1439,
+    "endTime": 1451,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "对，我们就可以定下来斜边了，角c等于90度，那么直角所对的边就是什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1452,
+    "endTime": 1458,
+    "question_sentiment": {
+      "score": 0.6100000000000001,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "没有选a的，啊已知ABC是三角形的三边，那a错在哪了呢？",
+    "answer": "是两倍3角18，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1541,
+    "endTime": 1545,
+    "question_sentiment": {
+      "score": 0.12000000000000004,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "没说明什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "理解",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1547,
+    "endTime": 1549,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角三角形，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1549,
+    "endTime": 1550,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "在直角三角形中两边和的平方等于第三边的平方，你现在觉得它有问题吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1552,
+    "endTime": 1558,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "有什么问题呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1559,
+    "endTime": 1561,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "是任意两边和的平方等于第三边的平方吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1564,
+    "endTime": 1567,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "不是，应该是什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1567,
+    "endTime": 1569,
+    "question_sentiment": {
+      "score": 0.29,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "两个什么边的平方和较短边在直角三角形中称为什么边？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1571,
+    "endTime": 1578,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，我们再来看选项c梦想你觉得选项c你觉得它是对的，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1586,
+    "endTime": 1595,
+    "question_sentiment": {
+      "score": 0.7,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "那谢老师问你一个问题，啊如果角b=90度，嗯那假设在这个三角形中角b=90度，那么谁是斜边？",
+    "answer": "啊 Bb。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "若何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1596,
+    "endTime": 1606,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "是斜边，那么由勾股定理得到的等式应该是什么？",
+    "answer": "A的二次方加a的二次方等于b的a方，a。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1607,
+    "endTime": 1611,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "比如说现在我们将选项d内容更改一下，听好了，在rt三角形ABC中，角a等于90度，那么你能够得到的等量关系是什么什么？",
+    "answer": "呀",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1631,
+    "endTime": 1643,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "a方，唉 B方加c方等于a方，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1646,
+    "endTime": 1650,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "所以我们勾股定理的内容不是单独的一个a方加b方等于c方，而是一定要明确直角之后，再去定斜边的平方等于两直角边的平方和，理解了吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "理解",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1650,
+    "endTime": 1662,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "同学们先来看这样的一道题，在rt三角形ABC中，角c等于90度，明确了它是一个什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1666,
+    "endTime": 1676,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "我们来看第一个问题，a等于6，b=8，求c的值等价于已知直角三角形中的几条边，两条什么边？",
+    "answer": "直角。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1689,
+    "endTime": 1700,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那我们可以利用什么知识来解答？",
+    "answer": "勾股定理，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1702,
+    "endTime": 1704,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "唉这节课学习的勾股定理正好可以解决这个问题，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1705,
+    "endTime": 1708,
+    "question_sentiment": {
+      "score": 0.57,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "首先解我们已经考虑好了，用什么定理来解决问题？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1712,
+    "endTime": 1717,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊勾股定理那勾股定理应用的前提在什么三角形中？",
+    "answer": "直角三角形、唉",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1717,
+    "endTime": 1721,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角三角形中，所以我们尽可能的先将这个题目中的什么做出来，图形做出来会更直观一些，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1722,
+    "endTime": 1731,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，接下来注明在而t三角形ABC中，因为角c等于多少度？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1731,
+    "endTime": 1739,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "夏老师写角c等于90度的目的是在干什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1740,
+    "endTime": 1743,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "唉确定直角就可以定斜边了，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1744,
+    "endTime": 1747,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，所以就有什么呢？",
+    "answer": "A方加。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1747,
+    "endTime": 1748,
+    "question_sentiment": {
+      "score": 0.6100000000000001,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "a方加b方等于c方，但是要注意我们现在想求的是c尽可能的把要求的这个式子写在前还是写在后？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1750,
+    "endTime": 1760,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "现在请所以c方就等于a方加b方来ab的值代入是多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1761,
+    "endTime": 1769,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "C是多少？",
+    "answer": "36 36。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1769,
+    "endTime": 1770,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "加多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1772,
+    "endTime": 1773,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "64等于多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1773,
+    "endTime": 1775,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "正值，所以c取多少？",
+    "answer": "是10。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1787,
+    "endTime": 1789,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "在这一步的时候呢我们可以直接写成c等于根号下唉根号下a方加b方来进一步带入就等于根号36加64，最终结果等于多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1798,
+    "endTime": 1815,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "算术平方根，有直角三角形的斜边是两直角边的平方和的算术平方根，是不是可以解决这个问题？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1823,
+    "endTime": 1833,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "勾股定理之a方加b方等于c方是否规范不规范不规范？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1944,
+    "endTime": 1951,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那么这块可以怎么改正一下？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1951,
+    "endTime": 1953,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角才能够定下来什么边斜边，直角是谁？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1963,
+    "endTime": 1967,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "角c所以谁才是斜边？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1967,
+    "endTime": 1970,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "你看这位同学相对来说就要规范很多，在rt三角形ABC中，角c等于多少度？",
+    "answer": "90。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1976,
+    "endTime": 1982,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "度，所以直接利用勾股定理得到b等于c方减a方的算术平方根等于15，所以b的值为15，是不是很简洁？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1983,
+    "endTime": 1992,
+    "question_sentiment": {
+      "score": 0.25,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 1992,
+    "endTime": 1993,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，那接下来我们来总结一下，你看刚刚的两问，第一问当中是已知两条什么边求什么边？",
+    "answer": "两条直角边唉两。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 1996,
+    "endTime": 2003,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "条直角边求什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2005,
+    "endTime": 2006,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那紧接着我们再来看一个不一样的，唉你发现这个问题当中，他给出来的条件不是两条边了，而是什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2027,
+    "endTime": 2036,
+    "question_sentiment": {
+      "score": 0.29,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "一边一角，此时让我们求解三角形ABC的周长又应该怎么处理？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2037,
+    "endTime": 2044,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "呢怎么求这个三角形ABC的周长？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2044,
+    "endTime": 2048,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "周长等于什么？",
+    "answer": "三天三天之后。",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2049,
+    "endTime": 2050,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "噢是这样写一下，周长等于三边之和，那我们现在只知道一条边怎么办呢？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2053,
+    "endTime": 2057,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "对，怎么求这个三角形的周长？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2064,
+    "endTime": 2066,
+    "question_sentiment": {
+      "score": 0.5900000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好了，没？",
+    "answer": "好，我们来一起看一下，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2126,
+    "endTime": 2127,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊来那个焦点，那你觉得在直角三角形中告知我们30度的角应该将这个问题转化为什么？",
+    "answer": "转化为求斜边，",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2135,
+    "endTime": 2143,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那接下来我们看这两位同学做的对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2157,
+    "endTime": 2160,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊好，我们先来看这位同学，啊因为角c等于90度且角a等于30度，所以这个三角形是30度、60度、90度三角形，其实这句话可以说可以不说，说了反而有点繁琐，所以b=2a对不对？",
+    "answer": "对，好好，",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2160,
+    "endTime": 2179,
+    "question_sentiment": {
+      "score": 0.57,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "b=2a对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2181,
+    "endTime": 2183,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "是什么边？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2184,
+    "endTime": 2185,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "直角边，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2185,
+    "endTime": 2187,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "所以这个性质一定要注意是30度角所对的直角边等于谁的一半？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2187,
+    "endTime": 2191,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊好，我们再来看另外一个同学写的，你看在rt三角形中，角c等于90度，角a等于30度，所以c等于2，a等于2，可不可以？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2195,
+    "endTime": 2205,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "接下来利用勾股定理b等于根号下c方减a方，唉此时为什么就定下来？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2207,
+    "endTime": 2213,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "B是直角边了，呢哪个条件告知你的？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2213,
+    "endTime": 2216,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "角c等于多少度？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2216,
+    "endTime": 2217,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，最终结果这个三角形的周长是3加根号3，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2222,
+    "endTime": 2225,
+    "question_sentiment": {
+      "score": 0.5499999999999999,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，南方同学都已经结束了，啊具体答案有几个？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2426,
+    "endTime": 2437,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "两个两个，大部分也写出来两个，为什么有两个答案呢？",
+    "answer": "谁知。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2437,
+    "endTime": 2441,
+    "question_sentiment": {
+      "score": 0.48000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "刘浩宇，为什么题目中会有两个答案呢？",
+    "answer": "因为不知道BC是斜边还是。",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2444,
+    "endTime": 2447,
+    "question_sentiment": {
+      "score": 0.48000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "为什么不知道呢？",
+    "answer": "唉",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2453,
+    "endTime": 2455,
+    "question_sentiment": {
+      "score": 0.48000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "因为这个题目没有干什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2457,
+    "endTime": 2458,
+    "question_sentiment": {
+      "score": 0.29,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "没有给，我们明确直角，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2458,
+    "endTime": 2461,
+    "question_sentiment": {
+      "score": 0.25000000000000006,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "啊在没有明确直角的情况下，我们就要有什么样的思想？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2461,
+    "endTime": 2466,
+    "question_sentiment": {
+      "score": 0.29,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "那我接下来分类的时候正常我不应该分三类吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2467,
+    "endTime": 2470,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "有没有可能BC是斜边或者ab是斜边或者ac是斜边吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2471,
+    "endTime": 2476,
+    "question_sentiment": {
+      "score": 0.29,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "唉所以这个时候斜边是直角三角形中最长的边，谁是比较短的？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2477,
+    "endTime": 2484,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "Ac，所以它不可能是斜边，那紧接着呢我们的BC就会有两种情况，啊要么BC为直角边，要么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2485,
+    "endTime": 2495,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "Bc为什么边斜边对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2495,
+    "endTime": 2498,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "当BC为直角边的时候，我们得到的BC的长是多少？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2498,
+    "endTime": 2502,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，或者有些同学呢他很聪明，他是通过作图的形式，啊你看第一幅图当中默认了BC是什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2515,
+    "endTime": 2523,
+    "question_sentiment": {
+      "score": 0.76,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "5，好，BC直接口算是几？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2529,
+    "endTime": 2531,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，再来看第二幅图，BC作为什么边？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2532,
+    "endTime": 2536,
+    "question_sentiment": {
+      "score": 0.6100000000000001,
+      "classification": "积极"
+    }
+  },
+  {
+    "question": "所以在实际做题过程中，呢我们是建议大家尽量的能够做到数和形结合，你看形是不是来得更直观一些？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2549,
+    "endTime": 2557,
+    "question_sentiment": {
+      "score": 0.27,
+      "classification": "消极"
+    }
+  },
+  {
+    "question": "答案写出来了吗？",
+    "answer": "是吧？",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2602,
+    "endTime": 2605,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "来讲解一下，刘志奇，你拿到这个题目是怎么考虑的？",
+    "answer": "你先做这个 Bc边上的高，",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "如何",
+    "feedbackType": "无反馈",
+    "answered": true,
+    "beginTime": 2608,
+    "endTime": 2612,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "先做BC边上的高，是这样吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2615,
+    "endTime": 2617,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2618,
+    "endTime": 2618,
+    "question_sentiment": {
+      "score": 0.55,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "为什么要做这条高？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2618,
+    "endTime": 2619,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "我们得出BD=CD都是几啊3？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2633,
+    "endTime": 2637,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "这利用了等腰三角形的什么性质？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2637,
+    "endTime": 2639,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "三线合一，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2639,
+    "endTime": 2642,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "好，进而高能不能求解出来了？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2642,
+    "endTime": 2644,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那求高的时候用什么定理？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2645,
+    "endTime": 2646,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊所以刘书记刚刚的想法，呢我们从结论出发，想求三角形ABC的面积等价于要求底边BC上的什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2649,
+    "endTime": 2659,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那求解AD的长，我们要把AD放在哪个直角三角形中去求解rt三角形、ADB中利，用什么方法去求解勾股定理？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2662,
+    "endTime": 2676,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那为什么BD边的长为三，呢用到了等腰三角形的什么性质？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "为何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2676,
+    "endTime": 2679,
+    "question_sentiment": {
+      "score": 0.48000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "现在是一个三角形ABC，ab=13，ac等于20，BC边上的高为12，再去求三角形的面积，你发现我们这个课后思考跟上面的例题不同点在于什么？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2695,
+    "endTime": 2707,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "没有图又与高相关，我们在作图的时候要有什么思想讨论再分类讨论，对吧？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2709,
+    "endTime": 2716,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那本节课呢我们从一般三角形的研究出发，啊将一般三角形令它有一个角是90度过渡到什么三角形？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2721,
+    "endTime": 2730,
+    "question_sentiment": {
+      "score": 0.46,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那么直角三角形除了具备一般三角形的性质之外，在边和角方面又具备了一些新的性质，比如说它的两个锐角什么关系？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2732,
+    "endTime": 2743,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "互余，比如说它的三边之间还满足什么关系？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2743,
+    "endTime": 2746,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "那通过我们本节课的学习，我们还知道在我们证明勾股定理成立的时候，从结论a方a方加b方等于c方出发，我们从几个维度对它进行了分析，啊还记得吗？",
+    "answer": "",
+    "comment": "",
+    "blmType": "分析",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2754,
+    "endTime": 2767,
+    "question_sentiment": {
+      "score": 0.5700000000000001,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "你还领悟到了哪些思想？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2780,
+    "endTime": 2781,
+    "question_sentiment": {
+      "score": 0.42000000000000004,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "在探究问题的时候，先从特殊的等值三角形过渡到一般的直角三角形，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2785,
+    "endTime": 2791,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "这叫一种什么思想？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2791,
+    "endTime": 2792,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "啊那同学们还要学会利用勾股定理来解决一些实际问题，我们要先将实际问题转化为我们这个学习的什么问题？",
+    "answer": "",
+    "comment": "",
+    "blmType": "应用",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2795,
+    "endTime": 2804,
+    "question_sentiment": {
+      "score": 0.44,
+      "classification": "中性"
+    }
+  },
+  {
+    "question": "数学问题，对不对？",
+    "answer": "",
+    "comment": "",
+    "blmType": "记忆",
+    "mat": "是何",
+    "feedbackType": "无反馈",
+    "answered": false,
+    "beginTime": 2804,
+    "endTime": 2806,
+    "question_sentiment": {
+      "score": 0.4,
+      "classification": "中性"
+    }
+  }
+]

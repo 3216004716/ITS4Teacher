@@ -1,0 +1,657 @@
+{
+  "metadata": {
+    "totalQuestions": 219,
+    "totalChains": 5,
+    "timeRange": {
+      "start": 9,
+      "end": 2806
+    },
+    "processedAt": "2025-11-24T08:15:56.134Z",
+    "processingMethod": "structured_by_teaching_phases"
+  },
+  "chains": [
+    {
+      "id": 1,
+      "teachingPhase": "一、回顾与引入新课",
+      "coreQuestion": "什么是直角三角形，它有什么特殊性质？",
+      "questions": [
+        {
+          "question": "任意一个三角形的两边之和大于第三边，两边之差呢小于小于第三边，那么第三边大于两边之，差小于两边之和，那么三角形在角的方面又具备什么样的性质呢？",
+          "answer": "内角和三角形。",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 18,
+          "endTime": 34,
+          "question_sentiment": {
+            "score": 0.31,
+            "classification": "中性"
+          },
+          "valueScore": 1.7,
+          "chainIndex": 0,
+          "relativeTime": 18
+        },
+        {
+          "question": "那如果现在呢我们给一般的三角形特殊化，令它有一个角为多少度？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 44,
+          "endTime": 51,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 1.6,
+          "chainIndex": 1,
+          "relativeTime": 44
+        },
+        {
+          "question": "三角形，那同学们再来回忆，直角三角形除了具备普通三角形在边和角的性质外，它还有没有一些特殊的性质？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 56,
+          "endTime": 67,
+          "question_sentiment": {
+            "score": 0.27,
+            "classification": "消极"
+          },
+          "valueScore": 1.49,
+          "chainIndex": 2,
+          "relativeTime": 56
+        }
+      ],
+      "startTime": 18,
+      "endTime": 67,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "记忆",
+      "duration": 49,
+      "questionCount": 3,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.34,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 0,
+          "descending": 0,
+          "stable": 2,
+          "progressionRatio": 0
+        },
+        "avgValueScore": 1.5966666666666667,
+        "intensity": 3.673469387755102
+      },
+      "timeline": {
+        "start": 18,
+        "end": 67,
+        "startMinute": 0,
+        "endMinute": 1,
+        "duration": 49
+      }
+    },
+    {
+      "id": 2,
+      "teachingPhase": "1.直角三角形边角关系总结",
+      "coreQuestion": "直角三角形三边之间有什么数量关系？",
+      "questions": [
+        {
+          "question": "正方形正方形，那么s一它的面积应该是边长的平方等于99，对于这个正方形是9个小方格的面积，所以s1=9个单位面积，用同样的方法s2呢它的面积也是几啊9？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 191,
+          "endTime": 210,
+          "question_sentiment": {
+            "score": 0.5900000000000001,
+            "classification": "中性"
+          },
+          "valueScore": 1.6,
+          "chainIndex": 0,
+          "relativeTime": 102
+        },
+        {
+          "question": "竖着的，徐静宇，你是怎么割的？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 226,
+          "endTime": 227,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 2.25,
+          "chainIndex": 1,
+          "relativeTime": 137
+        },
+        {
+          "question": "啊可以，那左边这个三角形它的面积怎么求呢？",
+          "answer": "他喵。",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 251,
+          "endTime": 255,
+          "question_sentiment": {
+            "score": 0.48000000000000004,
+            "classification": "中性"
+          },
+          "valueScore": 2.41,
+          "chainIndex": 2,
+          "relativeTime": 162
+        },
+        {
+          "question": "那s3应该如何求解它的面积呢？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 329,
+          "endTime": 334,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 2.25,
+          "chainIndex": 3,
+          "relativeTime": 240
+        },
+        {
+          "question": "那如果接下来我们将 s一、s二、s三分别替换成ABC，你能够得到ABC之间的数量关系吗？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 539,
+          "endTime": 551,
+          "question_sentiment": {
+            "score": 0.27,
+            "classification": "消极"
+          },
+          "valueScore": 1.74,
+          "chainIndex": 4,
+          "relativeTime": 450
+        }
+      ],
+      "startTime": 191,
+      "endTime": 551,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "应用",
+      "duration": 360,
+      "questionCount": 5,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.44399999999999995,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 1,
+          "descending": 1,
+          "stable": 2,
+          "progressionRatio": 0.25
+        },
+        "avgValueScore": 2.05,
+        "intensity": 0.8333333333333334
+      },
+      "timeline": {
+        "start": 191,
+        "end": 551,
+        "startMinute": 3,
+        "endMinute": 9,
+        "duration": 360
+      }
+    },
+    {
+      "id": 3,
+      "teachingPhase": "2.勾股定理证明",
+      "coreQuestion": "如何用严格的数学推理证明勾股定理？",
+      "questions": [
+        {
+          "question": "语言几何语言几何语言分为什么？",
+          "answer": "符号语言和高手语言。",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 653,
+          "endTime": 656,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 3.05,
+          "chainIndex": 0,
+          "relativeTime": 26
+        },
+        {
+          "question": "好，接下来我们从结构出发，如果我们想证明这样的一个结论成立，观察a方加b方等于c方，从数的角度出现了a方加b方，你会想到什么？",
+          "answer": "唉",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 713,
+          "endTime": 729,
+          "question_sentiment": {
+            "score": 0.5900000000000001,
+            "classification": "中性"
+          },
+          "valueScore": 3.2,
+          "chainIndex": 1,
+          "relativeTime": 86
+        },
+        {
+          "question": "那紧接着如果从形的角度，你看到了这个 A方、b方、c方你会想到什么图形？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "若何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 759,
+          "endTime": 767,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 1.66,
+          "chainIndex": 2,
+          "relativeTime": 132
+        },
+        {
+          "question": "好，那所以从形的角度，呢我们可以结合这些来进行探究，那接下来呢老师也准备了4个全等的，我们试一试用这4个全等的直角三角形来拼凑，能不能把我们刚刚的猜想给证明了吗？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 802,
+          "endTime": 821,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 2.8,
+          "chainIndex": 3,
+          "relativeTime": 175
+        },
+        {
+          "question": "好，我们先来看第一个同学拼的这个小的直角三角形它的斜边是c两条直角边分别为a和 b的话，来，冯梦瑶，你来给大家解释一下，你这种拼凑的方法怎么能够证明a方加b方等于c方呢？",
+          "answer": "C的平方等于。",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 1005,
+          "endTime": 1026,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 3.2,
+          "chainIndex": 4,
+          "relativeTime": 378
+        },
+        {
+          "question": "在中国古代，我们人们把弯曲的这个手臂的上半部分称为什么？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 1341,
+          "endTime": 1347,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 3.08,
+          "chainIndex": 5,
+          "relativeTime": 714
+        },
+        {
+          "question": "直角边两直角边的平方和等于斜边的平方，那关键问题是斜边我们应该如何确定呢要先确定什么角？",
+          "answer": "直角，",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 1397,
+          "endTime": 1407,
+          "question_sentiment": {
+            "score": 0.48000000000000004,
+            "classification": "中性"
+          },
+          "valueScore": 2.64,
+          "chainIndex": 6,
+          "relativeTime": 770
+        }
+      ],
+      "startTime": 653,
+      "endTime": 1407,
+      "primaryTopic": "如何",
+      "primaryBloomLevel": "分析",
+      "duration": 754,
+      "questionCount": 7,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.4785714285714286,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 1,
+          "descending": 2,
+          "stable": 3,
+          "progressionRatio": 0.16666666666666666
+        },
+        "avgValueScore": 2.8042857142857147,
+        "intensity": 0.5570291777188329
+      },
+      "timeline": {
+        "start": 653,
+        "end": 1407,
+        "startMinute": 10,
+        "endMinute": 23,
+        "duration": 754
+      }
+    },
+    {
+      "id": 4,
+      "teachingPhase": "三、勾股定理应用练习",
+      "coreQuestion": "如何运用勾股定理解决实际问题？",
+      "questions": [
+        {
+          "question": "两个什么边的平方和较短边在直角三角形中称为什么边？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 1571,
+          "endTime": 1578,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 3.05,
+          "chainIndex": 0,
+          "relativeTime": 89
+        },
+        {
+          "question": "算术平方根，有直角三角形的斜边是两直角边的平方和的算术平方根，是不是可以解决这个问题？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 1823,
+          "endTime": 1833,
+          "question_sentiment": {
+            "score": 0.27,
+            "classification": "消极"
+          },
+          "valueScore": 2.23,
+          "chainIndex": 1,
+          "relativeTime": 341
+        },
+        {
+          "question": "啊来那个焦点，那你觉得在直角三角形中告知我们30度的角应该将这个问题转化为什么？",
+          "answer": "转化为求斜边，",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 2135,
+          "endTime": 2143,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 3.3,
+          "chainIndex": 2,
+          "relativeTime": 653
+        },
+        {
+          "question": "接下来利用勾股定理b等于根号下c方减a方，唉此时为什么就定下来？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2207,
+          "endTime": 2213,
+          "question_sentiment": {
+            "score": 0.46,
+            "classification": "中性"
+          },
+          "valueScore": 3.12,
+          "chainIndex": 3,
+          "relativeTime": 725
+        },
+        {
+          "question": "两个两个，大部分也写出来两个，为什么有两个答案呢？",
+          "answer": "谁知。",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 2437,
+          "endTime": 2441,
+          "question_sentiment": {
+            "score": 0.48000000000000004,
+            "classification": "中性"
+          },
+          "valueScore": 3.15,
+          "chainIndex": 4,
+          "relativeTime": 955
+        },
+        {
+          "question": "刘浩宇，为什么题目中会有两个答案呢？",
+          "answer": "因为不知道BC是斜边还是。",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 2444,
+          "endTime": 2447,
+          "question_sentiment": {
+            "score": 0.48000000000000004,
+            "classification": "中性"
+          },
+          "valueScore": 3.08,
+          "chainIndex": 5,
+          "relativeTime": 962
+        },
+        {
+          "question": "来讲解一下，刘志奇，你拿到这个题目是怎么考虑的？",
+          "answer": "你先做这个 Bc边上的高，",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "如何",
+          "feedbackType": "无反馈",
+          "answered": true,
+          "beginTime": 2608,
+          "endTime": 2612,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 2.44,
+          "chainIndex": 6,
+          "relativeTime": 1126
+        },
+        {
+          "question": "那为什么BD边的长为三，呢用到了等腰三角形的什么性质？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "为何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2676,
+          "endTime": 2679,
+          "question_sentiment": {
+            "score": 0.48000000000000004,
+            "classification": "中性"
+          },
+          "valueScore": 3.07,
+          "chainIndex": 7,
+          "relativeTime": 1194
+        }
+      ],
+      "startTime": 1571,
+      "endTime": 2679,
+      "primaryTopic": "为何",
+      "primaryBloomLevel": "分析",
+      "duration": 1108,
+      "questionCount": 8,
+      "characteristics": {
+        "hasAnswers": true,
+        "hasFeedback": false,
+        "avgSentiment": 0.44125,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 2,
+          "descending": 2,
+          "stable": 3,
+          "progressionRatio": 0.2857142857142857
+        },
+        "avgValueScore": 2.93,
+        "intensity": 0.43321299638989175
+      },
+      "timeline": {
+        "start": 1571,
+        "end": 2679,
+        "startMinute": 26,
+        "endMinute": 44,
+        "duration": 1108
+      }
+    },
+    {
+      "id": 5,
+      "teachingPhase": "四、课堂知识回顾与总结",
+      "coreQuestion": "本节课学到了哪些重要的数学知识？",
+      "questions": [
+        {
+          "question": "那么直角三角形除了具备一般三角形的性质之外，在边和角方面又具备了一些新的性质，比如说它的两个锐角什么关系？",
+          "answer": "",
+          "comment": "",
+          "blmType": "记忆",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2732,
+          "endTime": 2743,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 1.53,
+          "chainIndex": 0,
+          "relativeTime": 11
+        },
+        {
+          "question": "那通过我们本节课的学习，我们还知道在我们证明勾股定理成立的时候，从结论a方a方加b方等于c方出发，我们从几个维度对它进行了分析，啊还记得吗？",
+          "answer": "",
+          "comment": "",
+          "blmType": "分析",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2754,
+          "endTime": 2767,
+          "question_sentiment": {
+            "score": 0.5700000000000001,
+            "classification": "中性"
+          },
+          "valueScore": 2.8,
+          "chainIndex": 1,
+          "relativeTime": 33
+        },
+        {
+          "question": "啊那同学们还要学会利用勾股定理来解决一些实际问题，我们要先将实际问题转化为我们这个学习的什么问题？",
+          "answer": "",
+          "comment": "",
+          "blmType": "应用",
+          "mat": "是何",
+          "feedbackType": "无反馈",
+          "answered": false,
+          "beginTime": 2795,
+          "endTime": 2804,
+          "question_sentiment": {
+            "score": 0.44,
+            "classification": "中性"
+          },
+          "valueScore": 2.29,
+          "chainIndex": 2,
+          "relativeTime": 74
+        }
+      ],
+      "startTime": 2732,
+      "endTime": 2804,
+      "primaryTopic": "是何",
+      "primaryBloomLevel": "应用",
+      "duration": 72,
+      "questionCount": 3,
+      "characteristics": {
+        "hasAnswers": false,
+        "hasFeedback": false,
+        "avgSentiment": 0.48333333333333334,
+        "sentimentClassification": "中性",
+        "bloomProgression": {
+          "pattern": "稳定为主",
+          "ascending": 1,
+          "descending": 1,
+          "stable": 0,
+          "progressionRatio": 0.5
+        },
+        "avgValueScore": 2.2066666666666666,
+        "intensity": 2.5
+      },
+      "timeline": {
+        "start": 2732,
+        "end": 2804,
+        "startMinute": 45,
+        "endMinute": 46,
+        "duration": 72
+      }
+    }
+  ]
+}
